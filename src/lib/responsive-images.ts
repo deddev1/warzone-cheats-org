@@ -38,18 +38,18 @@ export function contentSrcSet(baseSrc: string): string | undefined {
 }
 
 /**
- * Homepage / banner hero — compressed WebP ladder (not the 375KB+ PNG master).
- * Native art ~1024×409 (~2.5:1).
+ * Homepage / banner hero — Ghost operator art (warzone-ghost-hero).
+ * Native art 1536×1024 (3:2).
  */
 export const heroResponsive: ResponsiveWidth[] = [
-	{ src: '/images/warzone-cheats-hero-640w.webp', width: 640 },
-	{ src: '/images/warzone-cheats-hero-1024w.webp', width: 1024 },
+	{ src: '/images/warzone-ghost-hero-640w.webp', width: 640 },
+	{ src: '/images/warzone-ghost-hero-1024w.webp', width: 1024 },
 ];
 
 export const heroDesktopResponsive: ResponsiveWidth[] = heroResponsive;
 
-/** Default LCP src — mid ladder WebP (~56KB). */
-export const heroSrc = '/images/warzone-cheats-hero-1024w.webp';
+/** Default LCP src — compressed WebP. */
+export const heroSrc = '/images/warzone-ghost-hero-1024w.webp';
 export const heroSrcSet = buildSrcSet(heroResponsive);
 export const heroSizes = '100vw';
 
@@ -59,7 +59,7 @@ export const heroMimeType = 'image/webp';
 
 /** Exact native dimensions (no zoom crop). */
 export const heroWidth = 1024;
-export const heroHeight = 409;
+export const heroHeight = 683;
 
 /** Responsive widths for below-fold content images. */
 export const contentWidths = [480, 960] as const;

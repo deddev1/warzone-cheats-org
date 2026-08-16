@@ -1,6 +1,6 @@
 /** Descriptive image alts — Google rejects empty or keyword-only alts. */
 export const DESCRIPTIVE_IMAGE_ALTS = {
-	hero: 'Warzone Cheats hero — ESP and aimbot overlay in Call of Duty: Warzone',
+	hero: 'Warzone cheats homepage — Call of Duty Warzone Ghost operator undetected ESP aimbot banner',
 	espWallhack: 'Wallhack outlines showing enemy operators and squads through walls',
 	aimbotCombat: 'Soft aim assist overlay during a Call of Duty: Warzone match',
 	squadFight: 'Warzone Cheats combat overlay during a squad fight',
@@ -14,7 +14,7 @@ export const DESCRIPTIVE_IMAGE_ALTS = {
 
 /** Page-level image alt by pageId (EN source of truth). */
 export const PAGE_IMAGE_ALTS = {
-	home: 'Warzone Cheats homepage hero — ESP and aimbot for Call of Duty: Warzone',
+	home: 'Warzone cheats homepage banner — Call of Duty Warzone Ghost operator with undetected ESP aimbot',
 	'warzone-esp': 'Warzone ESP player boxes and distance readouts in a match',
 	'warzone-aimbot': 'Warzone aimbot and soft aim controls on Windows PC',
 	features: 'Warzone Cheats features — ESP, soft aim, and radar screenshots',

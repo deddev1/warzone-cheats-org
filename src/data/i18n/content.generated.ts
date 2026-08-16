@@ -109,7 +109,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					description: "Warzone cheats for Call of Duty: Warzone on Windows PC — ESP, soft aim, radar, and Ricochet updates. Compare plans and buy.",
 					h1: "Warzone Cheats — Undetected ESP, Wallhack & Aimbot",
 					intro: "Warzone Cheats is the undetected warzone cheats package for Windows PC — built for Call of Duty: Warzone on Windows PC. Warzone esp wallhack, 2D radar, and warzone aimbot with Ricochet maintenance after every major patch.",
-					imageAlt: "Warzone Cheats homepage hero — ESP and aimbot for Call of Duty: Warzone",
+					imageAlt: "Warzone cheats homepage banner — Call of Duty Warzone Ghost operator undetected ESP aimbot",
 					galleryTitle: "Warzone Cheats gallery — ESP, Aimbot and wallhack visuals",
 					ctaPrimary: "Buy Warzone Cheats",
 					ctaSecondary: "See all features",

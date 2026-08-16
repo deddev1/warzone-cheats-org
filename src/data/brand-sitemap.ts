@@ -46,7 +46,10 @@ const defaultImages: BrandSitemapImage[] = [
 
 /** Per-page image title/caption templates for the English urlset. */
 const pageImageTemplates: Record<PageId, { title: string; caption: string }> = {
-	home: { title: '{brand} hero — ESP and aimbot in Warzone', caption: 'Homepage preview of {primaryKeyword} on Windows PC' },
+	home: {
+		title: 'Warzone cheats homepage — Ghost operator banner',
+		caption: 'Call of Duty Warzone Ghost operator warzone cheats ESP aimbot homepage art',
+	},
 	'warzone-esp': { title: '{primaryKeyword} ESP overlay', caption: 'Player ESP boxes and distance with {primaryKeyword}' },
 	'warzone-aimbot': { title: '{primaryKeyword} aimbot view', caption: 'Aimbot and soft aim controls in {primaryKeyword}' },
 	features: { title: '{primaryKeyword} features', caption: 'ESP, soft aim, and radar included with {primaryKeyword}' },

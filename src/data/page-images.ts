@@ -18,7 +18,7 @@ export const crawlPhotoPool = [
  * Prefer compressed WebP screenshots so Google can fetch them quickly.
  */
 export const pageImageSrcById: Record<PageId, string> = {
-	home: '/images/warzone-cheats-hero-1024w.webp',
+	home: '/images/warzone-ghost-hero-1024w.webp',
 	'warzone-esp': warzoneImages.playerEsp,
 	'warzone-aimbot': warzoneImages.aimbotCombat,
 	features: warzoneImages.aimbotSkeleton,
