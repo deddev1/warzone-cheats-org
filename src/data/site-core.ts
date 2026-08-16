@@ -63,8 +63,9 @@ const seoDefaults = {
 	reviewsTitle: '{brand} Reviews | Buyer Feedback',
 	reviewsDescription:
 		'Real buyer reviews for {brand} — ESP, soft aim, radar, and patch updates on Windows PC.',
-	blogTitle: '{game} Intel | {brand}',
-	blogDescription: 'Guides and notes for {game} — meta tips, ESP, aimbot, and {antiCheat} updates.',
+	blogTitle: 'Warzone Cheats Blog | Guides & Tips',
+	blogDescription:
+		'Warzone cheats guides, ESP and aimbot tips, undetected Ricochet notes, and Call of Duty: Warzone meta articles for PC players.',
 } as const;
 
 type SeoShape = typeof seoDefaults;

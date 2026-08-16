@@ -172,7 +172,7 @@ export function getBlogSitemapEntriesForLocale(locale: LocaleCode) {
 		{
 			path: getBlogBasePath(locale),
 			lastmod: indexLastmod,
-			priority: 0.92,
+			priority: 0.94,
 			changefreq: 'daily',
 			images: [
 				{
@@ -186,11 +186,13 @@ export function getBlogSitemapEntriesForLocale(locale: LocaleCode) {
 	for (const post of blogPosts) {
 		const t = post.translations[locale];
 		const imageSrc = getBlogImageSrc(post.imageKey);
-		const isProductPost = /Warzone Cheats|Aimbot|ESP|Undetected|Comparisons/i.test(post.category);
+		const isProductPost = /Cheats Guide|Buyers Guide|Product Updates|Aimbot|ESP|Undetected|Comparisons/i.test(
+			post.category,
+		);
 		entries.push({
 			path: getBlogPostPath(locale, t.slug),
 			lastmod: post.updated,
-			priority: isProductPost ? 0.95 : 0.88,
+			priority: isProductPost ? 0.96 : 0.9,
 			changefreq: 'weekly',
 			images: [
 				{

@@ -48,14 +48,18 @@ const articleListSchema = {
 	isPartOf: { '@id': `${siteConfig.url}/#website` },
 	mainEntity: {
 		'@type': 'ItemList',
+		numberOfItems: posts.length,
 		itemListElement: posts.map((post, i) => ({
 			'@type': 'ListItem',
 			position: i + 1,
 			url: absoluteBlogUrl(locale, post.translation.slug),
-			name: post.translation.title,
+			name: post.translation.h1,
 		})),
 	},
 };
+
+const blogKeywords =
+	'warzone cheats, warzone guides, warzone esp, warzone aimbot, undetected cheats, ricochet warzone';
 ---
 
 <Layout
@@ -64,6 +68,7 @@ const articleListSchema = {
 	canonicalPath={canonicalPath}
 	hreflangAlternates={hreflangAlternates}
 	locale={locale}
+	keywords={locale === defaultLocale ? blogKeywords : undefined}
 	ogImage={siteConfig.defaultOgImage}
 	ogImageAlt={ui.blogH1}
 	breadcrumbs={[{ label: ui.home, href: homeHref }, { label: ui.blogH1 }]}

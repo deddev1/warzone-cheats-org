@@ -29,16 +29,27 @@ const related = getRelatedBlogPosts(post.id, 4);
 
 const articleUrl = absoluteBlogUrl(defaultLocale, post.translations[defaultLocale]?.slug ?? t.slug);
 const hreflangAlternates = getBlogPostHreflangAlternates(post, locale);
+const keywordString = t.keywords.join(', ');
+const plainText = [t.intro, ...t.sections.flatMap((s) => [s.h2, ...s.paragraphs])].join(' ');
+const wordCount = plainText.split(/\s+/).filter(Boolean).length;
+
 const articleSchema = {
-	'@type': 'Article',
+	'@type': 'BlogPosting',
 	'@id': `${articleUrl}#article`,
 	url: articleUrl,
-	headline: t.title,
+	headline: t.h1,
+	alternativeHeadline: t.title,
 	description: t.metaDescription,
-	datePublished: post.published,
-	dateModified: post.updated,
-	image: new URL(post.imageSrc, siteConfig.url).href,
-	inLanguage: locale,
+	datePublished: `${post.published}T12:00:00+00:00`,
+	dateModified: `${post.updated}T12:00:00+00:00`,
+	image: {
+		'@type': 'ImageObject',
+		url: new URL(post.imageSrc, siteConfig.url).href,
+		caption: t.imageAlt,
+	},
+	inLanguage: 'en',
+	isAccessibleForFree: true,
+	wordCount,
 	author: { '@type': 'Organization', name: siteConfig.name, url: siteConfig.url },
 	publisher: {
 		'@type': 'Organization',
@@ -51,7 +62,7 @@ const articleSchema = {
 		'@id': `${articleUrl}#webpage`,
 	},
 	isPartOf: { '@id': `${siteConfig.url}/#website` },
-	keywords: t.keywords.join(', '),
+	keywords: keywordString,
 	articleSection: post.category,
 };
 
@@ -80,6 +91,10 @@ function pageTitle(headline: string): string {
 	ogImage={post.imageSrc}
 	ogImageAlt={t.imageAlt}
 	type="article"
+	keywords={keywordString}
+	articlePublishedTime={post.published}
+	articleModifiedTime={post.updated}
+	articleSection={post.category}
 	locale={locale}
 	breadcrumbs={[
 		{ label: ui.home, href: homeHref },
@@ -98,8 +113,19 @@ function pageTitle(headline: string): string {
 				<h1>{t.h1}</h1>
 				<p class="post__intro">{t.intro}</p>
 				<p class="post__meta">
-					{ui.published} {post.published} · {ui.updated} {post.updated}
+					<time datetime={post.published}>{ui.published} {post.published}</time>
+					{' · '}
+					<time datetime={post.updated}>{ui.updated} {post.updated}</time>
 				</p>
+				{
+					t.keywords.length > 0 && (
+						<ul class="post__tags" aria-label="Topics">
+							{t.keywords.map((kw) => (
+								<li>{kw}</li>
+							))}
+						</ul>
+					)
+				}
 			</header>
 			<img
 				class="post__hero"
@@ -188,6 +214,25 @@ function pageTitle(headline: string): string {
 	.post__meta {
 		color: rgba(255, 255, 255, 0.5);
 		font-size: 0.85rem;
+	}
+
+	.post__tags {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.4rem;
+		margin: 0.75rem 0 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	.post__tags li {
+		padding: 0.25rem 0.55rem;
+		border: 1px solid var(--line-soft);
+		border-radius: var(--radius-pill);
+		font-size: 0.72rem;
+		font-weight: 600;
+		color: var(--magenta-soft);
+		text-transform: lowercase;
 	}
 	.post__hero {
 		width: 100%;
