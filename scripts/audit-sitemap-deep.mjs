@@ -198,16 +198,25 @@ async function main() {
 	ok(`Audited ${allPageUrls.size} unique page URLs`);
 	ok(`Audited ${allImageUrls.size} unique image URLs`);
 
-	// robots
+	// robots + AI site guide
 	const robots = await readFile(path.join(ROOT, 'public/robots.txt'), 'utf8');
 	if (!robots.includes(`Sitemap: ${SITE}/sitemap.xml`)) fail('robots.txt missing primary Sitemap');
 	else ok('robots.txt points at sitemap.xml');
+	if (!robots.includes(`${SITE}/llms.txt`)) fail('robots.txt missing llms.txt reference');
+	else ok('robots.txt references llms.txt');
 
-	// Layout link rel=sitemap
+	const llms = await readFile(path.join(ROOT, 'public/llms.txt'), 'utf8');
+	if (!llms.startsWith('# ')) fail('llms.txt missing H1 title');
+	else ok('llms.txt has site title and summary');
+
+	// Layout links
 	const home = await readFile(path.join(DIST, 'index.html'), 'utf8');
 	if (!home.includes('href="/sitemap.xml"') && !home.includes(`href="${SITE}/sitemap.xml"`)) {
 		fail('Homepage missing <link rel="sitemap">');
 	} else ok('Homepage links to sitemap.xml');
+	if (!home.includes('rel="describedby"') || !home.includes('href="/llms.txt"')) {
+		fail('Homepage missing <link rel="describedby" href="/llms.txt">');
+	} else ok('Homepage links to llms.txt for AI context');
 
 	console.log('');
 	if (errors) {

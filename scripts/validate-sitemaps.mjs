@@ -438,6 +438,38 @@ async function main() {
 	}
 	if (errors === 0) ok('robots.txt lists sitemap.xml only (primary GSC submission path)');
 
+	if (!robots.includes(`${SITE}/llms.txt`)) {
+		fail('robots.txt should reference llms.txt for AI site context');
+		bump();
+	}
+	if (!robots.includes('User-agent: GPTBot')) {
+		fail('robots.txt missing explicit AI crawler rules (GPTBot)');
+		bump();
+	}
+	if (errors === 0) ok('robots.txt references llms.txt and allows AI crawlers');
+
+	let llmsTxt;
+	try {
+		llmsTxt = await readFile(path.join(ROOT, 'public', 'llms.txt'), 'utf8');
+	} catch {
+		fail('public/llms.txt missing — run npm run sync:brand');
+		bump();
+		llmsTxt = '';
+	}
+	if (llmsTxt && !llmsTxt.startsWith('# ')) {
+		fail('llms.txt must start with H1 (# Title) per llmstxt.org spec');
+		bump();
+	}
+	if (llmsTxt && !llmsTxt.includes('> ')) {
+		fail('llms.txt missing blockquote summary');
+		bump();
+	}
+	if (llmsTxt && !llmsTxt.includes(`${SITE}/`)) {
+		fail('llms.txt should link to canonical site URLs');
+		bump();
+	}
+	if (errors === 0 && llmsTxt) ok('llms.txt present with summary and canonical links');
+
 	// Built HTML vs sitemap total
 	const htmlPaths = await collectHtmlPaths(DIST);
 	const sitemapPaths = new Set([

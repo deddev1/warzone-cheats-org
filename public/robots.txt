@@ -1,10 +1,103 @@
+# =============================================================================
+# Warzone Cheats — https://warzonecheats.org
+# =============================================================================
+# About: Official site for undetected warzone cheats on Windows PC.
+# Product: ESP wallhack, soft aim, and 2D radar for Call of Duty: Warzone.
+# Updates: Rebuilt after game patches and Ricochet anti-cheat changes.
+# AI site guide (summary + key pages): https://warzonecheats.org/llms.txt
+# =============================================================================
+
 User-agent: *
 Allow: /
+Allow: /blog/
 Allow: /images/
 Disallow: /brand-studio/
 Disallow: /brand-studio
 Disallow: /__brand/
 Disallow: /__brand
 
-# Primary sitemap for Google Search Console — index covers EN, locale, and image sitemaps.
+# AI crawlers — public pages allowed for search, answers, and site understanding.
+User-agent: GPTBot
+Allow: /
+Allow: /blog/
+Allow: /images/
+Disallow: /brand-studio/
+Disallow: /brand-studio
+Disallow: /__brand/
+Disallow: /__brand
+
+User-agent: OAI-SearchBot
+Allow: /
+Allow: /blog/
+Allow: /images/
+Disallow: /brand-studio/
+Disallow: /brand-studio
+Disallow: /__brand/
+Disallow: /__brand
+
+User-agent: ChatGPT-User
+Allow: /
+Allow: /blog/
+Allow: /images/
+Disallow: /brand-studio/
+Disallow: /brand-studio
+Disallow: /__brand/
+Disallow: /__brand
+
+User-agent: ClaudeBot
+Allow: /
+Allow: /blog/
+Allow: /images/
+Disallow: /brand-studio/
+Disallow: /brand-studio
+Disallow: /__brand/
+Disallow: /__brand
+
+User-agent: Claude-SearchBot
+Allow: /
+Allow: /blog/
+Allow: /images/
+Disallow: /brand-studio/
+Disallow: /brand-studio
+Disallow: /__brand/
+Disallow: /__brand
+
+User-agent: anthropic-ai
+Allow: /
+Allow: /blog/
+Allow: /images/
+Disallow: /brand-studio/
+Disallow: /brand-studio
+Disallow: /__brand/
+Disallow: /__brand
+
+User-agent: Google-Extended
+Allow: /
+Allow: /blog/
+Allow: /images/
+Disallow: /brand-studio/
+Disallow: /brand-studio
+Disallow: /__brand/
+Disallow: /__brand
+
+User-agent: PerplexityBot
+Allow: /
+Allow: /blog/
+Allow: /images/
+Disallow: /brand-studio/
+Disallow: /brand-studio
+Disallow: /__brand/
+Disallow: /__brand
+
+User-agent: CCBot
+Allow: /
+Allow: /blog/
+Allow: /images/
+Disallow: /brand-studio/
+Disallow: /brand-studio
+Disallow: /__brand/
+Disallow: /__brand
+
+# Primary sitemap — index covers EN, locale, and image sitemaps.
 Sitemap: https://warzonecheats.org/sitemap.xml
+# LLM-readable site guide: https://warzonecheats.org/llms.txt
