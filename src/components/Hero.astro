@@ -42,9 +42,9 @@ const monthly = productInfo.plans.find((p) => p.id === 'monthly') ?? productInfo
 		overflow: hidden;
 		background: #050506;
 		width: 100%;
-		height: clamp(280px, 30vw, 390px);
-		min-height: 280px;
-		max-height: 390px;
+		height: clamp(320px, 34vw, 440px);
+		min-height: 320px;
+		max-height: 440px;
 	}
 
 	.hero__media {
@@ -315,7 +315,7 @@ const monthly = productInfo.plans.find((p) => p.id === 'monthly') ?? productInfo
 		.hero__content {
 			transform: none;
 			width: 100%;
-			min-height: clamp(16rem, 44svh, 22rem);
+			min-height: clamp(18rem, 48svh, 24rem);
 			display: flex;
 			align-items: flex-end;
 			padding-block: 1.25rem 1.1rem;
@@ -374,7 +374,7 @@ const monthly = productInfo.plans.find((p) => p.id === 'monthly') ?? productInfo
 
 	@media (max-width: 480px) {
 		.hero__content {
-			min-height: clamp(15rem, 48svh, 20rem);
+			min-height: clamp(17rem, 52svh, 22rem);
 			padding-block: 1.1rem 1rem;
 		}
 
@@ -398,7 +398,7 @@ const monthly = productInfo.plans.find((p) => p.id === 'monthly') ?? productInfo
 
 	@media (max-width: 360px) {
 		.hero__content {
-			min-height: clamp(14rem, 50svh, 18.5rem);
+			min-height: clamp(16rem, 54svh, 20.5rem);
 		}
 
 		.hero__brand {
@@ -413,7 +413,7 @@ const monthly = productInfo.plans.find((p) => p.id === 'monthly') ?? productInfo
 
 	@media (max-width: 900px) and (orientation: landscape) and (max-height: 480px) {
 		.hero__content {
-			min-height: min(70svh, 16.5rem);
+			min-height: min(72svh, 18rem);
 			padding-block: 0.85rem 0.8rem;
 		}
 

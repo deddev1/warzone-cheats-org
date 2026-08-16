@@ -57,9 +57,9 @@ export const heroSizes = '100vw';
 export const heroPreloadSrc = heroSrc;
 export const heroMimeType = 'image/webp';
 
-/** Layout box for CLS — wide bar crop (~3.15:1), not full native 3:2 art. */
+/** Layout box for CLS — wide bar crop (~2.8:1), not full native 3:2 art. */
 export const heroWidth = 1024;
-export const heroHeight = 325;
+export const heroHeight = 365;
 
 /** Responsive widths for below-fold content images. */
 export const contentWidths = [480, 960] as const;
