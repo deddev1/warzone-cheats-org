@@ -32,21 +32,19 @@ const monthly = productInfo.plans.find((p) => p.id === 'monthly') ?? productInfo
 		--hero-pad-y: clamp(1rem, 2vw, 1.75rem);
 		--hero-stack: clamp(0.5rem, 1.1vw, 0.75rem);
 		/*
-		 * Bar is a bit shorter than the native 1024/409 (~2.5:1) art.
-		 * Image stays undistorted via object-fit: cover (crops edges, no squash).
+		 * Wide cinematic bar — shorter than native 3:2 art.
+		 * object-fit: cover crops bottom/sides; heads stay via object-position.
 		 */
-		--hero-ratio: 3 / 2;
 		position: relative;
 		isolation: isolate;
 		display: grid;
 		align-items: center;
 		overflow: hidden;
 		background: #050506;
-		aspect-ratio: var(--hero-ratio);
 		width: 100%;
-		height: auto;
-		min-height: 0;
-		max-height: none;
+		height: clamp(280px, 30vw, 390px);
+		min-height: 280px;
+		max-height: 390px;
 	}
 
 	.hero__media {
@@ -63,10 +61,9 @@ const monthly = productInfo.plans.find((p) => p.id === 'monthly') ?? productInfo
 	}
 
 	.hero__media img {
-		/* Cover = keep proportions; crop top/bottom of the shorter bar */
+		/* Cover = crop excess; never squash. Anchor high so Ghost/heads stay in frame. */
 		object-fit: cover;
-		/* Prefer a bit higher in the frame so the USEC head stays in view */
-		object-position: right 28%;
+		object-position: 58% 14%;
 		image-rendering: auto;
 		transform: translateZ(0);
 		animation: hero-in 0.9s ease-out both;
@@ -287,17 +284,22 @@ const monthly = productInfo.plans.find((p) => p.id === 'monthly') ?? productInfo
 	 */
 	@media (max-width: 900px) {
 		.hero {
-			aspect-ratio: auto;
+			height: auto;
 			min-height: 0;
 			max-height: none;
-			height: auto;
 			display: block;
 			overflow: hidden;
 		}
 
+		.hero__media {
+			position: absolute;
+			inset: 0;
+		}
+
 		.hero__media img {
 			object-fit: cover;
-			object-position: 78% 10%;
+			/* Characters sit center-right; keep helmets/masks above the fold */
+			object-position: 62% 10%;
 		}
 
 		.hero__veil {
@@ -313,11 +315,11 @@ const monthly = productInfo.plans.find((p) => p.id === 'monthly') ?? productInfo
 		.hero__content {
 			transform: none;
 			width: 100%;
-			min-height: clamp(18.5rem, 56svh, 28rem);
+			min-height: clamp(16rem, 44svh, 22rem);
 			display: flex;
 			align-items: flex-end;
-			padding-block: 1.35rem 1.2rem;
-			padding-bottom: max(1.2rem, env(safe-area-inset-bottom, 0px));
+			padding-block: 1.25rem 1.1rem;
+			padding-bottom: max(1.1rem, env(safe-area-inset-bottom, 0px));
 			box-sizing: border-box;
 		}
 
@@ -372,8 +374,8 @@ const monthly = productInfo.plans.find((p) => p.id === 'monthly') ?? productInfo
 
 	@media (max-width: 480px) {
 		.hero__content {
-			min-height: clamp(17.5rem, 60svh, 26rem);
-			padding-block: 1.2rem 1.1rem;
+			min-height: clamp(15rem, 48svh, 20rem);
+			padding-block: 1.1rem 1rem;
 		}
 
 		.hero__brand {
@@ -396,7 +398,7 @@ const monthly = productInfo.plans.find((p) => p.id === 'monthly') ?? productInfo
 
 	@media (max-width: 360px) {
 		.hero__content {
-			min-height: clamp(16.5rem, 64svh, 24rem);
+			min-height: clamp(14rem, 50svh, 18.5rem);
 		}
 
 		.hero__brand {
