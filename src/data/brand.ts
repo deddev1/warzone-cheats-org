@@ -75,7 +75,7 @@ export const brand = {
 		/** Home = brand hub. Money URL /warzone-cheats/ owns the head term. */
 		homeTitle: 'Warzone Cheats | Official Windows PC Site',
 		homeDescription:
-			'Official Warzone Cheats site for Windows PC. Compare features, store plans, and live status — then buy ESP, soft aim, and radar in one license.',
+			'Official Warzone Cheats site for Call of Duty: Warzone on Windows PC. Compare features, store plans, and live status — then buy ESP, soft aim, and radar in one license.',
 		featuresTitle: '{game} Features | {brand}',
 		featuresDescription:
 			'Everything in one {game} license for Windows PC — ESP, soft aim, radar, loot tools, and patch updates after {antiCheat}. See what is included.',
@@ -155,12 +155,12 @@ export const brand = {
 			},
 			{
 				src: '/images/warzone-cheats-wallhack.webp',
-				title: 'Wallhack visibility for Warzone matches',
+				title: 'Wallhack visibility for Call of Duty: Warzone matches',
 				caption: 'Enemy operator and squad outlines through walls and terrain',
 			},
 			{
 				src: '/images/warzone-cheats-aimbot.webp',
-				title: 'Soft aim assist for Warzone',
+				title: 'Soft aim assist for Call of Duty: Warzone',
 				caption: 'Configurable soft aim FOV and bone priority',
 			},
 			{

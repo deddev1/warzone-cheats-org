@@ -5,7 +5,7 @@ export const enPages = {
 	home: {
 		title: 'Warzone Cheats 2026 | Undetected ESP, Aimbot & Wallhack',
 		description:
-			'Warzone cheats for Windows PC — ESP, soft aim, radar, and Ricochet updates. Compare plans and buy.',
+			'Warzone cheats for Call of Duty: Warzone on Windows PC — ESP, soft aim, radar, and Ricochet updates. Compare plans and buy.',
 		h1: 'Warzone Cheats — Undetected ESP, Wallhack & Aimbot',
 		intro:
 			'Warzone Cheats is the undetected warzone cheats package for Windows PC — built for Call of Duty: Warzone on Windows PC. Warzone esp wallhack, 2D radar, and warzone aimbot with Ricochet maintenance after every major patch.',
@@ -37,8 +37,8 @@ export const enPages = {
 			'Warzone ESP for Windows PC — player boxes, loot markers, and distance readouts. Part of our undetected warzone cheats for Call of Duty: Warzone.',
 		h1: 'Warzone ESP — Player Boxes & Wallhack',
 		intro:
-			'Warzone esp visibility tools for BR and Resurgence. Read enemy squads, enemy operators and squads, loot, and distance before you commit — toggleable warzone esp wallhack overlays bundled in our warzone cheats package.',
-		imageAlt: "Warzone ESP player boxes and distance readouts in a match",
+			'Call of Duty: Warzone esp visibility tools for BR and Resurgence. Read enemy squads, enemy operators and squads, loot, and distance before you commit — toggleable warzone esp wallhack overlays bundled in our warzone cheats package.',
+		imageAlt: "Warzone ESP player boxes and distance readouts in a Call of Duty: Warzone match",
 		galleryTitle: 'Warzone ESP overlay visuals',
 		ctaPrimary: 'Buy Warzone Cheats',
 		ctaSecondary: 'Warzone wallhack guide',
@@ -82,8 +82,8 @@ export const enPages = {
 			'Warzone aimbot with soft aim tuning for Windows PC. FOV, bone priority, and hotkeys bundled with ESP boxes in our warzone cheats package.',
 		h1: 'Warzone Aimbot — Soft Aim for Windows PC',
 		intro:
-			'Configurable Aimbot tools for Warzone firefights. Smoothness, FOV, bone priority, and per-weapon profiles — bundled with ESP wallhack and radar in one undetected license.',
-		imageAlt: "Warzone aimbot and soft aim controls on Windows PC",
+			'Configurable Aimbot tools for Call of Duty: Warzone firefights. Smoothness, FOV, bone priority, and per-weapon profiles — bundled with ESP wallhack and radar in one undetected license.',
+		imageAlt: "Warzone aimbot and soft aim controls for Call of Duty: Warzone on Windows PC",
 		galleryTitle: 'Warzone Aimbot combat previews',
 		ctaPrimary: 'Buy Warzone Cheats',
 		ctaSecondary: 'See ESP wallhack',
@@ -127,7 +127,7 @@ export const enPages = {
 			'Full warzone cheats feature list: ESP boxes, soft aim, radar, and toggles for Windows PC. Review controls before checkout.',
 		h1: 'Warzone Cheats Features — Full Control List',
 		intro:
-			'Every ESP wallhack, radar hack, and Aimbot control included in the Warzone Cheats package for Warzone on Windows PC — with Ricochet maintenance after major patches.',
+			'Every ESP wallhack, radar hack, and Aimbot control included in the Warzone Cheats package for Call of Duty: Warzone on Windows PC — with Ricochet maintenance after major patches.',
 		imageAlt: "Warzone Cheats features — ESP, soft aim, and radar screenshots",
 		galleryTitle: 'Warzone Cheats feature gallery',
 		ctaPrimary: 'Buy Warzone Cheats',
@@ -160,7 +160,7 @@ export const enPages = {
 			'Warzone cheats pricing: $35/month or $150 lifetime for ESP, soft aim, and radar on Windows PC. Instant delivery — pick a plan.',
 		h1: 'Warzone Cheats Pricing — Monthly & Lifetime',
 		intro:
-			'Choose monthly or lifetime access to undetected Warzone Cheats — ESP wallhack, radar hack, and Aimbot for Warzone on Windows PC. Instant digital delivery after payment.',
+			'Choose monthly or lifetime access to undetected Warzone Cheats — ESP wallhack, radar hack, and Aimbot for Call of Duty: Warzone on Windows PC. Instant digital delivery after payment.',
 		imageAlt: "Warzone Cheats store plans for monthly and lifetime licenses",
 		galleryTitle: 'Warzone Cheats package visuals',
 		ctaPrimary: 'Buy Warzone Cheats',
@@ -190,10 +190,10 @@ export const enPages = {
 	setup: {
 		title: 'Warzone Cheats Setup | Windows PC Guide',
 		description:
-			'Set up warzone cheats on Windows PC — activate ESP boxes, soft aim profiles, and . Check Ricochet updates before your first queue.',
+			'Set up warzone cheats for Call of Duty: Warzone on Windows PC — activate ESP, soft aim, and radar. Check Ricochet updates before your first queue.',
 		h1: 'Warzone Cheats Setup — Windows PC Guide',
 		intro:
-			'Install and configure Warzone Cheats for Warzone on Windows 10 or 11. Activate your license, load ESP wallhack and Aimbot profiles, and verify Ricochet maintenance status before queueing.',
+			'Install and configure Warzone Cheats for Call of Duty: Warzone on Windows 10 or 11. Activate your license, load ESP wallhack and Aimbot profiles, and verify Ricochet maintenance status before queueing.',
 		imageAlt: "Warzone Cheats setup guide screenshot for Windows PC",
 		galleryTitle: 'Warzone Cheats setup visuals',
 		ctaPrimary: 'Buy Warzone Cheats',
@@ -226,7 +226,7 @@ export const enPages = {
 			'Warzone cheats update log: Ricochet rebuilds for ESP boxes, soft aim, and radar on Windows PC. Check status before queueing after patches.',
 		h1: 'Warzone Cheats Updates — Maintenance Log',
 		intro:
-			'Track Ricochet maintenance and Warzone patch rebuilds for the undetected ESP wallhack, radar hack, and Aimbot package. Check here before queueing after major updates.',
+			'Track Ricochet maintenance and Call of Duty: Warzone patch rebuilds for the undetected ESP wallhack, radar hack, and Aimbot package. Check here before queueing after major updates.',
 		imageAlt: "Warzone Cheats live status after Ricochet and game patches",
 		galleryTitle: 'Warzone patch and maintenance visuals',
 		ctaPrimary: 'Buy Warzone Cheats',
@@ -256,10 +256,10 @@ export const enPages = {
 	faq: {
 		title: 'Warzone Cheats FAQ | ESP, Soft Aim & Radar Answers',
 		description:
-			'Warzone cheats FAQ: ESP boxes, soft aim, Ricochet maintenance, and pricing for PC. Clear answers before you buy.',
+			'Warzone cheats FAQ for Call of Duty: Warzone — ESP boxes, soft aim, Ricochet maintenance, and pricing. Clear answers before you buy.',
 		h1: 'Warzone Cheats FAQ — Common Questions',
 		intro:
-			'Answers about undetected Warzone Cheats — ESP wallhack, radar hack, Aimbot, Ricochet maintenance, checkout, and Warzone compatibility on Windows PC.',
+			'Answers about undetected Warzone Cheats — ESP wallhack, radar hack, Aimbot, Ricochet maintenance, checkout, and Call of Duty: Warzone compatibility on Windows PC.',
 		imageAlt: "Warzone Cheats FAQ — delivery, setup, and update answers",
 		galleryTitle: 'Warzone Cheats FAQ visuals',
 		ctaPrimary: 'Buy Warzone Cheats',
@@ -268,7 +268,7 @@ export const enPages = {
 		sections: [
 			section(
 				'What is Warzone Cheats?',
-				'Warzone Cheats is an undetected cheat package for Warzone on Windows PC. It includes ESP wallhack, 2D radar-style awareness, and Aimbot controls with Ricochet maintenance updates.',
+				'Warzone Cheats is an undetected cheat package for Call of Duty: Warzone on Windows PC. It includes ESP wallhack, 2D radar-style awareness, and Aimbot controls with Ricochet maintenance updates.',
 				'Packages cover BR and Resurgence. Explore <a href="/features/">Features</a> for the full control list and <a href="/warzone-esp/">ESP</a> / <a href="/warzone-aimbot/">Aimbot</a> for module detail.',
 				`Warzone itself is published by Activision (${EXT.warzone}). Cheats are third-party tools and may violate Activision' rules — use is at your own risk.`,
 			),
@@ -289,10 +289,10 @@ export const enPages = {
 	support: {
 		title: 'Warzone Cheats Support | Help & Contact',
 		description:
-			'Contact warzone cheats support for licenses, ESP setup, soft aim profiles, and on Windows PC. Include your order ID for faster help.',
+			'Contact warzone cheats support for Call of Duty: Warzone licenses — ESP setup, soft aim profiles, and Windows PC help. Include your order ID.',
 		h1: 'Warzone Cheats Support — Contact Us',
 		intro:
-			'Get help with Warzone Cheats licenses, checkout, ESP wallhack setup, Aimbot profiles, and Ricochet maintenance for Warzone on Windows PC.',
+			'Get help with Warzone Cheats licenses, checkout, ESP wallhack setup, Aimbot profiles, and Ricochet maintenance for Call of Duty: Warzone on Windows PC.',
 		imageAlt: "Warzone Cheats support page for license and setup help",
 		galleryTitle: 'Warzone Cheats support resources',
 		ctaPrimary: 'Email support',
@@ -322,11 +322,11 @@ export const enPages = {
 	undetected: {
 		title: 'Undetected Warzone Cheats 2026 | Ricochet Maintenance',
 		description:
-			'Undetected warzone cheats with Ricochet maintenance for ESP boxes, soft aim, and radar on Windows PC. Check status before you queue.',
+			'Undetected warzone cheats for Call of Duty: Warzone — Ricochet maintenance for ESP, soft aim, and radar on Windows PC. Check status before you queue.',
 		h1: 'Undetected Warzone Cheats — Ricochet Maintenance',
 		intro:
-			'How Warzone Cheats stays maintained for Warzone after Ricochet anti-cheat patches — ESP wallhack, radar hack, and Aimbot rebuilds for Windows PC.',
-		imageAlt: "Warzone Cheats undetected status overview for Windows PC",
+			'How Warzone Cheats stays maintained for Call of Duty: Warzone after Ricochet anti-cheat patches — ESP wallhack, radar hack, and Aimbot rebuilds for Windows PC.',
+		imageAlt: "Warzone Cheats undetected status for Call of Duty: Warzone on Windows PC",
 		galleryTitle: 'Undetected Warzone Cheats visuals',
 		ctaPrimary: 'Buy Warzone Cheats',
 		ctaSecondary: 'Ricochet bypass guide',
@@ -358,8 +358,8 @@ export const enPages = {
 			'Warzone wallhack ESP with player boxes and loot markers for Windows PC. Undetected warzone cheats — learn overlays and buy.',
 		h1: 'Warzone Wallhack — ESP Boxes & Visibility',
 		intro:
-			'Warzone wallhack ESP for Warzone — see players, loot, loadout drops, and contracts through toggleable wallhack overlays built for BR matches and Resurgences.',
-		imageAlt: "Warzone wallhack visibility through walls in a match",
+			'Warzone wallhack ESP for Call of Duty: Warzone — see players, loot, loadout drops, and contracts through toggleable wallhack overlays built for BR matches and Resurgences.',
+		imageAlt: "Warzone wallhack visibility through walls in Call of Duty: Warzone",
 		galleryTitle: 'Warzone wallhack ESP gallery',
 		ctaPrimary: 'Buy Warzone Cheats',
 		ctaSecondary: 'Warzone ESP page',
@@ -391,8 +391,8 @@ export const enPages = {
 			'Warzone radar hack for flank awareness on Windows PC. Bundled with ESP boxes, soft aim, and radar in our warzone cheats package.',
 		h1: 'Warzone Radar Hack — 2D Threat Awareness',
 		intro:
-			'2D radar-style overlay for Warzone — directional threat cues for nearby players outside your line of sight, bundled with ESP wallhack and Aimbot.',
-		imageAlt: "Warzone 2D radar overlay showing nearby threats",
+			'2D radar-style overlay for Call of Duty: Warzone — directional threat cues for nearby players outside your line of sight, bundled with ESP wallhack and Aimbot.',
+		imageAlt: "Warzone 2D radar overlay for Call of Duty: Warzone threat awareness",
 		galleryTitle: 'Warzone radar hack visuals',
 		ctaPrimary: 'Buy Warzone Cheats',
 		ctaSecondary: 'See ESP wallhack',
@@ -424,7 +424,7 @@ export const enPages = {
 			'How warzone cheats rebuild after Ricochet patches — ESP boxes, soft aim, and radar maintenance for Windows PC. Read before queueing.',
 		h1: 'Ricochet Bypass — Warzone Cheats Maintenance',
 		intro:
-			'Understand Ricochet anti-cheat maintenance for Warzone Cheats — how ESP wallhack, radar hack, and Aimbot rebuild after Warzone security updates.',
+			'Understand Ricochet anti-cheat maintenance for Warzone Cheats — how ESP wallhack, radar hack, and Aimbot rebuild after Call of Duty: Warzone security updates.',
 		imageAlt: "Warzone Cheats maintenance after a Ricochet patch",
 		galleryTitle: 'Ricochet maintenance visuals',
 		ctaPrimary: 'Buy Warzone Cheats',
@@ -433,7 +433,7 @@ export const enPages = {
 		sections: [
 			section(
 				'Ricochet anti-cheat overview',
-				`Ricochet anti-cheat is Activision' anti-cheat for Warzone on PC (see ${EXT.ricochet}). Security updates can affect ESP wallhack, radar, and Aimbot behavior — requiring maintenance rebuilds for undetected packages.`,
+				`Ricochet anti-cheat is Activision' anti-cheat for Call of Duty: Warzone on PC (see ${EXT.ricochet}). Security updates can affect ESP wallhack, radar, and Aimbot behavior — requiring maintenance rebuilds for undetected packages.`,
 				`Warzone Cheats monitors Ricochet patch notes and Warzone seasonal updates from ${EXT.warzone} to schedule module reviews.`,
 				'“Ricochet bypass” in our wording means timely maintenance — not a permanent free pass around anti-cheat.',
 			),
@@ -457,7 +457,7 @@ export const enPages = {
 			'Best warzone cheats 2026: ESP boxes, soft aim, and radar for Windows PC. Undetected warzone cheats with Ricochet maintenance — compare and buy.',
 		h1: 'Warzone Cheats 2026 — ESP, Soft Aim & Radar',
 		intro:
-			'The 2026 Warzone Cheats package for Warzone — undetected ESP wallhack, radar hack, and Aimbot with Ricochet maintenance, instant delivery, and Windows PC support.',
+			'The 2026 Warzone Cheats package for Call of Duty: Warzone — undetected ESP wallhack, radar hack, and Aimbot with Ricochet maintenance, instant delivery, and Windows PC support.',
 		imageAlt: "Warzone Cheats product overview for Call of Duty: Warzone",
 		galleryTitle: 'Warzone Cheats 2026 gallery',
 		ctaPrimary: 'Buy Warzone Cheats',
@@ -490,7 +490,7 @@ export const enPages = {
 			'Warzone cheats for Windows PC: undetected ESP wallhack, radar hack, and Aimbot with Ricochet maintenance. Compare warzone cheats options and buy the full package.',
 		h1: 'Warzone Cheats — Undetected ESP, Aimbot & Wallhack',
 		intro:
-			'Warzone cheats for BR and Resurgence combine ESP wallhack visibility, 2D radar-style threat cues, and Aimbot controls in one undetected Windows PC license — maintained after Ricochet anti-cheat patches. This is the pillar guide for warzone cheats in 2026.',
+			'Warzone cheats for Call of Duty: Warzone — BR and Resurgence combine ESP wallhack visibility, 2D radar-style threat cues, and Aimbot controls in one undetected Windows PC license, maintained after Ricochet anti-cheat patches. This is the pillar guide for warzone cheats in 2026.',
 		imageAlt: "Warzone Cheats product page — ESP, aimbot, and radar",
 		galleryTitle: 'Warzone cheats gallery — ESP, Aimbot, wallhack',
 		ctaPrimary: 'Buy Warzone Cheats',
@@ -529,7 +529,7 @@ export const enPages = {
 			'Warzone cheat download with instant license delivery — ESP boxes, soft aim, and radar for Windows PC. Buy, activate, and play.',
 		h1: 'Warzone Hack Download — Instant License Delivery',
 		intro:
-			'How Warzone cheat download works for Warzone — digital license delivery after payment confirmation, with ESP wallhack, radar hack, and Aimbot access on Windows PC.',
+			'How Warzone cheat download works for Call of Duty: Warzone — digital license delivery after payment confirmation, with ESP wallhack, radar hack, and Aimbot access on Windows PC.',
 		imageAlt: "Warzone Cheats download and install delivery flow",
 		galleryTitle: 'Warzone cheat download visuals',
 		ctaPrimary: 'Buy Warzone Cheats',
@@ -562,7 +562,7 @@ export const enPages = {
 			'Warzone mod menu for in-match toggles — ESP boxes, soft aim, radar, and on Windows PC. Undetected warzone cheats package.',
 		h1: 'Warzone Mod Menu — In-Client Control Panel',
 		intro:
-			'Warzone mod menu controls for Warzone — toggle ESP wallhack categories, radar range, and Aimbot profiles mid-match without leaving your Warzone session on Windows PC.',
+			'Warzone mod menu controls for Call of Duty: Warzone — toggle ESP wallhack categories, radar range, and Aimbot profiles mid-match without leaving your Warzone session on Windows PC.',
 		imageAlt: "Warzone Cheats in-game menu controls",
 		galleryTitle: 'Warzone mod menu gallery',
 		ctaPrimary: 'Buy Warzone Cheats',
@@ -595,7 +595,7 @@ export const enPages = {
 			'Warzone soft aim settings for natural tracking on Windows PC. Smoothness, FOV, and bone priority — included in our warzone cheats with ESP boxes.',
 		h1: 'Warzone Soft Aim — Smooth Aimbot Controls',
 		intro:
-			'Warzone soft aim settings for Warzone — configurable Aimbot smoothness, FOV, bone priority, and hotkey toggles bundled with ESP wallhack and radar in one undetected license.',
+			'Warzone soft aim settings for Call of Duty: Warzone — configurable Aimbot smoothness, FOV, bone priority, and hotkey toggles bundled with ESP wallhack and radar in one undetected license.',
 		imageAlt: "Warzone soft aim FOV and smoothness settings",
 		galleryTitle: 'Warzone soft aim gallery',
 		ctaPrimary: 'Buy Warzone Cheats',
@@ -628,7 +628,7 @@ export const enPages = {
 			'Best warzone cheats for 2026: ESP boxes, soft aim, and Ricochet maintenance on Windows PC. Use this checklist before checkout.',
 		h1: 'Best Warzone Cheats — 2026 Buyer Guide',
 		intro:
-			'Compare the Warzone cheats for Warzone in 2026 — undetected ESP wallhack, radar hack, and Aimbot in one maintained package with Ricochet anti-cheat rebuilds and instant delivery.',
+			'Compare the Warzone cheats for Call of Duty: Warzone in 2026 — undetected ESP wallhack, radar hack, and Aimbot in one maintained package with Ricochet anti-cheat rebuilds and instant delivery.',
 		imageAlt: "Warzone Cheats overview for Call of Duty: Warzone on PC",
 		galleryTitle: 'Best Warzone cheats gallery',
 		ctaPrimary: 'Buy Warzone Cheats',
@@ -661,7 +661,7 @@ export const enPages = {
 			'Warzone aimbot hack with soft aim for Windows PC. FOV, bone priority, and hotkeys — bundled with ESP boxes in our warzone cheats package.',
 		h1: 'Warzone Aimbot Hack — Soft Aim Assist',
 		intro:
-			'Warzone aimbot hack tools for Warzone — smoothness, FOV, bone priority, per-weapon profiles, and hotkey toggles bundled with ESP wallhack and radar in one undetected license.',
+			'Warzone aimbot hack tools for Call of Duty: Warzone — smoothness, FOV, bone priority, per-weapon profiles, and hotkey toggles bundled with ESP wallhack and radar in one undetected license.',
 		imageAlt: "Warzone aimbot hack controls and bone priority",
 		galleryTitle: 'Warzone aimbot hack gallery',
 		ctaPrimary: 'Buy Warzone Cheats',
@@ -694,7 +694,7 @@ export const enPages = {
 			'Warzone ESP hack with player boxes and loot markers for Windows PC. Undetected warzone cheats with — see overlays and buy.',
 		h1: 'Warzone ESP Hack — Player Boxes Guide',
 		intro:
-			'Warzone ESP hack overlays for Warzone — player outlines, UAV threat cues, loot and container markers with distance readouts across BR and Resurgence.',
+			'Warzone ESP hack overlays for Call of Duty: Warzone — player outlines, UAV threat cues, loot and container markers with distance readouts across BR and Resurgence.',
 		imageAlt: "Warzone ESP hack boxes and loot markers",
 		galleryTitle: 'Warzone ESP hack gallery',
 		ctaPrimary: 'Buy Warzone Cheats',
@@ -727,7 +727,7 @@ export const enPages = {
 			'Warzone unlock all explained vs real warzone cheats — ESP boxes, soft aim, and radar for Windows PC. Know what you are buying.',
 		h1: 'Warzone Unlock All — What Players Search For',
 		intro:
-			'Warzone unlock all is a common search term for Warzone — this page clarifies what unlock-all tools claim versus the ESP wallhack, radar hack, and Aimbot tools Warzone Cheats actually provides on Windows PC.',
+			'Warzone unlock all is a common search term for Call of Duty: Warzone — this page clarifies what unlock-all tools claim versus the ESP wallhack, radar hack, and Aimbot tools Warzone Cheats actually provides on Windows PC.',
 		imageAlt: "Warzone Cheats license features overview",
 		galleryTitle: 'Warzone unlock all guide visuals',
 		ctaPrimary: 'Buy Warzone Cheats',
@@ -748,7 +748,7 @@ export const enPages = {
 			),
 			section(
 				'Buying Warzone Cheats for the right reasons',
-				'If you need undetected ESP wallhack, radar hack, and Aimbot for Warzone on Windows PC, compare <a href="/pricing/">Pricing</a> and read the <a href="/setup/">Setup guide</a> before checkout.',
+				'If you need undetected ESP wallhack, radar hack, and Aimbot for Call of Duty: Warzone on Windows PC, compare <a href="/pricing/">Pricing</a> and read the <a href="/setup/">Setup guide</a> before checkout.',
 				'Check the <a href="/updates/">Updates page</a> after Ricochet anti-cheat patches — maintenance rebuilds publish for active licenses.',
 				'Questions? <a href="/faq/">FAQ</a> and <a href="/support/">Support</a> cover delivery and configuration — not cosmetic unlocks.',
 			),
@@ -759,7 +759,7 @@ export const enPages = {
 		description:
 			'Privacy policy for Warzone Cheats. How we handle support emails, order data, and checkout for warzone cheats licenses on warzonecheats.org.',
 		h1: 'Privacy Policy',
-		intro: 'How Warzone Cheats handles information when you browse warzonecheats.org or contact support about a Warzone license.',
+		intro: 'How Warzone Cheats handles information when you browse warzonecheats.org or contact support about a Call of Duty: Warzone license.',
 		imageAlt: "Warzone Cheats privacy policy page",
 		galleryTitle: 'Warzone Cheats legal resources',
 		ctaPrimary: 'Email support',
@@ -790,7 +790,7 @@ export const enPages = {
 			'Refund policy for Warzone Cheats. Digital delivery terms and eligibility for warzone cheats packages with ESP, soft aim, and radar.',
 		h1: 'Refund Policy',
 		intro:
-			'Refund terms for Warzone Cheats licenses — ESP wallhack, radar hack, and Aimbot packages purchased through checkout for Warzone.',
+			'Refund terms for Warzone Cheats licenses — ESP wallhack, radar hack, and Aimbot packages purchased through checkout for Call of Duty: Warzone.',
 		imageAlt: "Warzone Cheats refund policy page",
 		galleryTitle: 'Warzone Cheats billing resources',
 		ctaPrimary: 'Contact support',
@@ -819,7 +819,7 @@ export const enPages = {
 		description:
 			'Terms of use for warzonecheats.org and Warzone Cheats licenses. Usage rules, anti-cheat risk, and liability for Windows PC cheats.',
 		h1: 'Terms of Use',
-		intro: 'Terms governing use of warzonecheats.org and Warzone Cheats licenses for Warzone on Windows PC.',
+		intro: 'Terms governing use of warzonecheats.org and Warzone Cheats licenses for Call of Duty: Warzone on Windows PC.',
 		imageAlt: "Warzone Cheats terms of use page",
 		galleryTitle: 'Warzone Cheats legal pages',
 		ctaPrimary: 'Email support',
@@ -828,7 +828,7 @@ export const enPages = {
 		sections: [
 			section(
 				'Acceptance and license scope',
-				'By purchasing or using Warzone Cheats you agree to these terms. Licenses grant personal use of ESP wallhack, radar, and Aimbot tools for Warzone on Windows PC only.',
+				'By purchasing or using Warzone Cheats you agree to these terms. Licenses grant personal use of ESP wallhack, radar, and Aimbot tools for Call of Duty: Warzone on Windows PC only.',
 				'Sharing, reselling, or reverse-engineering the package violates these terms and may revoke access.',
 			),
 			section(
