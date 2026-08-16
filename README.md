@@ -1,6 +1,6 @@
-# Tarkov Cheats — Marketing Site
+# Warzone Cheats — Marketing Site
 
-Static Astro 7 site for [tarkovcheats.org](https://tarkovcheats.org). Primary SEO keyword: **tarkov cheats** (secondary: escape from tarkov cheats, aimbot, ESP).
+Static Astro 7 site for [warzonecheats.org](https://warzonecheats.org). Primary SEO keyword: **warzone cheats** (secondary: call of duty warzone cheats, aimbot, ESP).
 
 ## Stack
 
@@ -25,11 +25,11 @@ npm run build:validate
 
 ## Deploy (Cloudflare Pages)
 
-1. Create a Cloudflare Pages project named **besttarkovcheats**
+1. Create a Cloudflare Pages project named **warzone-cheats--org**
 2. Connect this repo or upload `dist/` after `npm run build`
 3. Build command: `npm run build`
 4. Output directory: `dist`
-5. Add custom domain **tarkovcheats.org** (apex) and redirect **www** → apex
+5. Add custom domain **warzonecheats.org** (apex) and redirect **www** → apex
 6. Enable SSL **Always Use HTTPS**
 
 CLI deploy:
@@ -41,8 +41,8 @@ npm run pages:deploy
 ## Environment
 
 - Node.js >= 22.12.0
-- Checkout URL: Zadeyo Tarkov product (`siteConfig.checkoutUrl` in `src/data/site.ts`)
+- Checkout URL: Zadeyo Warzone product (`siteConfig.checkoutUrl` in `src/data/site.ts`)
 
 ## License
 
-Private — for tarkovcheats.org deployment only.
+Private — for warzonecheats.org deployment only.

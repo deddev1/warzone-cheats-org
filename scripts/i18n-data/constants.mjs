@@ -6,39 +6,39 @@ export const LOCALES = [
 ];
 
 export const PAGE_IDS = [
-	'home', 'tarkov-esp', 'tarkov-aimbot', 'features', 'pricing', 'setup',
-	'updates', 'faq', 'support', 'undetected', 'wallhack', 'radar', 'battleye',
+	'home', 'warzone-esp', 'warzone-aimbot', 'features', 'pricing', 'setup',
+	'updates', 'faq', 'support', 'undetected', 'wallhack', 'radar', 'ricochet',
 	'cheats-2026', 'hacks', 'cheat-download', 'mod-menu', 'soft-aim', 'best-cheats',
 	'aimbot-hack', 'esp-hack', 'unlock-all', 'privacy', 'refund', 'terms',
 ];
 
-/** Hero image per page — simple tarkov cheats keyword filenames. */
+/** Hero image per page — simple warzone cheats keyword filenames. */
 export const HERO_IMAGES = {
-	home: '/images/tarkov-cheats-esp.webp',
-	'tarkov-esp': '/images/tarkov-cheats-radar.webp',
-	'tarkov-aimbot': '/images/tarkov-cheats-aimbot.webp',
-	features: '/images/tarkov-cheats-aimbot-view.webp',
-	pricing: '/images/tarkov-cheats-raid.webp',
-	setup: '/images/tarkov-cheats-radar.webp',
-	updates: '/images/tarkov-cheats-esp.webp',
-	faq: '/images/tarkov-cheats-aimbot-view.webp',
-	support: '/images/tarkov-cheats-raid.webp',
-	undetected: '/images/tarkov-cheats-wallhack.webp',
-	wallhack: '/images/tarkov-cheats-wallhack.webp',
-	radar: '/images/tarkov-cheats-radar.webp',
-	battleye: '/images/tarkov-cheats-aimbot.webp',
-	'cheats-2026': '/images/tarkov-cheats-esp.webp',
-	hacks: '/images/tarkov-cheats-raid.webp',
-	'cheat-download': '/images/tarkov-cheats-raid.webp',
-	'mod-menu': '/images/tarkov-cheats-radar.webp',
-	'soft-aim': '/images/tarkov-cheats-aimbot-view.webp',
-	'best-cheats': '/images/tarkov-cheats-esp.webp',
-	'aimbot-hack': '/images/tarkov-cheats-aimbot-view.webp',
-	'esp-hack': '/images/tarkov-cheats-wallhack.webp',
-	'unlock-all': '/images/tarkov-cheats-radar.webp',
-	privacy: '/images/tarkov-cheats-aimbot.webp',
-	refund: '/images/tarkov-cheats-raid.webp',
-	terms: '/images/tarkov-cheats-aimbot-view.webp',
+	home: '/images/warzone-cheats-esp.webp',
+	'warzone-esp': '/images/warzone-cheats-radar.webp',
+	'warzone-aimbot': '/images/warzone-cheats-aimbot.webp',
+	features: '/images/warzone-cheats-aimbot-view.webp',
+	pricing: '/images/warzone-cheats-raid.webp',
+	setup: '/images/warzone-cheats-radar.webp',
+	updates: '/images/warzone-cheats-esp.webp',
+	faq: '/images/warzone-cheats-aimbot-view.webp',
+	support: '/images/warzone-cheats-raid.webp',
+	undetected: '/images/warzone-cheats-wallhack.webp',
+	wallhack: '/images/warzone-cheats-wallhack.webp',
+	radar: '/images/warzone-cheats-radar.webp',
+	ricochet: '/images/warzone-cheats-aimbot.webp',
+	'cheats-2026': '/images/warzone-cheats-esp.webp',
+	hacks: '/images/warzone-cheats-raid.webp',
+	'cheat-download': '/images/warzone-cheats-raid.webp',
+	'mod-menu': '/images/warzone-cheats-radar.webp',
+	'soft-aim': '/images/warzone-cheats-aimbot-view.webp',
+	'best-cheats': '/images/warzone-cheats-esp.webp',
+	'aimbot-hack': '/images/warzone-cheats-aimbot-view.webp',
+	'esp-hack': '/images/warzone-cheats-wallhack.webp',
+	'unlock-all': '/images/warzone-cheats-radar.webp',
+	privacy: '/images/warzone-cheats-aimbot.webp',
+	refund: '/images/warzone-cheats-raid.webp',
+	terms: '/images/warzone-cheats-aimbot-view.webp',
 };
 
 export const TS_HEADER = `import type { LocaleCode } from './locales';
@@ -70,7 +70,7 @@ export type LocaleUi = {
 \t\theaderArt: string; cheatsPackage: string; rebootFight: string; battleRoyale: string; battleRoyaleIsland: string;
 \t};
 };
-export type PageId = 'home' | 'tarkov-esp' | 'tarkov-aimbot' | 'features' | 'pricing' | 'setup' | 'updates' | 'faq' | 'support' | 'undetected' | 'wallhack' | 'radar' | 'battleye' | 'cheats-2026' | 'hacks' | 'cheat-download' | 'mod-menu' | 'soft-aim' | 'best-cheats' | 'aimbot-hack' | 'esp-hack' | 'unlock-all' | 'privacy' | 'refund' | 'terms';
+export type PageId = 'home' | 'warzone-esp' | 'warzone-aimbot' | 'features' | 'pricing' | 'setup' | 'updates' | 'faq' | 'support' | 'undetected' | 'wallhack' | 'radar' | 'ricochet' | 'cheats-2026' | 'hacks' | 'cheat-download' | 'mod-menu' | 'soft-aim' | 'best-cheats' | 'aimbot-hack' | 'esp-hack' | 'unlock-all' | 'privacy' | 'refund' | 'terms';
 `;
 
 /** Clamp meta strings to SEO limits without ugly ellipsis. */
@@ -101,7 +101,7 @@ export function stripZadeyoFromMeta(text) {
 		.replace(/\s*Zadeyo delivery\.?/gi, ' instant digital delivery.')
 		.replace(/\s*and Zadeyo delivery\.?/gi, ' and instant digital delivery.')
 		.replace(/\|\s*Instant Zadeyo Delivery/g, '| Instant Digital Delivery')
-		.replace(/Buy on Zadeyo/g, 'Buy Tarkov Cheats')
+		.replace(/Buy on Zadeyo/g, 'Buy Warzone Cheats')
 		.replace(/\s{2,}/g, ' ')
 		.trim();
 }
@@ -124,11 +124,11 @@ export function section(h2, ...args) {
 /** Authoritative external citation helpers (open in new tab). */
 export const EXT = {
 	activision:
-		'<a href="https://www.escapefromtarkov.com/" target="_blank" rel="noopener noreferrer">Escape from Tarkov</a>',
-	tarkov:
-		'<a href="https://www.escapefromtarkov.com/" target="_blank" rel="noopener noreferrer">Escape from Tarkov</a>',
+		'<a href="https://www.callofduty.com/warzone" target="_blank" rel="noopener noreferrer">Call of Duty: Warzone</a>',
+	warzone:
+		'<a href="https://www.callofduty.com/warzone" target="_blank" rel="noopener noreferrer">Call of Duty: Warzone</a>',
 	status:
-		'<a href="https://www.escapefromtarkov.com/support" target="_blank" rel="noopener noreferrer">Escape from Tarkov Support</a>',
-	battleye:
-		'<a href="https://www.battleye.com/" target="_blank" rel="noopener noreferrer">BattlEye Anti-Cheat</a>',
+		'<a href="https://support.activision.com/" target="_blank" rel="noopener noreferrer">Call of Duty: Warzone Support</a>',
+	ricochet:
+		'<a href="https://www.ricochet.com/" target="_blank" rel="noopener noreferrer">Ricochet Anti-Cheat</a>',
 };

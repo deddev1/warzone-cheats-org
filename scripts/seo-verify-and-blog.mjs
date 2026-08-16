@@ -16,9 +16,9 @@ const bad = [
 	'Activision',
 	'soft aim, and .',
 	'ESP, Soft Aim,',
-	'best-tarkov-cheats',
-	'tarkov-esp-hack',
-	'tarkov-aimbot-hack',
+	'best-warzone-cheats',
+	'warzone-esp-hack',
+	'warzone-aimbot-hack',
 ];
 console.log('--- pages-en leftovers ---');
 for (const b of bad) {
@@ -37,10 +37,10 @@ for (const b of [
 	'vehicles before',
 	'Controllers',
 	'Battle Pass',
-	'RBattlEye',
+	'RRicochet',
 	'soft aim, and .',
-	'best-tarkov-cheats',
-	'tarkov-esp-hack',
+	'best-warzone-cheats',
+	'warzone-esp-hack',
 ]) {
 	const n = en.split(b).length - 1;
 	if (n) console.log(`${b}: ${n}`);
@@ -48,29 +48,29 @@ for (const b of [
 
 const blog = readFileSync('src/data/blog/posts.generated.ts', 'utf8');
 const reps = [
-	['V-Bucks', 'roubles'],
-	['Item Shop', 'Flea Market'],
-	['Battle Pass', 'wipe progression'],
-	['FNCS', 'Tarkov tournament'],
+	['V-Bucks', 'CP'],
+	['Item Shop', 'Store bundles'],
+	['Battle Pass', 'season progression'],
+	['FNCS', 'Warzone tournament'],
 	['Hammer AR', 'M4A1'],
 	['mythics', 'meta guns'],
 	['island codes', 'offline practice maps'],
 	['Creative 1v1s', 'aim training'],
 	['creative 1v1s', 'aim training'],
 	['Epic health', 'Battlestate status'],
-	['Epic terms', 'Battlestate Games terms'],
-	["Epic's BattlEye", 'BattlEye'],
-	['Epic patch', 'Tarkov patch'],
+	['Epic terms', 'Activision terms'],
+	["Epic's Ricochet", 'Ricochet'],
+	['Epic patch', 'Warzone patch'],
 	['EliteFN', 'a Fortnite cheat shop'],
 	['GhostWare', 'a slim cheat vendor'],
 	['CheatVault', 'another cheat shop'],
-	['/tarkov-aimbot-hack/', '/tarkov-aimbot/'],
-	['/tarkov-esp-hack/', '/tarkov-esp/'],
-	['/best-tarkov-cheats/', '/tarkov-cheats/'],
-	['best Tarkov cheats', 'Tarkov cheats'],
+	['/warzone-aimbot-hack/', '/warzone-aimbot/'],
+	['/warzone-esp-hack/', '/warzone-esp/'],
+	['/best-warzone-cheats/', '/warzone-cheats/'],
+	['best Warzone cheats', 'Warzone cheats'],
 	['hot drops', 'hot spawns'],
-	['ranked grinders', 'raid grinders'],
-	['before Ranked', 'before a raid'],
+	['ranked grinders', 'match grinders'],
+	['before Ranked', 'before a match'],
 ];
 let s = blog;
 let n = 0;

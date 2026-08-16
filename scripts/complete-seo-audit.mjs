@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Completes escape-from-tarkov-cheats SEO audit: add missing pages, fix leftovers, strip Zadeyo from meta.
+ * Completes call-of-duty-warzone-cheats SEO audit: add missing pages, fix leftovers, strip Zadeyo from meta.
  * Run: node scripts/complete-seo-audit.mjs
  */
 import { readFile, writeFile, mkdir, access } from 'node:fs/promises';
@@ -11,70 +11,70 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const NODE = 'C:\\Program Files\\nodejs\\node.exe';
 
 const EXTRA_PAGES = [
-	{ id: 'hacks', dir: 'tarkov-cheats', pageId: 'hacks' },
-	{ id: 'cheat-download', dir: 'tarkov-cheat-download', pageId: 'cheat-download' },
-	{ id: 'mod-menu', dir: 'tarkov-mod-menu', pageId: 'mod-menu' },
-	{ id: 'soft-aim', dir: 'tarkov-soft-aim', pageId: 'soft-aim' },
-	{ id: 'best-cheats', dir: 'best-tarkov-cheats', pageId: 'best-cheats' },
-	{ id: 'aimbot-hack', dir: 'tarkov-aimbot-hack', pageId: 'aimbot-hack' },
-	{ id: 'esp-hack', dir: 'tarkov-esp-hack', pageId: 'esp-hack' },
-	{ id: 'unlock-all', dir: 'tarkov-unlock-all', pageId: 'unlock-all' },
+	{ id: 'hacks', dir: 'warzone-cheats', pageId: 'hacks' },
+	{ id: 'cheat-download', dir: 'warzone-cheat-download', pageId: 'cheat-download' },
+	{ id: 'mod-menu', dir: 'warzone-mod-menu', pageId: 'mod-menu' },
+	{ id: 'soft-aim', dir: 'warzone-soft-aim', pageId: 'soft-aim' },
+	{ id: 'best-cheats', dir: 'best-warzone-cheats', pageId: 'best-cheats' },
+	{ id: 'aimbot-hack', dir: 'warzone-aimbot-hack', pageId: 'aimbot-hack' },
+	{ id: 'esp-hack', dir: 'warzone-esp-hack', pageId: 'esp-hack' },
+	{ id: 'unlock-all', dir: 'warzone-unlock-all', pageId: 'unlock-all' },
 ];
 
 const GLOBAL_REPLACEMENTS = [
-	[/tarkov-tarkov/g, 'tarkov'],
-	[/battleye-bypass-tarkov/g, 'battleye-bypass'],
-	[/Escape from Tarkov/g, 'Escape from Tarkov'],
-	[/Escape from Tarkov/g, 'Escape from Tarkov'],
-	[/Call of Duty/g, 'Escape from Tarkov'],
-	[/Tarkov Wallhack/g, 'Escape from Tarkov Wallhack'],
-	[/Tarkov Radar Hack/g, 'Escape from Tarkov Radar Hack'],
-	[/Tarkov Cheat Features/g, 'Escape from Tarkov Cheat Features'],
-	[/Tarkov Cheat Pricing/g, 'Escape from Tarkov Cheat Pricing'],
-	[/Tarkov Cheat Setup/g, 'Escape from Tarkov Cheat Setup'],
-	[/Tarkov Cheat Status/g, 'Escape from Tarkov Cheat Status'],
-	[/Tarkov Cheat Support/g, 'Escape from Tarkov Cheat Support'],
-	[/Tarkov squad fight/g, 'Escape from Tarkov squad fight'],
-	[/Tarkov squad builder/g, 'Escape from Tarkov loadout builder'],
-	[/Tarkov store header/g, 'Escape from Tarkov header'],
-	[/Tarkov wasteland combat/g, 'Escape from Tarkov battle royale combat'],
-	[/Tarkov loadout builder/g, 'Escape from Tarkov loadout builder'],
-	[/Tarkov pricing/g, 'Escape from Tarkov pricing'],
-	[/Tarkov BattlEye anti-cheat/g, 'Escape from Tarkov BattlEye anti-cheat'],
-	[/on Tarkov/g, 'on Escape from Tarkov'],
-	[/for Tarkov/g, 'for Escape from Tarkov'],
-	[/Tarkov guides/g, 'Escape from Tarkov guides'],
-	[/Tarkov guide/g, 'Escape from Tarkov guide'],
-	[/Tarkov hileleri/g, 'Escape from Tarkov hileleri'],
-	[/Tarkov hile/g, 'Escape from Tarkov hile'],
-	[/Tarkov hileleri/g, 'Escape from Tarkov hileleri'],
-	[/cheatów Tarkov/g, 'cheatów Escape from Tarkov'],
-	[/cheat Tarkov/g, 'cheat Escape from Tarkov'],
-	[/cheats Tarkov/g, 'cheats Escape from Tarkov'],
-	[/trucos Tarkov/g, 'trucos Escape from Tarkov'],
-	[/triche Tarkov/g, 'triche Escape from Tarkov'],
-	[/trucchi Tarkov/g, 'trucchi Escape from Tarkov'],
-	[/Wallhack Tarkov/g, 'Escape from Tarkov Wallhack'],
-	[/cheat Tarkov undetected/g, 'cheat Escape from Tarkov undetected'],
-	[/cheats Tarkov undetected/g, 'cheats Escape from Tarkov undetected'],
+	[/warzone-warzone/g, 'warzone'],
+	[/ricochet-bypass-warzone/g, 'ricochet-bypass'],
+	[/Call of Duty: Warzone/g, 'Call of Duty: Warzone'],
+	[/Call of Duty: Warzone/g, 'Call of Duty: Warzone'],
+	[/Call of Duty/g, 'Call of Duty: Warzone'],
+	[/Warzone Wallhack/g, 'Call of Duty: Warzone Wallhack'],
+	[/Warzone Radar Hack/g, 'Call of Duty: Warzone Radar Hack'],
+	[/Warzone Cheat Features/g, 'Call of Duty: Warzone Cheat Features'],
+	[/Warzone Cheat Pricing/g, 'Call of Duty: Warzone Cheat Pricing'],
+	[/Warzone Cheat Setup/g, 'Call of Duty: Warzone Cheat Setup'],
+	[/Warzone Cheat Status/g, 'Call of Duty: Warzone Cheat Status'],
+	[/Warzone Cheat Support/g, 'Call of Duty: Warzone Cheat Support'],
+	[/Warzone squad fight/g, 'Call of Duty: Warzone squad fight'],
+	[/Warzone squad builder/g, 'Call of Duty: Warzone loadout builder'],
+	[/Warzone store header/g, 'Call of Duty: Warzone header'],
+	[/Warzone wasteland combat/g, 'Call of Duty: Warzone battle royale combat'],
+	[/Warzone loadout builder/g, 'Call of Duty: Warzone loadout builder'],
+	[/Warzone pricing/g, 'Call of Duty: Warzone pricing'],
+	[/Warzone Ricochet anti-cheat/g, 'Call of Duty: Warzone Ricochet anti-cheat'],
+	[/on Warzone/g, 'on Call of Duty: Warzone'],
+	[/for Warzone/g, 'for Call of Duty: Warzone'],
+	[/Warzone guides/g, 'Call of Duty: Warzone guides'],
+	[/Warzone guide/g, 'Call of Duty: Warzone guide'],
+	[/Warzone hileleri/g, 'Call of Duty: Warzone hileleri'],
+	[/Warzone hile/g, 'Call of Duty: Warzone hile'],
+	[/Warzone hileleri/g, 'Call of Duty: Warzone hileleri'],
+	[/cheatów Warzone/g, 'cheatów Call of Duty: Warzone'],
+	[/cheat Warzone/g, 'cheat Call of Duty: Warzone'],
+	[/cheats Warzone/g, 'cheats Call of Duty: Warzone'],
+	[/trucos Warzone/g, 'trucos Call of Duty: Warzone'],
+	[/triche Warzone/g, 'triche Call of Duty: Warzone'],
+	[/trucchi Warzone/g, 'trucchi Call of Duty: Warzone'],
+	[/Wallhack Warzone/g, 'Call of Duty: Warzone Wallhack'],
+	[/cheat Warzone undetected/g, 'cheat Call of Duty: Warzone undetected'],
+	[/cheats Warzone undetected/g, 'cheats Call of Duty: Warzone undetected'],
 	[/Verdansk beams/g, 'long-range AR beams'],
-	[/scav-run room clears/g, 'close-quarters room clears'],
-	[/Verdansk and Urzikstan/g, 'Verdansk and scav-run'],
-	[/Verdansk, Urzikstan/g, 'Verdansk, scav-run'],
-	[/raid and scav-run/g, 'raid and scav-run'],
+	[/Resurgence room clears/g, 'close-quarters room clears'],
+	[/Verdansk and Urzikstan/g, 'Verdansk and Resurgence'],
+	[/Verdansk, Urzikstan/g, 'Verdansk, Resurgence'],
+	[/BR and Resurgence/g, 'BR and Resurgence'],
 	[/Activision's anti-cheat/g, "Epic Games' anti-cheat"],
 	[/Activision anti-cheat/g, 'Epic Games anti-cheat'],
 	[/Activision ships/g, 'Epic Games ships'],
 	[/Activision security/g, 'Epic Games security'],
 	[/Activision bans/g, 'Epic Games bans'],
 	[/Activision/g, 'Epic Games'],
-	[/battleye/gi, 'battleye'],
-	[/BattlEye/g, 'BattlEye anti-cheat'],
-	[/escape-from-tarkov-cheats/g, 'escape-from-tarkov-cheats'],
-	[/escape-from-tarkov/g, 'tarkov'],
-	[/Undetected Wallhack for Call of Duty/g, 'Undetected Wallhack for Escape from Tarkov'],
+	[/ricochet/gi, 'ricochet'],
+	[/Ricochet/g, 'Ricochet anti-cheat'],
+	[/call-of-duty-warzone-cheats/g, 'call-of-duty-warzone-cheats'],
+	[/call-of-duty-warzone/g, 'warzone'],
+	[/Undetected Wallhack for Call of Duty/g, 'Undetected Wallhack for Call of Duty: Warzone'],
 	[/How ESP wallhack, radar, and Aimbot rebuild after Call of Duty anti-cheat/g,
-		'How ESP wallhack, radar, and Aimbot rebuild after Escape from Tarkov anti-cheat'],
+		'How ESP wallhack, radar, and Aimbot rebuild after Call of Duty: Warzone anti-cheat'],
 ];
 
 /** Remove Zadeyo from meta description/title strings only */
@@ -90,7 +90,7 @@ function stripZadeyoFromMeta(text) {
 		.replace(/\s*Zadeyo delivery\.?/gi, 'instant digital delivery.')
 		.replace(/\s*and Zadeyo delivery\.?/gi, ' and instant digital delivery.')
 		.replace(/\|\s*Instant Zadeyo Delivery/g, '| Instant Digital Delivery')
-		.replace(/Buy on Zadeyo/g, 'Buy Tarkov Cheats')
+		.replace(/Buy on Zadeyo/g, 'Buy Warzone Cheats')
 		.replace(/\s{2,}/g, ' ')
 		.trim();
 }
@@ -169,38 +169,38 @@ import LocalizedPage from '../../components/LocalizedPage.astro';
 async function fixLocalesBlogUi() {
 	const file = path.join(ROOT, 'src', 'data', 'i18n', 'locales.ts');
 	let content = await readFile(file, 'utf8');
-	content = content.replace(/Tarkov guides/g, 'Escape from Tarkov guides');
-	content = content.replace(/Tarkov guide/g, 'Escape from Tarkov guide');
-	content = content.replace(/Tarkov hileleri/g, 'Escape from Tarkov hileleri');
-	content = content.replace(/Tarkov hile/g, 'Escape from Tarkov hile');
-	content = content.replace(/cheat Tarkov/g, 'cheat Escape from Tarkov');
-	content = content.replace(/cheats Tarkov/g, 'cheats Escape from Tarkov');
-	content = content.replace(/trucos Tarkov/g, 'trucos Escape from Tarkov');
-	content = content.replace(/triche Tarkov/g, 'triche Escape from Tarkov');
-	content = content.replace(/trucchi Tarkov/g, 'trucchi Escape from Tarkov');
-	content = content.replace(/cheatów Tarkov/g, 'cheatów Escape from Tarkov');
-	content = content.replace(/читов Tarkov/g, 'читов Escape from Tarkov');
-	content = content.replace(/читів Tarkov/g, 'читів Escape from Tarkov');
-	content = content.replace(/Tarkovチート/g, 'Escape from Tarkovチート');
-	content = content.replace(/Tarkov 치트/g, 'Escape from Tarkov 치트');
-	content = content.replace(/Tarkov作弊/g, 'Escape from Tarkov作弊');
-	content = content.replace(/Tarkov rehberleri/g, 'Escape from Tarkov rehberleri');
-	content = content.replace(/Tarkov gidsen/g, 'Escape from Tarkov gidsen');
-	content = content.replace(/Tarkov průvodce/g, 'Escape from Tarkov průvodce');
-	content = content.replace(/Tarkov guider/g, 'Escape from Tarkov guider');
-	content = content.replace(/Tarkov related/g, 'Escape from Tarkov related');
-	content = content.replace(/Tarkov ガイド/g, 'Escape from Tarkov ガイド');
-	content = content.replace(/Tarkov 가이드/g, 'Escape from Tarkov 가이드');
-	content = content.replace(/Tarkov指南/g, 'Escape from Tarkov指南');
-	content = content.replace(/Tarkov गाइड/g, 'Escape from Tarkov गाइड');
-	content = content.replace(/Tarkov panduan/g, 'Escape from Tarkov panduan');
-	content = content.replace(/Tarkov คู่มือ/g, 'Escape from Tarkov คู่มือ');
-	content = content.replace(/Tarkov hướng dẫn/g, 'Escape from Tarkov hướng dẫn');
+	content = content.replace(/Warzone guides/g, 'Call of Duty: Warzone guides');
+	content = content.replace(/Warzone guide/g, 'Call of Duty: Warzone guide');
+	content = content.replace(/Warzone hileleri/g, 'Call of Duty: Warzone hileleri');
+	content = content.replace(/Warzone hile/g, 'Call of Duty: Warzone hile');
+	content = content.replace(/cheat Warzone/g, 'cheat Call of Duty: Warzone');
+	content = content.replace(/cheats Warzone/g, 'cheats Call of Duty: Warzone');
+	content = content.replace(/trucos Warzone/g, 'trucos Call of Duty: Warzone');
+	content = content.replace(/triche Warzone/g, 'triche Call of Duty: Warzone');
+	content = content.replace(/trucchi Warzone/g, 'trucchi Call of Duty: Warzone');
+	content = content.replace(/cheatów Warzone/g, 'cheatów Call of Duty: Warzone');
+	content = content.replace(/читов Warzone/g, 'читов Call of Duty: Warzone');
+	content = content.replace(/читів Warzone/g, 'читів Call of Duty: Warzone');
+	content = content.replace(/Warzoneチート/g, 'Call of Duty: Warzoneチート');
+	content = content.replace(/Warzone 치트/g, 'Call of Duty: Warzone 치트');
+	content = content.replace(/Warzone作弊/g, 'Call of Duty: Warzone作弊');
+	content = content.replace(/Warzone rehberleri/g, 'Call of Duty: Warzone rehberleri');
+	content = content.replace(/Warzone gidsen/g, 'Call of Duty: Warzone gidsen');
+	content = content.replace(/Warzone průvodce/g, 'Call of Duty: Warzone průvodce');
+	content = content.replace(/Warzone guider/g, 'Call of Duty: Warzone guider');
+	content = content.replace(/Warzone related/g, 'Call of Duty: Warzone related');
+	content = content.replace(/Warzone ガイド/g, 'Call of Duty: Warzone ガイド');
+	content = content.replace(/Warzone 가이드/g, 'Call of Duty: Warzone 가이드');
+	content = content.replace(/Warzone指南/g, 'Call of Duty: Warzone指南');
+	content = content.replace(/Warzone गाइड/g, 'Call of Duty: Warzone गाइड');
+	content = content.replace(/Warzone panduan/g, 'Call of Duty: Warzone panduan');
+	content = content.replace(/Warzone คู่มือ/g, 'Call of Duty: Warzone คู่มือ');
+	content = content.replace(/Warzone hướng dẫn/g, 'Call of Duty: Warzone hướng dẫn');
 	await writeFile(file, content, 'utf8');
 	console.log('Fixed locales.ts blogUi');
 }
 
-console.log('=== Tarkov Cheats SEO completion ===\n');
+console.log('=== Warzone Cheats SEO completion ===\n');
 await applyGlobalFixes();
 await createExtraPages();
 await fixLocalesBlogUi();
