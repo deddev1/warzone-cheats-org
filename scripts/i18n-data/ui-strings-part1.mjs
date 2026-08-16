@@ -8,7 +8,7 @@ export const uiStrings = {
 		product: { title: 'Warzone Cheats', addToCart: 'Add to Cart', monthly: 'Monthly', lifetime: 'Lifetime', available: 'Available now', gameBadge: 'Warzone', platformBadge: 'Windows PC', statusBadge: 'Undetected warzone cheats' },
 		reviews: { title: 'What players say', subtitle: 'Recent feedback from Warzone Cheats buyers', outOf: 'out of 5', countLabel: 'reviews' },
 		common: { buyNow: 'Buy Warzone Cheats', readGuide: 'Read guide', language: 'Language', officialLanguageNote: 'English is official; other locales are translated.', relatedPages: 'Related pages' },
-		footer: { explore: 'Explore', help: 'Help & legal', tagline: 'Undetected Warzone cheats for PC.\nESP, wallhack, radar & aimbot.' },
+		footer: { explore: 'Explore', guides: 'Warzone cheats guides', help: 'Help & legal', tagline: 'Undetected Warzone cheats for PC.\nESP, wallhack, radar & aimbot.' },
 		images: {
 		hero: "Warzone Cheats hero — ESP and aimbot overlay in Call of Duty: Warzone",
 		espWallhack: "Wallhack outlines showing enemy operators and squads through walls",

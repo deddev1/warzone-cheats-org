@@ -103,6 +103,16 @@ export const PAGE_BLOG_LINKS: Partial<Record<PageId, readonly string[]>> = {
 		'call-of-duty-warzone-cheats-buyers-guide',
 		'undetected-warzone-cheats-ricochet',
 	],
+	'unlock-all': [
+		'warzone-cheats-complete-guide',
+		'call-of-duty-warzone-cheats-buyers-guide',
+		'warzone-cheats-2026-whats-new',
+	],
+	support: [
+		'call-of-duty-warzone-cheats-buyers-guide',
+		'warzone-cheats-complete-guide',
+		'undetected-warzone-cheats-ricochet',
+	],
 };
 
 export type BlogLinkItem = {

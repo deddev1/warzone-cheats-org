@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next';
 import I18nProvider from './I18nProvider';
 
 type FooterLink = { labelKey: string; href: string };
+type GuideLink = { href: string; title: string };
 
 type Props = {
 	locale: string;
@@ -10,9 +11,10 @@ type Props = {
 	shareUrl: string;
 	explore: FooterLink[];
 	help: FooterLink[];
+	guides?: GuideLink[];
 };
 
-function SiteFooterInner({ siteName, supportEmail, shareUrl, explore, help }: Props) {
+function SiteFooterInner({ siteName, supportEmail, shareUrl, explore, help, guides = [] }: Props) {
 	const { t } = useTranslation();
 	const year = new Date().getFullYear();
 	const encodedUrl = encodeURIComponent(shareUrl);
@@ -36,7 +38,9 @@ function SiteFooterInner({ siteName, supportEmail, shareUrl, explore, help }: Pr
 
 	return (
 		<footer className="site-footer">
-			<div className="shell site-footer__grid">
+			<div
+				className={`shell site-footer__grid${guides.length === 0 ? ' site-footer__grid--no-guides' : ''}`}
+			>
 				<div>
 					<p className="site-footer__brand">{siteName}</p>
 					<p>{tagline}</p>
@@ -61,6 +65,21 @@ function SiteFooterInner({ siteName, supportEmail, shareUrl, explore, help }: Pr
 						))}
 					</ul>
 				</div>
+				{guides.length > 0 && (
+					<div>
+						<p className="site-footer__label">{t('footer.guides')}</p>
+						<ul>
+							{guides.map((link) => (
+								<li key={link.href}>
+									<a href={link.href}>{link.title}</a>
+								</li>
+							))}
+							<li>
+								<a href="/blog/">{t('common.blog')}</a>
+							</li>
+						</ul>
+					</div>
+				)}
 				<div>
 					<p className="site-footer__label">{t('footer.help')}</p>
 					<ul>

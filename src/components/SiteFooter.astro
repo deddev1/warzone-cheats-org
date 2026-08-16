@@ -3,6 +3,7 @@ import SiteFooterApp from './react/SiteFooter';
 import { getLocalizedPath } from '../data/i18n/routing';
 import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
 import { getBlogBasePath } from '../data/blog/helpers';
+import { getCheatBlogLinks } from '../data/blog/internal-links';
 import { siteConfig } from '../data/site';
 
 interface Props {
@@ -29,6 +30,12 @@ const help = [
 	{ labelKey: 'common.privacy', href: getLocalizedPath('privacy', locale) },
 	{ labelKey: 'common.terms', href: getLocalizedPath('terms', locale) },
 ];
+
+/** Top cheat blog posts — site-wide footer links for crawlable internal SEO. */
+const guides =
+	locale === defaultLocale
+		? getCheatBlogLinks(locale).slice(0, 6).map(({ href, title }) => ({ href, title }))
+		: [];
 ---
 
 <SiteFooterApp
@@ -39,6 +46,7 @@ const help = [
 	shareUrl={`${siteConfig.url}/`}
 	explore={explore}
 	help={help}
+	guides={guides}
 />
 
 <style is:global>
@@ -52,9 +60,13 @@ const help = [
 
 	.site-footer__grid {
 		display: grid;
-		grid-template-columns: 1.5fr 1fr 1fr;
+		grid-template-columns: 1.5fr 1fr 1fr 1fr;
 		gap: 2rem;
 		padding-bottom: 2.25rem;
+	}
+
+	.site-footer__grid--no-guides {
+		grid-template-columns: 1.5fr 1fr 1fr;
 	}
 
 	.site-footer__brand {
