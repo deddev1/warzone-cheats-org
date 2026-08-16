@@ -262,17 +262,18 @@ const links = [
 	}
 
 	.site-nav {
-		display: flex;
+		display: inline-flex;
 		align-items: center;
 		justify-content: flex-start;
 		gap: 0.1rem;
+		width: max-content;
+		max-width: 100%;
 		padding: 0.22rem;
 		border: 1px solid var(--line-soft);
 		border-radius: 999px;
 		background: color-mix(in srgb, var(--bg-elevated) 65%, transparent);
 		box-shadow: inset 0 1px 0 color-mix(in srgb, #fff 5%, transparent);
-		flex: 1 1 auto;
-		min-width: 0;
+		flex: 0 0 auto;
 		overflow-x: auto;
 		scrollbar-width: none;
 	}
