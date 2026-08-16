@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar.astro';
 import Hero from '../components/Hero.astro';
 import HomeReviews from '../components/HomeReviews.astro';
 import HomeSeo from '../components/HomeSeo.astro';
-import HomeAboutApp from '../components/react/HomeAbout';
+import HomeAbout from '../components/HomeAbout.astro';
 import SiteFooter from '../components/SiteFooter.astro';
 import { getLocaleContent, getPageContent } from '../data/i18n';
 import { getLocalizedPath } from '../data/i18n/routing';
@@ -110,7 +110,7 @@ const extraGraph: Record<string, unknown>[] = [
 			{
 				locale === 'en' ? (
 					<>
-						<HomeAboutApp client:visible locale={locale} />
+						<HomeAbout locale={locale} />
 						<HomeSeo locale={locale} />
 					</>
 				) : (
@@ -153,21 +153,6 @@ const extraGraph: Record<string, unknown>[] = [
 		color: var(--ink-muted);
 		line-height: 1.65;
 		font-size: 0.9375rem;
-	}
-
-	.home__prose--en {
-		padding-block: clamp(2rem, 4vw, 2.75rem) 0.5rem;
-		border-bottom: 1px solid var(--line-soft);
-	}
-
-	.home__prose--en a {
-		color: var(--magenta-soft);
-		font-weight: 600;
-		text-decoration: none;
-	}
-
-	.home__prose--en a:hover {
-		color: var(--ink);
 	}
 
 	.home__prose h2 {
