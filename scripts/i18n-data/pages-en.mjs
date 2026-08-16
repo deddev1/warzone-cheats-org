@@ -1,4 +1,4 @@
-import { HERO_IMAGES, clampTitle, clampDesc, section, stripZadeyoFromMeta, EXT } from './constants.mjs';
+import { HERO_IMAGES, clampTitle, clampDesc, section, stripZadeyoFromMeta, EXT, EXT_URL } from './constants.mjs';
 
 /** Richest English page content — source of truth for structure. */
 export const enPages = {
@@ -197,8 +197,8 @@ export const enPages = {
 		imageAlt: "Warzone Cheats setup guide screenshot for Windows PC",
 		galleryTitle: 'Warzone Cheats setup visuals',
 		ctaPrimary: 'Buy Warzone Cheats',
-		ctaSecondary: 'Contact support',
-		ctaSecondaryHref: '/support/',
+		ctaSecondary: 'Official Warzone site',
+		ctaSecondaryHref: EXT_URL.warzone,
 		sections: [
 			section(
 				'Before you install Warzone Cheats',
@@ -230,8 +230,8 @@ export const enPages = {
 		imageAlt: "Warzone Cheats live status after Ricochet and game patches",
 		galleryTitle: 'Warzone patch and maintenance visuals',
 		ctaPrimary: 'Buy Warzone Cheats',
-		ctaSecondary: 'Undetected status guide',
-		ctaSecondaryHref: '/warzone-cheats/',
+		ctaSecondary: 'Official Warzone support',
+		ctaSecondaryHref: EXT_URL.status,
 		sections: [
 			section(
 				'Why the Updates page matters',
@@ -263,8 +263,8 @@ export const enPages = {
 		imageAlt: "Warzone Cheats FAQ — delivery, setup, and update answers",
 		galleryTitle: 'Warzone Cheats FAQ visuals',
 		ctaPrimary: 'Buy Warzone Cheats',
-		ctaSecondary: 'Contact support',
-		ctaSecondaryHref: '/support/',
+		ctaSecondary: 'Official game support',
+		ctaSecondaryHref: EXT_URL.status,
 		sections: [
 			section(
 				'What is Warzone Cheats?',
@@ -296,8 +296,8 @@ export const enPages = {
 		imageAlt: "Warzone Cheats support page for license and setup help",
 		galleryTitle: 'Warzone Cheats support resources',
 		ctaPrimary: 'Email support',
-		ctaSecondary: 'Read setup guide',
-		ctaSecondaryHref: '/setup/',
+		ctaSecondary: 'Official game support',
+		ctaSecondaryHref: EXT_URL.status,
 		sections: [
 			section(
 				'When to contact support',
@@ -329,8 +329,8 @@ export const enPages = {
 		imageAlt: "Warzone Cheats undetected status for Call of Duty: Warzone on Windows PC",
 		galleryTitle: 'Undetected Warzone Cheats visuals',
 		ctaPrimary: 'Buy Warzone Cheats',
-		ctaSecondary: 'Ricochet bypass guide',
-		ctaSecondaryHref: '/updates/',
+		ctaSecondary: 'Ricochet anti-cheat info',
+		ctaSecondaryHref: EXT_URL.ricochet,
 		sections: [
 			section(
 				'What undetected means for Warzone Cheats',
@@ -428,8 +428,8 @@ export const enPages = {
 		imageAlt: "Warzone Cheats maintenance after a Ricochet patch",
 		galleryTitle: 'Ricochet maintenance visuals',
 		ctaPrimary: 'Buy Warzone Cheats',
-		ctaSecondary: 'Check updates',
-		ctaSecondaryHref: '/updates/',
+		ctaSecondary: 'Ricochet anti-cheat info',
+		ctaSecondaryHref: EXT_URL.ricochet,
 		sections: [
 			section(
 				'Ricochet anti-cheat overview',
@@ -461,8 +461,8 @@ export const enPages = {
 		imageAlt: "Warzone Cheats product overview for Call of Duty: Warzone",
 		galleryTitle: 'Warzone Cheats 2026 gallery',
 		ctaPrimary: 'Buy Warzone Cheats',
-		ctaSecondary: 'Compare features',
-		ctaSecondaryHref: '/features/',
+		ctaSecondary: 'Official patch notes',
+		ctaSecondaryHref: EXT_URL.patchBlog,
 		sections: [
 			section(
 				'Why warzone cheats buyers choose Warzone Cheats in 2026',
@@ -494,8 +494,8 @@ export const enPages = {
 		imageAlt: "Warzone Cheats product page — ESP, aimbot, and radar",
 		galleryTitle: 'Warzone cheats gallery — ESP, Aimbot, wallhack',
 		ctaPrimary: 'Buy Warzone Cheats',
-		ctaSecondary: 'See undetected guide',
-		ctaSecondaryHref: '/warzone-cheats/',
+		ctaSecondary: 'Official patch notes',
+		ctaSecondaryHref: EXT_URL.patchBlog,
 		sections: [
 			section(
 				'What Warzone cheats include in 2026',

@@ -177,7 +177,20 @@
     "faqTitle": "Before you buy",
     "faqLede": "Delivery, detection status, and what is included.",
     "allAnswers": "All answers",
-    "openFullPage": "Open full page"
+    "openFullPage": "Open full page",
+    "officialEyebrow": "Official sources",
+    "officialTitle": "Call of Duty: Warzone resources we cite",
+    "officialLede": "Patch notes, service status, and anti-cheat background from Activision — useful context for any Warzone player.",
+    "officialSourceActivision": "Activision",
+    "linkOfficialWarzone": "Official Call of Duty: Warzone site",
+    "linkOfficialSupport": "Call of Duty Support & status",
+    "linkOfficialRicochet": "Ricochet Anti-Cheat overview",
+    "linkOfficialPatchNotes": "Official Warzone patch notes"
+  },
+  "externalResources": {
+    "title": "Official Call of Duty: Warzone resources",
+    "lede": "We cite Activision sources for patch context, platform status, and Ricochet anti-cheat background — helpful whether you use our tools or not.",
+    "blogLede": "Our guides reference official Warzone patch notes, support status, and Ricochet documentation alongside in-house cheat maintenance notes."
   },
   "pageBlog": {
     "title": "Warzone cheats guides",

@@ -86,6 +86,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 				},
 				footer: {
 					explore: "Explore",
+					guides: "Warzone cheats guides",
 					help: "Help & legal",
 					tagline: "Undetected Warzone cheats for PC.\nESP, wallhack, radar & aimbot.",
 				},
@@ -323,8 +324,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					imageAlt: "Warzone Cheats setup guide screenshot for Windows PC",
 					galleryTitle: "Warzone Cheats setup visuals",
 					ctaPrimary: "Buy Warzone Cheats",
-					ctaSecondary: "Contact support",
-					ctaSecondaryHref: "/support/",
+					ctaSecondary: "Official Warzone site",
+					ctaSecondaryHref: "https://www.callofduty.com/warzone",
 					sections: [
 						{
 							h2: "Before you install Warzone Cheats",
@@ -361,8 +362,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					imageAlt: "Warzone Cheats live status after Ricochet and game patches",
 					galleryTitle: "Warzone patch and maintenance visuals",
 					ctaPrimary: "Buy Warzone Cheats",
-					ctaSecondary: "Undetected status guide",
-					ctaSecondaryHref: "/warzone-cheats/",
+					ctaSecondary: "Official Warzone support",
+					ctaSecondaryHref: "https://support.activision.com/",
 					sections: [
 						{
 							h2: "Why the Updates page matters",
@@ -399,8 +400,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					imageAlt: "Warzone Cheats FAQ — delivery, setup, and update answers",
 					galleryTitle: "Warzone Cheats FAQ visuals",
 					ctaPrimary: "Buy Warzone Cheats",
-					ctaSecondary: "Contact support",
-					ctaSecondaryHref: "/support/",
+					ctaSecondary: "Official game support",
+					ctaSecondaryHref: "https://support.activision.com/",
 					sections: [
 						{
 							h2: "What is Warzone Cheats?",
@@ -437,8 +438,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					imageAlt: "Warzone Cheats support page for license and setup help",
 					galleryTitle: "Warzone Cheats support resources",
 					ctaPrimary: "Email support",
-					ctaSecondary: "Read setup guide",
-					ctaSecondaryHref: "/setup/",
+					ctaSecondary: "Official game support",
+					ctaSecondaryHref: "https://support.activision.com/",
 					sections: [
 						{
 							h2: "When to contact support",
@@ -475,8 +476,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					imageAlt: "Warzone Cheats undetected status for Call of Duty: Warzone on Windows PC",
 					galleryTitle: "Undetected Warzone Cheats visuals",
 					ctaPrimary: "Buy Warzone Cheats",
-					ctaSecondary: "Ricochet bypass guide",
-					ctaSecondaryHref: "/updates/",
+					ctaSecondary: "Ricochet anti-cheat info",
+					ctaSecondaryHref: "https://www.ricochet.com/",
 					sections: [
 						{
 							h2: "What undetected means for Warzone Cheats",
@@ -589,8 +590,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					imageAlt: "Warzone Cheats maintenance after a Ricochet patch",
 					galleryTitle: "Ricochet maintenance visuals",
 					ctaPrimary: "Buy Warzone Cheats",
-					ctaSecondary: "Check updates",
-					ctaSecondaryHref: "/updates/",
+					ctaSecondary: "Ricochet anti-cheat info",
+					ctaSecondaryHref: "https://www.ricochet.com/",
 					sections: [
 						{
 							h2: "Ricochet anti-cheat overview",
@@ -627,8 +628,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					imageAlt: "Warzone Cheats product overview for Call of Duty: Warzone",
 					galleryTitle: "Warzone Cheats 2026 gallery",
 					ctaPrimary: "Buy Warzone Cheats",
-					ctaSecondary: "Compare features",
-					ctaSecondaryHref: "/features/",
+					ctaSecondary: "Official patch notes",
+					ctaSecondaryHref: "https://www.callofduty.com/blog/tag/call-of-duty-warzone",
 					sections: [
 						{
 							h2: "Why warzone cheats buyers choose Warzone Cheats in 2026",
@@ -665,8 +666,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					imageAlt: "Warzone Cheats product page — ESP, aimbot, and radar",
 					galleryTitle: "Warzone cheats gallery — ESP, Aimbot, wallhack",
 					ctaPrimary: "Buy Warzone Cheats",
-					ctaSecondary: "See undetected guide",
-					ctaSecondaryHref: "/warzone-cheats/",
+					ctaSecondary: "Official patch notes",
+					ctaSecondaryHref: "https://www.callofduty.com/blog/tag/call-of-duty-warzone",
 					sections: [
 						{
 							h2: "What Warzone cheats include in 2026",

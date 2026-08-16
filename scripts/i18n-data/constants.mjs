@@ -131,4 +131,16 @@ export const EXT = {
 		'<a href="https://support.activision.com/" target="_blank" rel="noopener noreferrer">Call of Duty: Warzone Support</a>',
 	ricochet:
 		'<a href="https://www.ricochet.com/" target="_blank" rel="noopener noreferrer">Ricochet Anti-Cheat</a>',
+	patchBlog:
+		'<a href="https://www.callofduty.com/blog/tag/call-of-duty-warzone" target="_blank" rel="noopener noreferrer">official Warzone patch notes</a>',
+	codBlog:
+		'<a href="https://www.callofduty.com/blog" target="_blank" rel="noopener noreferrer">Activision blog</a>',
+};
+
+/** External URLs for secondary CTAs (informational pages only). */
+export const EXT_URL = {
+	warzone: 'https://www.callofduty.com/warzone',
+	status: 'https://support.activision.com/',
+	ricochet: 'https://www.ricochet.com/',
+	patchBlog: 'https://www.callofduty.com/blog/tag/call-of-duty-warzone',
 };

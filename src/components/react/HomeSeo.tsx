@@ -87,6 +87,29 @@ function HomeSeoInner({ faqs }: Props) {
 		},
 	];
 
+	const officialLinks = [
+		{
+			href: 'https://www.callofduty.com/warzone',
+			sourceKey: 'homeSeo.officialSourceActivision',
+			labelKey: 'homeSeo.linkOfficialWarzone',
+		},
+		{
+			href: 'https://support.activision.com/',
+			sourceKey: 'homeSeo.officialSourceActivision',
+			labelKey: 'homeSeo.linkOfficialSupport',
+		},
+		{
+			href: 'https://www.ricochet.com/',
+			sourceKey: 'homeSeo.officialSourceActivision',
+			labelKey: 'homeSeo.linkOfficialRicochet',
+		},
+		{
+			href: 'https://www.callofduty.com/blog/tag/call-of-duty-warzone',
+			sourceKey: 'homeSeo.officialSourceActivision',
+			labelKey: 'homeSeo.linkOfficialPatchNotes',
+		},
+	];
+
 	return (
 		<section className="home-seo shell" aria-labelledby="home-seo-title">
 			<header className="home-seo__head">
@@ -136,6 +159,29 @@ function HomeSeoInner({ faqs }: Props) {
 								<span className="home-seo__guides-cat">{t(link.catKey)}</span>
 								<span>{t(link.labelKey)}</span>
 								<span className="home-seo__cat-arrow" aria-hidden="true" />
+							</a>
+						</li>
+					))}
+				</ul>
+			</section>
+
+			<section className="home-seo__official" aria-labelledby="home-official-title">
+				<header className="home-seo__guides-head">
+					<div>
+						<p className="home-seo__eyebrow">{t('homeSeo.officialEyebrow')}</p>
+						<h3 id="home-official-title">{t('homeSeo.officialTitle')}</h3>
+						<p className="home-seo__guides-lede">{t('homeSeo.officialLede')}</p>
+					</div>
+				</header>
+				<ul className="home-seo__official-list">
+					{officialLinks.map((link) => (
+						<li key={link.href}>
+							<a href={link.href} target="_blank" rel="noopener noreferrer">
+								<span className="home-seo__guides-cat">{t(link.sourceKey)}</span>
+								<span>{t(link.labelKey)}</span>
+								<span className="home-seo__external" aria-hidden="true">
+									↗
+								</span>
 							</a>
 						</li>
 					))}

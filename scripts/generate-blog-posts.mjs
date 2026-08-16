@@ -7,20 +7,12 @@
 import { writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { EXT } from './i18n-data/constants.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const OUT = join(__dirname, '..', 'src', 'data', 'blog', 'posts.generated.ts');
 
 const LOCALES = ['en'];
-
-const EXT = {
-	warzone:
-		'<a href="https://www.callofduty.com/warzone" target="_blank" rel="noopener noreferrer">Call of Duty: Warzone</a>',
-	status:
-		'<a href="https://support.activision.com/" target="_blank" rel="noopener noreferrer">Call of Duty: Warzone Support</a>',
-	ricochet:
-		'<a href="https://www.ricochet.com/" target="_blank" rel="noopener noreferrer">Ricochet</a>',
-};
 
 /** @typedef {{ h2: string, paragraphs: string[] }} Section */
 /** @typedef {{ id: string, imageKey: string, published: string, updated: string, category: string, featured?: boolean, slug: string, title: string, metaDescription: string, h1: string, intro: string, keywords: string[], imageAlt: string, sections: Section[] }} SourcePost */
@@ -332,7 +324,7 @@ const sources = [
 			{
 				h2: 'Visibility and performance before fancy numbers',
 				paragraphs: [
-					'If your frame rate collapses in Urzikstan or Rebirth Island interiors, no sensitivity tip will save you. Prioritize a stable FPS and readable shadows over maximum eye candy. Many strong players lower clutter so operator silhouettes pop sooner in tree lines and warehouse lighting.',
+					`Graphics and visibility rules change when ${EXT.warzone} ships seasonal updates. If your frame rate collapses in Urzikstan or Rebirth Island interiors, no sensitivity tip will save you. Prioritize a stable FPS and readable shadows over maximum eye candy. Many strong players lower clutter so operator silhouettes pop sooner in tree lines and warehouse lighting.`,
 					'Test changes in offline mode or a quiet Resurgence match before locking them for serious BR matches. Your eyes adapt in a few sessions — give settings that long before declaring them useless.',
 				],
 			},
@@ -379,7 +371,7 @@ const sources = [
 				h2: 'Why your first match should not be the warmup',
 				paragraphs: [
 					'Most players boot the game, slap on a kit, and die to the first clean peeker. Hands are cold, audio is not dialed, and map timing feels off. Treat warmup as part of the session, not optional fluff.',
-					'Offline practice, shooting range habits, and a couple of low-stakes Resurgence exist so your expensive loadout is not the experiment.',
+					`Offline practice, shooting range habits, and a couple of low-stakes Resurgence exist so your expensive loadout is not the experiment. Confirm current modes and rules on ${EXT.warzone} when a new season drops.`,
 				],
 			},
 			{
@@ -478,7 +470,7 @@ const sources = [
 				h2: 'Start with status, not screenshots',
 				paragraphs: [
 					'Ask whether the seller publishes a dated status page after Ricochet or client patches. Fancy galleries do not help if the tool is offline for three days. Warzone Cheats posts rebuild notes on <a href="/updates/">Updates</a> for that reason.',
-					'If a shop only answers in private Discord and never writes public notes, assume you will miss patch windows.',
+					`Before you pay anyone, read ${EXT.ricochet} for how anti-cheat evolves, then check ${EXT.status} on patch mornings so you know whether Activision services — not the seller — are down.`,
 				],
 			},
 			{
@@ -570,7 +562,7 @@ const sources = [
 				h2: 'Start softer than you think you need',
 				paragraphs: [
 					'Begin with a smaller FOV and higher smoothness so the assist helps tracking instead of snapping. Play five matches on Verdansk or Rebirth Island and only then widen FOV. If friends watching a demo say it looks robotic, you went too far.',
-					'Full control docs live on <a href="/warzone-aimbot/">Warzone Aimbot</a> and <a href="/warzone-soft-aim/">soft aim</a>.',
+					`Weapon balance shifts after ${EXT.patchBlog} — retune profiles when your main AR or SMG gets a quiet nerf. Full control docs live on <a href="/warzone-aimbot/">Warzone Aimbot</a> and <a href="/warzone-soft-aim/">soft aim</a>.`,
 				],
 			},
 			{
@@ -629,6 +621,7 @@ const sources = [
 				h2: 'Maintenance and responsible use',
 				paragraphs: [
 					'ESP modules rebuild after Ricochet patches like everything else. Check <a href="/updates/">Updates</a> and the <a href="/undetected-warzone-cheats/">undetected guide</a>. No overlay replaces listening and map knowledge — it shortens the time between “I heard something” and “I know where.”',
+					`${EXT.ricochet} documents why rebuilds happen. Pair overlay reads with ${EXT.warzone} map notes when POIs or gulag rules change mid-season.`,
 				],
 			},
 		],
@@ -719,7 +712,7 @@ const sources = [
 				h2: 'How to decide without brand loyalty',
 				paragraphs: [
 					'Write down must-haves: dated status, loot ESP, radar, soft aim profiles, Windows PC support. Open each seller’s status channel and feature list side by side. If a shop fails the status test, price does not matter.',
-					'Then return to <a href="/warzone-cheats/">warzone cheats</a> and <a href="/undetected-warzone-cheats/">undetected notes</a> if that checklist matches what we ship.',
+					`Patch communication should reference ${EXT.ricochet} reality — no seller controls Activision’s anti-cheat schedule. Then return to <a href="/warzone-cheats/">warzone cheats</a> and <a href="/undetected-warzone-cheats/">undetected notes</a> if that checklist matches what we ship.`,
 				],
 			},
 		],
@@ -765,7 +758,7 @@ const sources = [
 				h2: 'The patch window that ended the trial',
 				paragraphs: [
 					'A Warzone plus Ricochet update landed mid-test. The other tool’s status went quiet without a clear ETA. I skipped queues while my group played without me. A rebuild arrived days later; stability was mixed. That downtime — not a single feature screenshot — pushed me to switch.',
-					'Warzone Cheats won me over with written notes on <a href="/updates/">Updates</a>. I still do not queue blind after patches on any tool.',
+					`Warzone Cheats won me over with written notes on <a href="/updates/">Updates</a>. I still cross-check ${EXT.status} and ${EXT.ricochet} on patch mornings before I queue on any tool.`,
 				],
 			},
 			{
@@ -818,7 +811,7 @@ const sources = [
 				h2: 'Detection talk without fairy tales',
 				paragraphs: [
 					'Smaller user bases generate fewer public ban screenshots — that is not proof of safety. Larger brands generate more noise even when maintenance is solid. Judge sellers by patch communication speed and whether you can find a dated status note.',
-					'Warzone Cheats documents maintenance on <a href="/ricochet-bypass/">Ricochet workflow</a> and <a href="/undetected-warzone-cheats/">undetected notes</a>.',
+					`Read ${EXT.ricochet} for the anti-cheat context, then our <a href="/ricochet-bypass/">Ricochet workflow</a> and <a href="/undetected-warzone-cheats/">undetected notes</a> for how we respond to those updates.`,
 				],
 			},
 			{

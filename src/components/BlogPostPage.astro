@@ -9,6 +9,8 @@ import {
 	getBlogPostHreflangAlternates,
 } from '../data/blog/helpers';
 import { getRelatedBlogPosts } from '../data/blog/internal-links';
+import { OFFICIAL_WARZONE_RESOURCES } from '../data/external-resources';
+import ExternalResourcesBlock from './ExternalResourcesBlock.astro';
 import type { ResolvedBlogPost } from '../data/blog/types';
 import { blogLabel, siteConfig } from '../data/site';
 import { getLocalizedPath, localizeInternalHref } from '../data/i18n/routing';
@@ -144,6 +146,13 @@ function pageTitle(headline: string): string {
 				</section>
 			)
 		}
+
+		<ExternalResourcesBlock
+			title="Official Call of Duty: Warzone resources"
+			lede="We link to Activision sources for patch context, service status, and anti-cheat background — useful whether you use our tools or not."
+			resources={OFFICIAL_WARZONE_RESOURCES}
+			compact={true}
+		/>
 			</div>
 		</div>
 	</main>

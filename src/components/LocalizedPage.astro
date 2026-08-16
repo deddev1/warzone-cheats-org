@@ -11,6 +11,8 @@ import { getT } from '../i18n/server';
 import { getPageCrawlImage } from '../data/page-images';
 import { getBlogLinksForPage } from '../data/blog/internal-links';
 import BlogGuidesBlock from './BlogGuidesBlock.astro';
+import ExternalResourcesBlock from './ExternalResourcesBlock.astro';
+import { OFFICIAL_WARZONE_RESOURCES } from '../data/external-resources';
 
 interface Props {
 	locale: LocaleCode;
@@ -115,10 +117,18 @@ const storeSchema =
 const extraGraph = [faqSchema, storeSchema].filter(Boolean) as Record<string, unknown>[];
 
 const ctaSecondaryHref = ctaSecondaryPath
-	? localizeInternalHref(ctaSecondaryPath, locale)
+	? ctaSecondaryPath.startsWith('http')
+		? ctaSecondaryPath
+		: localizeInternalHref(ctaSecondaryPath, locale)
 	: ctaSecondaryLabel
 		? siteConfig.checkoutUrl
 		: getLocalizedPath('features', locale);
+
+const showExternalResources =
+	locale === defaultLocale &&
+	['updates', 'ricochet', 'undetected', 'setup', 'faq', 'support', 'hacks', 'cheats-2026'].includes(
+		pageId,
+	);
 
 const monthly = productInfo.plans.find((p) => p.id === 'monthly') ?? productInfo.plans[0];
 const lifetime = productInfo.plans.find((p) => p.id === 'lifetime') ?? productInfo.plans[1];
@@ -225,6 +235,16 @@ const eyebrowByPage: Partial<Record<PageId, string>> = {
 		lede={t('pageBlog.lede')}
 		links={pageBlogLinks}
 	/>
+
+	{
+		showExternalResources && (
+			<ExternalResourcesBlock
+				title={t('externalResources.title')}
+				lede={t('externalResources.lede')}
+				resources={OFFICIAL_WARZONE_RESOURCES}
+			/>
+		)
+	}
 </PageLayout>
 
 <style>

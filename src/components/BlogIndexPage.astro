@@ -11,6 +11,8 @@ import {
 	getBlogIndexHreflangAlternates,
 } from '../data/blog/helpers';
 import { getCheatBlogLinks } from '../data/blog/internal-links';
+import { OFFICIAL_WARZONE_RESOURCES } from '../data/external-resources';
+import ExternalResourcesBlock from './ExternalResourcesBlock.astro';
 import { blogLabel, siteConfig } from '../data/site';
 import { brandSeo, seoPageTitle } from '../data/site-core';
 import { seoDescription } from '../data/brand';
@@ -158,12 +160,23 @@ const articleListSchema = {
 		</section>
 		</div>
 	</main>
+	<div class="shell blog__resources-wrap">
+		<ExternalResourcesBlock
+			title={t('externalResources.title')}
+			lede={t('externalResources.blogLede')}
+			resources={OFFICIAL_WARZONE_RESOURCES}
+		/>
+	</div>
 	<SiteFooter locale={locale} />
 </Layout>
 
 <style>
 	.blog {
 		padding: 2.5rem 0 4rem;
+	}
+
+	.blog__resources-wrap {
+		padding-bottom: 3rem;
 	}
 
 	.blog__inner {

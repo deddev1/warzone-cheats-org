@@ -24,7 +24,7 @@ export const blogPosts: BlogPostDefinition[] = [
 				paragraphs: [
 					"Official notes live on <a href=\"https://www.callofduty.com/warzone\" target=\"_blank\" rel=\"noopener noreferrer\">Call of Duty: Warzone</a>. Treat that page as the source of truth — Discord rumors and streamer hot takes come second. Ask three plain questions for every bullet: Does this change how I kill armored Operators? Does this change what loot is worth looting? Does this change which gulag or map I should run tonight?",
 					"Ammo tables, armor classes, boss spawn rates, and trader unlocks move the real economy. A small recoil tweak on an M4 looks boring in a video title, but it quietly reshapes mid-range fights on Urzikstan and Rebirth Island. Cosmetic lines and UI polish almost never decide whether you survive loadout.",
-					"If you also run third-party tools, separate game balance from anti-cheat maintenance. After a <a href=\"https://www.ricochet.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Ricochet</a> or client update, check our <a href=\"/updates/\">Warzone Cheats status page</a> before you blame your own aim.",
+					"If you also run third-party tools, separate game balance from anti-cheat maintenance. After a <a href=\"https://www.ricochet.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Ricochet Anti-Cheat</a> or client update, check our <a href=\"/updates/\">Warzone Cheats status page</a> before you blame your own aim.",
 				],
 			},
 			{
@@ -277,7 +277,7 @@ export const blogPosts: BlogPostDefinition[] = [
 			{
 				h2: "Visibility and performance before fancy numbers",
 				paragraphs: [
-					"If your frame rate collapses in Urzikstan or Rebirth Island interiors, no sensitivity tip will save you. Prioritize a stable FPS and readable shadows over maximum eye candy. Many strong players lower clutter so operator silhouettes pop sooner in tree lines and warehouse lighting.",
+					"Graphics and visibility rules change when <a href=\"https://www.callofduty.com/warzone\" target=\"_blank\" rel=\"noopener noreferrer\">Call of Duty: Warzone</a> ships seasonal updates. If your frame rate collapses in Urzikstan or Rebirth Island interiors, no sensitivity tip will save you. Prioritize a stable FPS and readable shadows over maximum eye candy. Many strong players lower clutter so operator silhouettes pop sooner in tree lines and warehouse lighting.",
 					"Test changes in offline mode or a quiet Resurgence match before locking them for serious BR matches. Your eyes adapt in a few sessions — give settings that long before declaring them useless.",
 				],
 			},
@@ -320,7 +320,7 @@ export const blogPosts: BlogPostDefinition[] = [
 				h2: "Why your first match should not be the warmup",
 				paragraphs: [
 					"Most players boot the game, slap on a kit, and die to the first clean peeker. Hands are cold, audio is not dialed, and map timing feels off. Treat warmup as part of the session, not optional fluff.",
-					"Offline practice, shooting range habits, and a couple of low-stakes Resurgence exist so your expensive loadout is not the experiment.",
+					"Offline practice, shooting range habits, and a couple of low-stakes Resurgence exist so your expensive loadout is not the experiment. Confirm current modes and rules on <a href=\"https://www.callofduty.com/warzone\" target=\"_blank\" rel=\"noopener noreferrer\">Call of Duty: Warzone</a> when a new season drops.",
 				],
 			},
 			{
@@ -375,7 +375,7 @@ export const blogPosts: BlogPostDefinition[] = [
 			{
 				h2: "Ricochet, “undetected,” and honest expectations",
 				paragraphs: [
-					"<a href=\"https://www.ricochet.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Ricochet</a> protects Call of Duty: Warzone. No seller can promise permanent undetected status. What a serious vendor can offer is maintenance: rebuilds after patches, a public status note, and clear setup steps. That workflow is documented on <a href=\"/undetected-warzone-cheats/\">undetected warzone cheats</a> and <a href=\"/ricochet-bypass/\">Ricochet maintenance</a>.",
+					"<a href=\"https://www.ricochet.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Ricochet Anti-Cheat</a> protects Call of Duty: Warzone. No seller can promise permanent undetected status. What a serious vendor can offer is maintenance: rebuilds after patches, a public status note, and clear setup steps. That workflow is documented on <a href=\"/undetected-warzone-cheats/\">undetected warzone cheats</a> and <a href=\"/ricochet-bypass/\">Ricochet maintenance</a>.",
 					"Before every patch-day queue, read <a href=\"/updates/\">Updates</a>. If status is quiet, wait. Responsible settings matter as much as the binary itself.",
 				],
 			},
@@ -411,7 +411,7 @@ export const blogPosts: BlogPostDefinition[] = [
 				h2: "Start with status, not screenshots",
 				paragraphs: [
 					"Ask whether the seller publishes a dated status page after Ricochet or client patches. Fancy galleries do not help if the tool is offline for three days. Warzone Cheats posts rebuild notes on <a href=\"/updates/\">Updates</a> for that reason.",
-					"If a shop only answers in private Discord and never writes public notes, assume you will miss patch windows.",
+					"Before you pay anyone, read <a href=\"https://www.ricochet.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Ricochet Anti-Cheat</a> for how anti-cheat evolves, then check <a href=\"https://support.activision.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Call of Duty: Warzone Support</a> on patch mornings so you know whether Activision services — not the seller — are down.",
 				],
 			},
 			{
@@ -453,7 +453,7 @@ export const blogPosts: BlogPostDefinition[] = [
 				h2: "Why 2026 buyers care more about status pages",
 				paragraphs: [
 					"Players got tired of “undetected forever” slogans. They want a dated note after patches. That is why we invest in the <a href=\"/updates/\">Updates</a> log and the <a href=\"/undetected-warzone-cheats/\">undetected explainer</a> instead of empty guarantees.",
-					"<a href=\"https://www.ricochet.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Ricochet</a> and Activision client updates still force rebuilds. The shops that survive are the ones that communicate during those windows.",
+					"<a href=\"https://www.ricochet.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Ricochet Anti-Cheat</a> and Activision client updates still force rebuilds. The shops that survive are the ones that communicate during those windows.",
 				],
 			},
 			{
@@ -495,7 +495,7 @@ export const blogPosts: BlogPostDefinition[] = [
 				h2: "Start softer than you think you need",
 				paragraphs: [
 					"Begin with a smaller FOV and higher smoothness so the assist helps tracking instead of snapping. Play five matches on Verdansk or Rebirth Island and only then widen FOV. If friends watching a demo say it looks robotic, you went too far.",
-					"Full control docs live on <a href=\"/warzone-aimbot/\">Warzone Aimbot</a> and <a href=\"/warzone-soft-aim/\">soft aim</a>.",
+					"Weapon balance shifts after <a href=\"https://www.callofduty.com/blog/tag/call-of-duty-warzone\" target=\"_blank\" rel=\"noopener noreferrer\">official Warzone patch notes</a> — retune profiles when your main AR or SMG gets a quiet nerf. Full control docs live on <a href=\"/warzone-aimbot/\">Warzone Aimbot</a> and <a href=\"/warzone-soft-aim/\">soft aim</a>.",
 				],
 			},
 			{
@@ -550,6 +550,7 @@ export const blogPosts: BlogPostDefinition[] = [
 				h2: "Maintenance and responsible use",
 				paragraphs: [
 					"ESP modules rebuild after Ricochet patches like everything else. Check <a href=\"/updates/\">Updates</a> and the <a href=\"/undetected-warzone-cheats/\">undetected guide</a>. No overlay replaces listening and map knowledge — it shortens the time between “I heard something” and “I know where.”",
+					"<a href=\"https://www.ricochet.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Ricochet Anti-Cheat</a> documents why rebuilds happen. Pair overlay reads with <a href=\"https://www.callofduty.com/warzone\" target=\"_blank\" rel=\"noopener noreferrer\">Call of Duty: Warzone</a> map notes when POIs or gulag rules change mid-season.",
 				],
 			}
 		],
@@ -576,7 +577,7 @@ export const blogPosts: BlogPostDefinition[] = [
 			{
 				h2: "What undetected can honestly mean",
 				paragraphs: [
-					"Ricochet is documented at <a href=\"https://www.ricochet.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Ricochet</a>. It evolves. Vendors who care publish rebuild notes when ESP, radar, or aim modules need work. Warzone Cheats does that on <a href=\"/updates/\">Updates</a> and explains the workflow on <a href=\"/ricochet-bypass/\">Ricochet maintenance</a>.",
+					"Ricochet is documented at <a href=\"https://www.ricochet.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Ricochet Anti-Cheat</a>. It evolves. Vendors who care publish rebuild notes when ESP, radar, or aim modules need work. Warzone Cheats does that on <a href=\"/updates/\">Updates</a> and explains the workflow on <a href=\"/ricochet-bypass/\">Ricochet maintenance</a>.",
 					"If a seller says “100% undetected forever,” treat it as advertising. Your risk also depends on how obviously you play.",
 				],
 			},
@@ -632,7 +633,7 @@ export const blogPosts: BlogPostDefinition[] = [
 				h2: "How to decide without brand loyalty",
 				paragraphs: [
 					"Write down must-haves: dated status, loot ESP, radar, soft aim profiles, Windows PC support. Open each seller’s status channel and feature list side by side. If a shop fails the status test, price does not matter.",
-					"Then return to <a href=\"/warzone-cheats/\">warzone cheats</a> and <a href=\"/undetected-warzone-cheats/\">undetected notes</a> if that checklist matches what we ship.",
+					"Patch communication should reference <a href=\"https://www.ricochet.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Ricochet Anti-Cheat</a> reality — no seller controls Activision’s anti-cheat schedule. Then return to <a href=\"/warzone-cheats/\">warzone cheats</a> and <a href=\"/undetected-warzone-cheats/\">undetected notes</a> if that checklist matches what we ship.",
 				],
 			}
 		],
@@ -674,7 +675,7 @@ export const blogPosts: BlogPostDefinition[] = [
 				h2: "The patch window that ended the trial",
 				paragraphs: [
 					"A Warzone plus Ricochet update landed mid-test. The other tool’s status went quiet without a clear ETA. I skipped queues while my group played without me. A rebuild arrived days later; stability was mixed. That downtime — not a single feature screenshot — pushed me to switch.",
-					"Warzone Cheats won me over with written notes on <a href=\"/updates/\">Updates</a>. I still do not queue blind after patches on any tool.",
+					"Warzone Cheats won me over with written notes on <a href=\"/updates/\">Updates</a>. I still cross-check <a href=\"https://support.activision.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Call of Duty: Warzone Support</a> and <a href=\"https://www.ricochet.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Ricochet Anti-Cheat</a> on patch mornings before I queue on any tool.",
 				],
 			},
 			{
@@ -723,7 +724,7 @@ export const blogPosts: BlogPostDefinition[] = [
 				h2: "Detection talk without fairy tales",
 				paragraphs: [
 					"Smaller user bases generate fewer public ban screenshots — that is not proof of safety. Larger brands generate more noise even when maintenance is solid. Judge sellers by patch communication speed and whether you can find a dated status note.",
-					"Warzone Cheats documents maintenance on <a href=\"/ricochet-bypass/\">Ricochet workflow</a> and <a href=\"/undetected-warzone-cheats/\">undetected notes</a>.",
+					"Read <a href=\"https://www.ricochet.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Ricochet Anti-Cheat</a> for the anti-cheat context, then our <a href=\"/ricochet-bypass/\">Ricochet workflow</a> and <a href=\"/undetected-warzone-cheats/\">undetected notes</a> for how we respond to those updates.",
 				],
 			},
 			{

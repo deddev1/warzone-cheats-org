@@ -226,6 +226,54 @@ const faqs = homeFaqs.map((item) => ({
 		white-space: nowrap;
 	}
 
+	.home-seo__official {
+		margin-top: 1.75rem;
+		padding: clamp(1.25rem, 3vw, 1.65rem);
+		border: 1px solid var(--line);
+		border-radius: var(--radius-lg, 1rem);
+		background: var(--bg-panel);
+	}
+
+	.home-seo__official-list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 0.45rem;
+	}
+
+	.home-seo__official-list a {
+		display: grid;
+		grid-template-columns: auto 1fr auto;
+		align-items: center;
+		gap: 0.65rem;
+		min-height: var(--touch-min, 2.75rem);
+		padding: 0.75rem 0.95rem;
+		border: 1px solid var(--line-soft);
+		border-radius: var(--radius-md);
+		background: var(--bg-elevated);
+		font-size: 0.875rem;
+		font-weight: 600;
+		color: var(--ink-muted);
+		text-decoration: none;
+		transition:
+			border-color 0.15s ease,
+			color 0.15s ease,
+			background 0.15s ease;
+	}
+
+	.home-seo__official-list a:hover {
+		border-color: color-mix(in srgb, var(--magenta) 30%, var(--line));
+		background: color-mix(in srgb, var(--magenta) 6%, var(--bg-elevated));
+		color: var(--magenta-soft);
+	}
+
+	.home-seo__external {
+		color: var(--ink-faint);
+		font-weight: 700;
+	}
+
 	.home-seo__faq {
 		margin-top: 2.25rem;
 		padding: clamp(1.35rem, 3vw, 1.85rem);
