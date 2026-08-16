@@ -42,9 +42,9 @@ const monthly = productInfo.plans.find((p) => p.id === 'monthly') ?? productInfo
 		overflow: hidden;
 		background: #050506;
 		width: 100%;
-		height: clamp(320px, 34vw, 440px);
-		min-height: 320px;
-		max-height: 440px;
+		height: clamp(360px, 38vw, 480px);
+		min-height: 360px;
+		max-height: 480px;
 	}
 
 	.hero__media {
@@ -61,9 +61,9 @@ const monthly = productInfo.plans.find((p) => p.id === 'monthly') ?? productInfo
 	}
 
 	.hero__media img {
-		/* Cover = crop excess; never squash. Anchor high so Ghost/heads stay in frame. */
+		/* Cover = crop excess. Anchor high for heads, tilt down slightly for lower body. */
 		object-fit: cover;
-		object-position: 58% 14%;
+		object-position: 58% 22%;
 		image-rendering: auto;
 		transform: translateZ(0);
 		animation: hero-in 0.9s ease-out both;
@@ -298,8 +298,8 @@ const monthly = productInfo.plans.find((p) => p.id === 'monthly') ?? productInfo
 
 		.hero__media img {
 			object-fit: cover;
-			/* Characters sit center-right; keep helmets/masks above the fold */
-			object-position: 62% 10%;
+			/* Characters sit center-right; keep heads in frame, show a bit more below */
+			object-position: 62% 18%;
 		}
 
 		.hero__veil {
@@ -315,7 +315,7 @@ const monthly = productInfo.plans.find((p) => p.id === 'monthly') ?? productInfo
 		.hero__content {
 			transform: none;
 			width: 100%;
-			min-height: clamp(18rem, 48svh, 24rem);
+			min-height: clamp(19rem, 52svh, 26rem);
 			display: flex;
 			align-items: flex-end;
 			padding-block: 1.25rem 1.1rem;
@@ -374,7 +374,7 @@ const monthly = productInfo.plans.find((p) => p.id === 'monthly') ?? productInfo
 
 	@media (max-width: 480px) {
 		.hero__content {
-			min-height: clamp(17rem, 52svh, 22rem);
+			min-height: clamp(18rem, 54svh, 23rem);
 			padding-block: 1.1rem 1rem;
 		}
 
@@ -398,7 +398,7 @@ const monthly = productInfo.plans.find((p) => p.id === 'monthly') ?? productInfo
 
 	@media (max-width: 360px) {
 		.hero__content {
-			min-height: clamp(16rem, 54svh, 20.5rem);
+			min-height: clamp(17rem, 56svh, 21.5rem);
 		}
 
 		.hero__brand {
