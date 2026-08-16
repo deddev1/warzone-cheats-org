@@ -98,65 +98,65 @@ export const homeFaqs: readonly FaqItem[] = [
 	faq({
 		question: 'What is {brand}?',
 		answer:
-			'{brand} is an undetected {primaryKeyword} package for Call of Duty: Warzone on Windows PC. It includes ESP wallhack, 2D radar, and aimbot controls, with {antiCheat} maintenance and setup support.',
+			'{brand} is a cheat package for Call of Duty: Warzone on Windows PC. It includes ESP wallhack, 2D radar, and aimbot. We send updates after game and {antiCheat} patches, and we help with setup.',
 		slug: 'what-are-warzone-cheats',
 		seoTitle: 'What is {brand}? | FAQ',
 		seoDescription:
-			'{brand} explained: undetected ESP, radar, and aimbot for {game} on Windows PC with {antiCheat} maintenance.',
+			'{brand} explained: ESP, radar, and aimbot for Call of Duty: Warzone on Windows PC, with {antiCheat} updates.',
 	}),
 	faq({
 		question: 'Are {primaryKeyword} undetected in 2026?',
 		answer:
-			'{brand} is maintained for {game} with rebuilds after {antiCheat} and game patches. Check the Status page before you queue. No cheat can guarantee permanent undetected status — maintenance and responsible use matter.',
+			'We keep {brand} updated after {antiCheat} and game patches. Check the Status page before you play. No cheat stays undetected forever — updates and careful use both matter.',
 		slug: 'are-warzone-cheats-undetected-in-2026',
 		seoTitle: 'Are {brand} Undetected in 2026? | FAQ',
 		seoDescription:
-			'How {brand} stays maintained after {antiCheat} patches in 2026 — and why no cheat can promise permanent undetected status.',
+			'How {brand} is maintained after {antiCheat} patches in 2026, and why no cheat can promise permanent undetected status.',
 	}),
 	faq({
-		question: 'Does this work in BR and Resurgence-style modes?',
+		question: 'Does this work in BR and Resurgence modes?',
 		answer:
-			'Yes. ESP, radar, and aimbot are built for {game} match flow — reading enemy operators and squads, spotting loot, and staying aware near gulags.',
+			'Yes. ESP, radar, and aimbot work in Call of Duty: Warzone BR and Resurgence modes on Windows PC.',
 		slug: 'br-and-resurgence-modes',
 		seoTitle: 'BR and Resurgence Support | FAQ',
 		seoDescription:
-			'{brand} works in BR and Resurgence-style modes — ESP, radar, and aimbot for Windows PC.',
+			'{brand} works in BR and Resurgence modes — ESP, radar, and aimbot for Windows PC.',
 	}),
 	faq({
-		question: 'What is included — ESP, wallhack, radar, or Aimbot?',
+		question: 'What is included in one license?',
 		answer:
-			'{brand} bundles ESP wallhack, loot markers, 2D radar cues, and configurable Aimbot in one license. See Features for the full list.',
+			'One {brand} license includes ESP wallhack, loot markers, 2D radar, and aimbot. See the Features page for the full list.',
 		slug: 'esp-wallhack-radar-or-aimbot',
 		seoTitle: 'What Is Included: ESP, Wallhack, Radar, Aimbot | FAQ',
 		seoDescription:
-			'One {brand} license includes ESP wallhack, loot markers, 2D radar cues, and configurable Aimbot for Windows PC.',
+			'One {brand} license includes ESP wallhack, loot markers, 2D radar, and aimbot for Windows PC.',
 	}),
 	faq({
 		question: 'How are licenses delivered?',
 		answer:
-			'After payment is confirmed, {brand} license details are delivered digitally through checkout. Timing can vary by payment method and order review. Keep your order confirmation ready if you contact support.',
+			'After payment is confirmed, your license details are sent by email. Delivery time can vary by payment method. Keep your order confirmation if you contact support.',
 		slug: 'how-are-licenses-delivered',
 		seoTitle: 'How Are {brand} Licenses Delivered? | FAQ',
 		seoDescription:
-			'{brand} licenses are delivered digitally after payment confirmation. Timing varies by payment method and order review.',
+			'{brand} licenses are delivered by email after payment. Delivery time varies by payment method.',
 	}),
 	faq({
-		question: 'Where do I check updates after a Call of Duty: Warzone or {antiCheat} patch?',
+		question: 'Where do I check updates after a Warzone or {antiCheat} patch?',
 		answer:
-			'Maintenance notes are posted on the Status page when a Call of Duty: Warzone or {antiCheat} update affects the package. That is the fastest place to confirm whether a new {brand} build is live.',
+			'Check the Status page after a Call of Duty: Warzone or {antiCheat} update. That is where we post when a new {brand} build is ready.',
 		slug: 'where-to-check-updates',
 		seoTitle: 'Where to Check {game} / {antiCheat} Updates | FAQ',
 		seoDescription:
-			'Check the Status page after {game} or {antiCheat} patches to confirm the latest {brand} build status.',
+			'Check the Status page after {game} or {antiCheat} patches to see the latest {brand} build.',
 	}),
 	faq({
 		question: 'How do I contact support?',
 		answer:
-			'Use the Support page or email {email}. Include your order details, package length, and a clear description of the setup issue so replies can be faster.',
+			'Use the Support page or email {email}. Include your order number and a short description of the problem so we can help faster.',
 		slug: 'how-to-contact-support',
 		seoTitle: 'How to Contact {brand} Support | FAQ',
 		seoDescription:
-			'Contact {brand} support via the Support page or {email} with your order details for faster help.',
+			'Contact {brand} support via the Support page or {email} with your order number.',
 	}),
 ] as const;
 

@@ -12,6 +12,7 @@ function HomeAboutInner() {
 		<section className="shell home__prose home__prose--en" aria-labelledby="home-about-title">
 			<h2 id="home-about-title">{t('home.aboutTitle')}</h2>
 			<p>{t('home.aboutP1')}</p>
+			<p>{t('home.aboutRequirements')}</p>
 			<p>
 				{t('home.aboutP2Before')}{' '}
 				<a href="/warzone-cheats/">{t('home.aboutPillar')}</a>
