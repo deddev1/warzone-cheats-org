@@ -1,0 +1,101 @@
+---
+import type { BlogLinkItem } from '../data/blog/internal-links';
+
+interface Props {
+	title: string;
+	lede?: string;
+	links: BlogLinkItem[];
+	ariaLabel?: string;
+}
+
+const { title, lede, links, ariaLabel = title } = Astro.props;
+---
+
+{
+	links.length > 0 && (
+		<section class="blog-guides card-panel" aria-label={ariaLabel}>
+			<h2>{title}</h2>
+			{lede && <p class="blog-guides__lede">{lede}</p>}
+			<ul class="blog-guides__list">
+				{links.map((item) => (
+					<li>
+						<a href={item.href}>
+							<span class="blog-guides__cat">{item.category}</span>
+							<span class="blog-guides__title">{item.title}</span>
+							<span class="blog-guides__arrow" aria-hidden="true">
+								→
+							</span>
+						</a>
+					</li>
+				))}
+			</ul>
+		</section>
+	)
+}
+
+<style>
+	.blog-guides__lede {
+		margin: 0 0 1rem;
+		color: var(--ink-muted);
+		max-width: 42rem;
+	}
+
+	.blog-guides__list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: grid;
+		gap: 0.45rem;
+	}
+
+	.blog-guides__list a {
+		display: grid;
+		grid-template-columns: auto 1fr auto;
+		align-items: center;
+		gap: 0.75rem;
+		padding: 0.85rem 1rem;
+		border: 1px solid var(--line);
+		border-radius: var(--radius-md, 0.75rem);
+		background: var(--bg-elevated);
+		color: var(--ink);
+		text-decoration: none;
+		transition:
+			border-color 0.2s ease,
+			color 0.2s ease;
+	}
+
+	.blog-guides__list a:hover {
+		border-color: color-mix(in srgb, var(--magenta) 35%, var(--line));
+		color: var(--magenta-soft);
+	}
+
+	.blog-guides__cat {
+		font-size: 0.68rem;
+		font-weight: 700;
+		letter-spacing: 0.06em;
+		text-transform: uppercase;
+		color: var(--magenta-soft);
+		white-space: nowrap;
+	}
+
+	.blog-guides__title {
+		font-weight: 600;
+		line-height: 1.35;
+	}
+
+	.blog-guides__arrow {
+		color: var(--ink-faint);
+		font-weight: 700;
+	}
+
+	@media (max-width: 640px) {
+		.blog-guides__list a {
+			grid-template-columns: 1fr auto;
+			grid-template-rows: auto auto;
+		}
+
+		.blog-guides__cat {
+			grid-column: 1 / -1;
+		}
+	}
+</style>

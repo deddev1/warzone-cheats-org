@@ -149,6 +149,83 @@ const faqs = homeFaqs.map((item) => ({
 		transform: rotate(-45deg) translate(1px, 1px);
 	}
 
+	.home-seo__guides {
+		margin-top: 1.75rem;
+		padding: clamp(1.25rem, 3vw, 1.65rem);
+		border: 1px solid var(--line);
+		border-radius: var(--radius-lg, 1rem);
+		background: var(--bg-panel);
+	}
+
+	.home-seo__guides-head {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		gap: 1rem;
+		margin-bottom: 1rem;
+		padding-bottom: 0.85rem;
+		border-bottom: 1px solid var(--line-soft);
+	}
+
+	.home-seo__guides-head h3 {
+		margin: 0.15rem 0 0;
+		font-family: var(--font-display);
+		font-size: clamp(1.05rem, 1.8vw, 1.2rem);
+		font-weight: 700;
+		color: var(--ink);
+	}
+
+	.home-seo__guides-lede {
+		margin: 0.45rem 0 0;
+		max-width: 40rem;
+		font-size: 0.875rem;
+		color: var(--ink-muted);
+	}
+
+	.home-seo__guides-list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 0.45rem;
+	}
+
+	.home-seo__guides-list a {
+		display: grid;
+		grid-template-columns: auto 1fr auto;
+		align-items: center;
+		gap: 0.65rem;
+		min-height: var(--touch-min, 2.75rem);
+		padding: 0.75rem 0.95rem;
+		border: 1px solid var(--line-soft);
+		border-radius: var(--radius-md);
+		background: var(--bg-elevated);
+		font-size: 0.875rem;
+		font-weight: 600;
+		color: var(--ink-muted);
+		text-decoration: none;
+		transition:
+			border-color 0.15s ease,
+			color 0.15s ease,
+			background 0.15s ease;
+	}
+
+	.home-seo__guides-list a:hover {
+		border-color: color-mix(in srgb, var(--magenta) 30%, var(--line));
+		background: color-mix(in srgb, var(--magenta) 6%, var(--bg-elevated));
+		color: var(--magenta-soft);
+	}
+
+	.home-seo__guides-cat {
+		font-size: 0.65rem;
+		font-weight: 700;
+		letter-spacing: 0.06em;
+		text-transform: uppercase;
+		color: var(--magenta-soft);
+		white-space: nowrap;
+	}
+
 	.home-seo__faq {
 		margin-top: 2.25rem;
 		padding: clamp(1.35rem, 3vw, 1.85rem);
@@ -304,6 +381,15 @@ const faqs = homeFaqs.map((item) => ({
 	@media (max-width: 900px) {
 		.home-seo__cats {
 			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
+
+		.home-seo__guides-list {
+			grid-template-columns: 1fr;
+		}
+
+		.home-seo__guides-head {
+			flex-direction: column;
+			align-items: flex-start;
 		}
 
 		.home-seo__faq-head {

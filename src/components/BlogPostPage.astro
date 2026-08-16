@@ -5,10 +5,10 @@ import SiteFooter from './SiteFooter.astro';
 import { blogUi, defaultLocale, type LocaleCode } from '../data/i18n/locales';
 import {
 	absoluteBlogUrl,
-	getAllPostsForLocale,
 	getBlogBasePath,
 	getBlogPostHreflangAlternates,
 } from '../data/blog/helpers';
+import { getRelatedBlogPosts } from '../data/blog/internal-links';
 import type { ResolvedBlogPost } from '../data/blog/types';
 import { blogLabel, siteConfig } from '../data/site';
 import { getLocalizedPath, localizeInternalHref } from '../data/i18n/routing';
@@ -23,9 +23,7 @@ const ui = blogUi[locale];
 const t = post.translation;
 const homeHref = getLocalizedPath('home', locale);
 const blogHref = getBlogBasePath(defaultLocale);
-const related = getAllPostsForLocale(defaultLocale)
-	.filter((p) => p.id !== post.id)
-	.slice(0, 3);
+const related = getRelatedBlogPosts(post.id, 4);
 
 const articleUrl = absoluteBlogUrl(defaultLocale, post.translations[defaultLocale]?.slug ?? t.slug);
 const hreflangAlternates = getBlogPostHreflangAlternates(post, locale);
@@ -139,7 +137,7 @@ function pageTitle(headline: string): string {
 					<ul>
 						{related.map((item) => (
 							<li>
-								<a href={item.canonicalPath}>{item.translation.title}</a>
+								<a href={item.href}>{item.title}</a>
 							</li>
 						))}
 					</ul>

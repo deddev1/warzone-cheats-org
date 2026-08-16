@@ -38,8 +38,8 @@ function HomeSeoInner({ faqs }: Props) {
 			links: [
 				{ href: '/pricing/', labelKey: 'homeSeo.linkPlans' },
 				{ href: '/reviews/', labelKey: 'homeSeo.linkReviews' },
+				{ href: '/blog/call-of-duty-warzone-cheats-buyers-guide/', labelKey: 'homeSeo.linkBuyersGuide' },
 				{ href: '/warzone-cheats/', labelKey: 'homeSeo.linkWarzoneCheats' },
-				{ href: '/features/', labelKey: 'homeSeo.linkAllFeatures' },
 			],
 		},
 		{
@@ -48,9 +48,42 @@ function HomeSeoInner({ faqs }: Props) {
 			links: [
 				{ href: '/support/', labelKey: 'homeSeo.linkSupport' },
 				{ href: '/setup/', labelKey: 'homeSeo.linkSetupGuide' },
-				{ href: '/blog/', labelKey: 'homeSeo.linkBlog' },
+				{ href: '/blog/warzone-cheats-complete-guide-2026/', labelKey: 'homeSeo.linkCompleteGuide' },
 				{ href: '/refund-policy/', labelKey: 'homeSeo.linkRefunds' },
 			],
+		},
+	];
+
+	const guideLinks = [
+		{
+			href: '/blog/warzone-cheats-complete-guide-2026/',
+			catKey: 'homeSeo.guideCatCheats',
+			labelKey: 'homeSeo.linkCompleteGuide',
+		},
+		{
+			href: '/blog/call-of-duty-warzone-cheats-buyers-guide/',
+			catKey: 'homeSeo.guideCatBuyers',
+			labelKey: 'homeSeo.linkBuyersGuide',
+		},
+		{
+			href: '/blog/undetected-warzone-cheats-ricochet/',
+			catKey: 'homeSeo.guideCatUndetected',
+			labelKey: 'homeSeo.linkUndetectedGuide',
+		},
+		{
+			href: '/blog/warzone-esp-wallhack-explained/',
+			catKey: 'homeSeo.guideCatEsp',
+			labelKey: 'homeSeo.linkEspGuide',
+		},
+		{
+			href: '/blog/warzone-aimbot-settings-guide/',
+			catKey: 'homeSeo.guideCatAimbot',
+			labelKey: 'homeSeo.linkAimbotGuide',
+		},
+		{
+			href: '/blog/warzone-cheats-2026-whats-new/',
+			catKey: 'homeSeo.guideCatUpdates',
+			labelKey: 'homeSeo.linkWhatsNewGuide',
 		},
 	];
 
@@ -84,6 +117,30 @@ function HomeSeoInner({ faqs }: Props) {
 					</nav>
 				))}
 			</div>
+
+			<section className="home-seo__guides" aria-labelledby="home-guides-title">
+				<header className="home-seo__guides-head">
+					<div>
+						<p className="home-seo__eyebrow">{t('homeSeo.guidesEyebrow')}</p>
+						<h3 id="home-guides-title">{t('homeSeo.guidesTitle')}</h3>
+						<p className="home-seo__guides-lede">{t('homeSeo.guidesLede')}</p>
+					</div>
+					<a className="home-seo__faq-link" href="/blog/">
+						{t('homeSeo.allGuides')}
+					</a>
+				</header>
+				<ul className="home-seo__guides-list">
+					{guideLinks.map((link) => (
+						<li key={link.href}>
+							<a href={link.href}>
+								<span className="home-seo__guides-cat">{t(link.catKey)}</span>
+								<span>{t(link.labelKey)}</span>
+								<span className="home-seo__cat-arrow" aria-hidden="true" />
+							</a>
+						</li>
+					))}
+				</ul>
+			</section>
 
 			<section className="home-seo__faq" aria-labelledby="home-faq-title">
 				<header className="home-seo__faq-head">

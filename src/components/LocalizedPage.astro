@@ -2,13 +2,15 @@
 import PageLayout from '../layouts/PageLayout.astro';
 import { getPageContent, getUi, type PageId } from '../data/i18n';
 import { getLocalizedPath, localizeInternalHref } from '../data/i18n/routing';
-import type { LocaleCode } from '../data/i18n/locales';
+import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
 import { productInfo, seoFaqs, siteConfig, customerReviewStats } from '../data/site';
 import { absoluteFaqUrl, getFaqPath } from '../data/faq';
 import { warzoneImages } from '../data/warzone';
 import { simplePageCopy } from '../data/i18n/simple-pages';
 import { getT } from '../i18n/server';
 import { getPageCrawlImage } from '../data/page-images';
+import { getBlogLinksForPage } from '../data/blog/internal-links';
+import BlogGuidesBlock from './BlogGuidesBlock.astro';
 
 interface Props {
 	locale: LocaleCode;
@@ -122,6 +124,8 @@ const monthly = productInfo.plans.find((p) => p.id === 'monthly') ?? productInfo
 const lifetime = productInfo.plans.find((p) => p.id === 'lifetime') ?? productInfo.plans[1];
 const showStorePlans = pageId === 'pricing' && locale === 'en';
 
+const pageBlogLinks = locale === defaultLocale ? getBlogLinksForPage(pageId) : [];
+
 const eyebrowByPage: Partial<Record<PageId, string>> = {
 	features: ui.nav.features,
 	pricing: ui.nav.pricing,
@@ -215,6 +219,12 @@ const eyebrowByPage: Partial<Record<PageId, string>> = {
 			</section>
 		)
 	}
+
+	<BlogGuidesBlock
+		title={t('pageBlog.title')}
+		lede={t('pageBlog.lede')}
+		links={pageBlogLinks}
+	/>
 </PageLayout>
 
 <style>

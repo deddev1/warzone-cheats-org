@@ -181,7 +181,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"ESP alone wins information wars; Aimbot covers the firefight. Review <a href=\"/warzone-aimbot/\">Aimbot controls</a> if you want one license for visibility and assist.",
 								"Compare monthly ($35) and lifetime ($150) on <a href=\"/pricing/\">Pricing</a>, then keep <a href=\"/support/\">Support</a> ready if activation needs a human reply.",
-								"Still researching? The <a href=\"/warzone-cheats/\">Warzone cheats pillar</a> and <a href=\"/warzone-cheats/\">2026 buyer guide</a> summarize the full stack.",
+								"Still researching? The <a href=\"/warzone-cheats/\">Warzone cheats pillar</a>, <a href=\"/blog/warzone-esp-wallhack-explained/\">ESP wallhack guide</a>, and <a href=\"/warzone-cheats/\">2026 buyer guide</a> summarize the full stack.",
 							],
 						},
 					],
@@ -233,7 +233,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Every plan includes Aimbot plus ESP and radar. Compare options on <a href=\"/pricing/\">Pricing</a>, then activate with the <a href=\"/setup/\">Setup guide</a>.",
 								"Questions about delivery or profiles? Use <a href=\"/faq/\">FAQ</a> or email <a href=\"/support/\">Support</a> with your order ID.",
-								"Want the full control list first? Open <a href=\"/features/\">Features</a> before checkout.",
+								"Want the full control list first? Open <a href=\"/features/\">Features</a>, the <a href=\"/blog/warzone-aimbot-settings-guide/\">aimbot settings guide</a>, or <a href=\"/blog/call-of-duty-warzone-cheats-buyers-guide/\">buyers guide</a> before checkout.",
 							],
 						},
 					],
@@ -271,7 +271,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Monthly ($35) and lifetime ($150) licenses with instant digital delivery. Ricochet maintenance rebuilds publish on the <a href=\"/updates/\">Updates page</a> after anti-cheat or game patches.",
 								"Monitor <a href=\"https://support.activision.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Call of Duty: Warzone Support</a> on patch days, then confirm rebuild notes before you queue. Setup and billing help lives on <a href=\"/support/\">Support</a> and support@warzonecheats.org.",
-								"Next step: compare plans on <a href=\"/pricing/\">Pricing</a> or read <a href=\"/warzone-cheats/\">how undetected maintenance works</a>.",
+								"Next step: compare plans on <a href=\"/pricing/\">Pricing</a>, read <a href=\"/blog/warzone-cheats-complete-guide-2026/\">how undetected maintenance works</a>, or open the <a href=\"/warzone-cheats/\">undetected guide</a>.",
 							],
 						},
 					],
@@ -499,7 +499,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Combine maintenance with conservative in-game settings. Read the <a href=\"/faq/\">FAQ</a> and Updates log regularly — undetected status is not a one-time promise.",
 								"Lifetime and monthly plans include rebuild access during active terms — see <a href=\"/pricing/\">Pricing</a>.",
-								"New buyers should also read <a href=\"/warzone-cheats/\">Warzone cheats 2026</a> and complete <a href=\"/setup/\">Setup</a> after delivery.",
+								"New buyers should also read <a href=\"/warzone-cheats/\">Warzone cheats 2026</a>, <a href=\"/blog/warzone-cheats-complete-guide-2026/\">complete warzone cheats guide</a>, <a href=\"/blog/undetected-warzone-cheats-ricochet/\">undetected Ricochet explainer</a>, and complete <a href=\"/setup/\">Setup</a> after delivery.",
 							],
 						},
 					],
@@ -537,7 +537,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"ESP wallhack modules rebuild after Ricochet anti-cheat patches. Follow the <a href=\"/updates/\">Updates page</a> and complete checkout for instant license delivery on Windows PC.",
 								"Learn the full maintenance story on <a href=\"/warzone-cheats/\">undetected Warzone cheats</a> and <a href=\"/updates/\">Ricochet bypass</a>.",
-								"Ready to buy? Compare <a href=\"/pricing/\">Pricing</a> or continue to the <a href=\"/warzone-esp/\">ESP hack</a> landing for alternate search wording.",
+								"Ready to buy? Compare <a href=\"/pricing/\">Pricing</a> or continue to the <a href=\"/warzone-esp/\">ESP hack</a> landing for alternate search wording. Read the <a href=\"/blog/warzone-esp-wallhack-explained/\">ESP wallhack blog guide</a> for overlay details.",
 							],
 						},
 					],
@@ -575,7 +575,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Radar hack modules receive Ricochet maintenance rebuilds with the full Warzone Cheats package. Monthly and lifetime licenses include digital delivery — see <a href=\"/pricing/\">Pricing</a>.",
 								"Check <a href=\"/updates/\">Updates</a> after major Warzone patches before relying on previous radar configs.",
-								"New to the stack? Start at <a href=\"/features/\">Features</a> or <a href=\"/warzone-cheats/\">undetected status</a>.",
+								"New to the stack? Start at <a href=\"/features/\">Features</a>, the <a href=\"/blog/warzone-cheats-complete-guide-2026/\">warzone cheats complete guide</a>, or <a href=\"/warzone-cheats/\">undetected status</a>.",
 							],
 						},
 					],
@@ -613,7 +613,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Ricochet bypass in practice means timely maintenance. Read the undetected guide, <a href=\"/faq/\">FAQ</a>, and Updates log before every session.",
 								"Contact <a href=\"/support/\">Support</a> if activation fails immediately after a posted rebuild.",
-								"Buying for the first time? Compare <a href=\"/pricing/\">Pricing</a> and finish <a href=\"/setup/\">Setup</a> only after Updates shows a live build.",
+								"Buying for the first time? Compare <a href=\"/pricing/\">Pricing</a> and finish <a href=\"/setup/\">Setup</a> only after Updates shows a live build. Read the <a href=\"/blog/undetected-warzone-cheats-ricochet/\">undetected warzone cheats guide</a> first.",
 							],
 						},
 					],
@@ -733,7 +733,7 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 						{
 							h2: "After purchase — setup and updates",
 							paragraphs: [
-								"Follow Setup to activate ESP wallhack and Aimbot on Windows 10 or 11. When Warzone or Ricochet anti-cheat patches ship, check the <a href=\"/updates/\">Updates page</a> for maintenance rebuilds.",
+								"Follow Setup to activate ESP wallhack and Aimbot on Windows 10 or 11. When Warzone or Ricochet anti-cheat patches ship, check the <a href=\"/updates/\">Updates page</a> for maintenance rebuilds. See the <a href=\"/blog/warzone-cheats-complete-guide-2026/\">setup section in our complete guide</a>.",
 								"Contact <a href=\"/support/\">Support</a> with your order ID if delivery or activation fails within 24 hours of purchase.",
 								"Also read <a href=\"/warzone-cheats/\">undetected status</a> so you know what “download ready” means after a patch.",
 							],

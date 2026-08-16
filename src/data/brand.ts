@@ -40,12 +40,12 @@ export const brand = {
 	 * Edit in Brand Studio → Colors (tones are fully customizable).
 	 */
 	theme: {
-		accent: '#5311ee',
-		bg: '#0a0811',
-		soft: '#c3aef4',
-		deep: '#4907df',
-		hover: '#a07bf4',
-		panel: '#0a080c',
+		accent: '#560061',
+		bg: '#050506',
+		soft: '#d789e1',
+		deep: '#7b1588',
+		hover: '#cc51db',
+		panel: '#111213',
 	},
 
 	/**
@@ -71,46 +71,32 @@ export const brand = {
 	 * Aim ~50–60 chars titles, ~140–160 chars descriptions.
 	 */
 	seo: {
-		/** Titles ≤60 chars; descriptions ~140–160 (Google SERP display). */
-		/** Home = brand hub. Money URL /warzone-cheats/ owns the head term. */
 		homeTitle: 'Warzone Cheats | Official Windows PC Site',
-		homeDescription:
-			'Official Warzone Cheats site for Call of Duty: Warzone on Windows PC. Compare features, store plans, and live status — then buy ESP, soft aim, and radar in one license.',
+		homeDescription: 'Official Warzone Cheats site for Call of Duty: Warzone on Windows PC. Compare features, store plans, and live status — then buy ESP, soft aim, and radar in one',
 		featuresTitle: '{game} Features | {brand}',
-		featuresDescription:
-			'Everything in one {game} license for Windows PC — ESP, soft aim, radar, loot tools, and patch updates after {antiCheat}. See what is included.',
+		featuresDescription: 'Everything in one {game} license for Windows PC — ESP, soft aim, radar, loot tools, and patch updates after {antiCheat}. See what is included.',
 		storeTitle: '{game} Store | {brand}',
-		storeDescription:
-			'Monthly and lifetime {game} plans for Windows PC. Same ESP, aimbot, and radar features on both. Instant delivery after payment checkout.',
+		storeDescription: 'Monthly and lifetime {game} plans for Windows PC. Same ESP, aimbot, and radar features on both. Instant delivery after payment checkout.',
 		statusTitle: '{game} Status | {brand}',
-		statusDescription:
-			'Live undetected status for {brand} after {game} or {antiCheat} patches. Check here before you queue a match on Windows PC today.',
-		/** Money page meta — primary target for "warzone cheats". */
+		statusDescription: 'Live undetected status for {brand} after {game} or {antiCheat} patches. Check here before you queue a match on Windows PC today.',
 		previewTitle: 'Warzone Cheats | Undetected ESP & Aimbot',
-		previewDescription:
-			'Buy undetected warzone cheats for Call of Duty: Warzone on Windows PC. ESP, soft aim, radar, and Ricochet patch updates in one license with instant delivery.',
+		previewDescription: 'Buy undetected warzone cheats for Call of Duty: Warzone on Windows PC. ESP, soft aim, radar, and Ricochet patch updates in one license with instant delivery.',
 		setupTitle: '{game} Setup | {brand}',
-		setupDescription:
-			'Install and launch {brand} on Windows PC after checkout. Short setup steps so you can match faster. Follow each step in order before your first match.',
+		setupDescription: 'Install and launch {brand} on Windows PC after checkout. Short setup steps so you can match faster. Follow each step in order before your first match.',
 		supportTitle: '{game} Support | {brand}',
-		supportDescription:
-			'Get help with {brand} on Windows PC. Email {email} with your order ID for setup, delivery, or billing help after you buy.',
+		supportDescription: 'Get help with {brand} on Windows PC. Email {email} with your order ID for setup, delivery, or billing help after you buy.',
 		faqTitle: '{game} FAQ | {brand}',
-		faqDescription:
-			'Short answers about {brand} for Call of Duty: Warzone — delivery, setup, {antiCheat} updates, refunds, and Windows PC system notes before you buy.',
+		faqDescription: 'Short answers about {brand} for Call of Duty: Warzone — delivery, setup, {antiCheat} updates, refunds, and Windows PC system notes before you buy.',
 		reviewsTitle: '{brand} Reviews | Buyer Feedback',
-		reviewsDescription:
-			'Buyer reviews for {brand} — ESP, soft aim, radar, and patch updates for Call of Duty: Warzone on Windows PC. Real feedback from license holders.',
+		reviewsDescription: 'Buyer reviews for {brand} — ESP, soft aim, radar, and patch updates for Call of Duty: Warzone on Windows PC. Real feedback from license holders.',
 		blogTitle: '{game} Intel | {brand}',
-		blogDescription:
-			'Guides and notes for {game} — match tips, ESP, aimbot, loot routes, and {antiCheat} update coverage for Windows PC players who match.',
+		blogDescription: 'Guides and notes for {game} — match tips, ESP, aimbot, loot routes, and {antiCheat} update coverage for Windows PC players who match.',
 	},
 
 	/** On-page marketing copy (tokens allowed) */
 	copy: {
 		tagline: 'Undetected {primaryKeyword} — ESP, aimbot, and radar for PC',
-		summary:
-			'{brand} is an undetected {game} cheat package for Windows PC. Includes ESP, soft aim, and radar, with {antiCheat} maintenance after patches.',
+		summary: '{brand} is an undetected {game} cheat package for Windows PC. Includes ESP, soft aim, and radar, with {antiCheat} maintenance after patches.',
 		heroLede: 'Undetected ESP, soft aim, and radar for Call of Duty: Warzone on Windows PC.',
 		blogLabel: 'Warzone Intel',
 		ctaBuy: 'Get Access',
@@ -118,8 +104,7 @@ export const brand = {
 		featuresIntro: 'Everything included in one license for {game} on Windows PC.',
 		storeIntro: 'Pick a plan. Same features on both. Instant delivery after payment.',
 		statusIntro: 'Check here after a {game} or {antiCheat} patch before you match.',
-		previewIntro:
-			'{brand} for Call of Duty: Warzone — ESP wallhack, soft aim, 2D radar, and Ricochet rebuilds after patches.',
+		previewIntro: '{brand} for Call of Duty: Warzone — ESP wallhack, soft aim, 2D radar, and Ricochet rebuilds after patches.',
 		setupIntro: 'Install {brand} on Windows PC after you buy. Follow these short steps.',
 		supportIntro: 'Need help with {brand}? Email {email} with your order ID.',
 		faqIntro: 'Short answers about delivery, setup, updates, and refunds.',
@@ -142,7 +127,7 @@ export const brand = {
 	 */
 	sitemap: {
 		/** YYYY-MM-DD — Brand Studio can bump this on save to refresh crawl dates */
-		contentLastmod: '2026-08-13',
+		contentLastmod: '2026-08-16',
 		blogImageTitle: '{brand} blog',
 		blogImageCaption: 'Tips and updates for {primaryKeyword}',
 		reviewsImageTitle: '{brand} reviews',

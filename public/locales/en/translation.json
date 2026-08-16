@@ -156,11 +156,31 @@
     "linkSetupGuide": "Setup guide",
     "linkBlog": "Blog",
     "linkRefunds": "Refunds",
+    "guidesEyebrow": "Warzone cheats guides",
+    "guidesTitle": "In-depth warzone cheats blog posts",
+    "guidesLede": "Read before you buy — ESP, aimbot, Ricochet maintenance, and buyer checklists for Call of Duty: Warzone.",
+    "allGuides": "All blog guides",
+    "linkCompleteGuide": "Complete 2026 warzone cheats guide",
+    "linkBuyersGuide": "Warzone cheats buyers guide",
+    "linkUndetectedGuide": "Undetected warzone cheats & Ricochet",
+    "linkEspGuide": "Warzone ESP & wallhack explained",
+    "linkAimbotGuide": "Warzone aimbot settings guide",
+    "linkWhatsNewGuide": "Warzone cheats 2026 — what changed",
+    "guideCatCheats": "Cheats",
+    "guideCatBuyers": "Buyers",
+    "guideCatUndetected": "Undetected",
+    "guideCatEsp": "ESP",
+    "guideCatAimbot": "Aimbot",
+    "guideCatUpdates": "2026",
     "faqEyebrow": "FAQ",
     "faqTitle": "Before you buy",
     "faqLede": "Delivery, detection status, and what is included.",
     "allAnswers": "All answers",
     "openFullPage": "Open full page"
+  },
+  "pageBlog": {
+    "title": "Warzone cheats guides",
+    "lede": "In-depth blog posts on undetected warzone cheats, ESP, aimbot, Ricochet maintenance, and buying safely for Call of Duty: Warzone."
   },
   "deals": {
     "pricing": "Pricing",
@@ -211,7 +231,12 @@
     "allPosts": "All blog posts",
     "home": "Warzone Cheats home",
     "language": "Language",
-    "label": "Warzone Intel"
+    "label": "Warzone Intel",
+    "cheatGuidesTitle": "Warzone cheats guides — read before you buy",
+    "cheatGuidesLede": "Deep dives on undetected warzone cheats, ESP wallhack, soft aim, Ricochet rebuilds, and buyer checklists. Pair these guides with our product pages when you are ready to compare.",
+    "cheatGuidesPillar": "Warzone cheats pillar",
+    "cheatGuidesPricing": "Pricing plans",
+    "cheatGuidesStatus": "Live status"
   },
   "gallery": {
     "eyebrow": "warzone cheats",

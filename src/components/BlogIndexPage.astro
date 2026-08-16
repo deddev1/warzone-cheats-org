@@ -10,6 +10,7 @@ import {
 	getFeaturedPosts,
 	getBlogIndexHreflangAlternates,
 } from '../data/blog/helpers';
+import { getCheatBlogLinks } from '../data/blog/internal-links';
 import { blogLabel, siteConfig } from '../data/site';
 import { brandSeo, seoPageTitle } from '../data/site-core';
 import { seoDescription } from '../data/brand';
@@ -25,6 +26,7 @@ const ui = blogUi[locale];
 const t = getT(locale);
 const posts = getAllPostsForLocale(locale);
 const featured = getFeaturedPosts(locale, 3);
+const cheatGuides = getCheatBlogLinks(locale);
 const canonicalPath = getBlogBasePath(locale);
 const canonicalURL = absoluteBlogUrl(locale);
 const hreflangAlternates = getBlogIndexHreflangAlternates(locale);
@@ -73,6 +75,34 @@ const articleListSchema = {
 			<h1>{ui.blogH1}</h1>
 			<p class="blog__intro">{ui.blogIntro}</p>
 		</header>
+
+		{
+			cheatGuides.length > 0 && (
+				<section class="blog__cheat-hub" aria-labelledby="blog-cheat-guides-title">
+					<header class="blog__cheat-hub-head">
+						<h2 id="blog-cheat-guides-title">{t('blog.cheatGuidesTitle')}</h2>
+						<p>{t('blog.cheatGuidesLede')}</p>
+					</header>
+					<ul class="blog__cheat-hub-list">
+						{cheatGuides.map((item) => (
+							<li>
+								<a href={item.href}>
+									<span class="blog__cat">{item.category}</span>
+									<span>{item.title}</span>
+								</a>
+							</li>
+						))}
+					</ul>
+					<p class="blog__cheat-hub-links">
+						<a href="/warzone-cheats/">{t('blog.cheatGuidesPillar')}</a>
+						·
+						<a href="/pricing/">{t('blog.cheatGuidesPricing')}</a>
+						·
+						<a href="/updates/">{t('blog.cheatGuidesStatus')}</a>
+					</p>
+				</section>
+			)
+		}
 
 		{
 			featured.length > 0 && (
@@ -161,6 +191,63 @@ const articleListSchema = {
 		color: rgba(255, 255, 255, 0.72);
 		font-size: 1.05rem;
 	}
+	.blog__cheat-hub {
+		margin-bottom: 2.5rem;
+		padding: 1.25rem 1.35rem;
+		border: 1px solid var(--line);
+		border-radius: var(--radius-md, 0.75rem);
+		background: var(--bg-panel);
+	}
+	.blog__cheat-hub-head h2 {
+		margin: 0 0 0.5rem;
+		font-size: 1.25rem;
+	}
+	.blog__cheat-hub-head p {
+		margin: 0 0 1rem;
+		color: rgba(255, 255, 255, 0.68);
+		font-size: 0.92rem;
+		max-width: 42rem;
+	}
+	.blog__cheat-hub-list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 0.45rem;
+	}
+	.blog__cheat-hub-list a {
+		display: grid;
+		grid-template-columns: auto 1fr;
+		gap: 0.65rem;
+		align-items: center;
+		padding: 0.75rem 0.9rem;
+		border: 1px solid var(--line-soft);
+		border-radius: var(--radius-md, 0.75rem);
+		background: var(--bg-elevated);
+		text-decoration: none;
+		color: inherit;
+		font-weight: 600;
+		font-size: 0.9rem;
+		transition: border-color 0.15s ease, color 0.15s ease;
+	}
+	.blog__cheat-hub-list a:hover {
+		border-color: color-mix(in srgb, var(--magenta) 35%, var(--line));
+		color: var(--magenta-soft);
+	}
+	.blog__cheat-hub-links {
+		margin: 1rem 0 0;
+		font-size: 0.85rem;
+		color: rgba(255, 255, 255, 0.55);
+	}
+	.blog__cheat-hub-links a {
+		color: var(--magenta-soft);
+		text-decoration: none;
+		font-weight: 600;
+	}
+	.blog__cheat-hub-links a:hover {
+		text-decoration: underline;
+	}
 	.blog__featured {
 		display: grid;
 		gap: 1.25rem;
@@ -240,6 +327,10 @@ const articleListSchema = {
 	}
 	@media (max-width: 760px) {
 		.blog__feature-card {
+			grid-template-columns: 1fr;
+		}
+
+		.blog__cheat-hub-list {
 			grid-template-columns: 1fr;
 		}
 
