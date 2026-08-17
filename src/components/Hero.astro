@@ -32,21 +32,19 @@ const monthly = productInfo.plans.find((p) => p.id === 'monthly') ?? productInfo
 		--hero-pad-y: clamp(1rem, 2vw, 1.75rem);
 		--hero-stack: clamp(0.5rem, 1.1vw, 0.75rem);
 		/*
-		 * Bar is a bit shorter than the native 1024/409 (~2.5:1) art.
-		 * Image stays undistorted via object-fit: cover (crops edges, no squash).
+		 * Wide cinematic bar — shorter than native 3:2 art.
+		 * object-fit: cover crops bottom/sides; heads stay via object-position.
 		 */
-		--hero-ratio: 3 / 2;
 		position: relative;
 		isolation: isolate;
 		display: grid;
 		align-items: center;
 		overflow: hidden;
 		background: #050506;
-		aspect-ratio: var(--hero-ratio);
 		width: 100%;
-		height: auto;
-		min-height: 0;
-		max-height: none;
+		height: clamp(360px, 38vw, 480px);
+		min-height: 360px;
+		max-height: 480px;
 	}
 
 	.hero__media {
@@ -63,10 +61,10 @@ const monthly = productInfo.plans.find((p) => p.id === 'monthly') ?? productInfo
 	}
 
 	.hero__media img {
-		/* Cover = keep proportions; crop top/bottom of the shorter bar */
+		/* Cover = crop excess. Anchor high for heads, tilt down slightly for lower body. */
 		object-fit: cover;
-		/* Prefer a bit higher in the frame so the USEC head stays in view */
-		object-position: right 28%;
+		object-position: 58% 22%;
+		filter: brightness(0.58);
 		image-rendering: auto;
 		transform: translateZ(0);
 		animation: hero-in 0.9s ease-out both;
@@ -79,10 +77,10 @@ const monthly = productInfo.plans.find((p) => p.id === 'monthly') ?? productInfo
 		pointer-events: none;
 		background: linear-gradient(
 			90deg,
-			rgba(5, 5, 6, 0.78) 0%,
-			rgba(5, 5, 6, 0.52) 34%,
-			rgba(5, 5, 6, 0.18) 58%,
-			transparent 74%
+			rgba(5, 5, 6, 0.88) 0%,
+			rgba(5, 5, 6, 0.68) 34%,
+			rgba(5, 5, 6, 0.42) 58%,
+			rgba(5, 5, 6, 0.22) 74%
 		);
 	}
 
@@ -287,37 +285,42 @@ const monthly = productInfo.plans.find((p) => p.id === 'monthly') ?? productInfo
 	 */
 	@media (max-width: 900px) {
 		.hero {
-			aspect-ratio: auto;
+			height: auto;
 			min-height: 0;
 			max-height: none;
-			height: auto;
 			display: block;
 			overflow: hidden;
 		}
 
+		.hero__media {
+			position: absolute;
+			inset: 0;
+		}
+
 		.hero__media img {
 			object-fit: cover;
-			object-position: 78% 10%;
+			/* Characters sit center-right; keep heads in frame, show a bit more below */
+			object-position: 62% 18%;
 		}
 
 		.hero__veil {
 			background: linear-gradient(
 				180deg,
-				rgba(5, 5, 6, 0.28) 0%,
-				rgba(5, 5, 6, 0.52) 42%,
-				rgba(5, 5, 6, 0.9) 78%,
-				rgba(5, 5, 6, 0.96) 100%
+				rgba(5, 5, 6, 0.48) 0%,
+				rgba(5, 5, 6, 0.66) 42%,
+				rgba(5, 5, 6, 0.94) 78%,
+				rgba(5, 5, 6, 0.98) 100%
 			);
 		}
 
 		.hero__content {
 			transform: none;
 			width: 100%;
-			min-height: clamp(18.5rem, 56svh, 28rem);
+			min-height: clamp(19rem, 52svh, 26rem);
 			display: flex;
 			align-items: flex-end;
-			padding-block: 1.35rem 1.2rem;
-			padding-bottom: max(1.2rem, env(safe-area-inset-bottom, 0px));
+			padding-block: 1.25rem 1.1rem;
+			padding-bottom: max(1.1rem, env(safe-area-inset-bottom, 0px));
 			box-sizing: border-box;
 		}
 
@@ -372,8 +375,8 @@ const monthly = productInfo.plans.find((p) => p.id === 'monthly') ?? productInfo
 
 	@media (max-width: 480px) {
 		.hero__content {
-			min-height: clamp(17.5rem, 60svh, 26rem);
-			padding-block: 1.2rem 1.1rem;
+			min-height: clamp(18rem, 54svh, 23rem);
+			padding-block: 1.1rem 1rem;
 		}
 
 		.hero__brand {
@@ -396,7 +399,7 @@ const monthly = productInfo.plans.find((p) => p.id === 'monthly') ?? productInfo
 
 	@media (max-width: 360px) {
 		.hero__content {
-			min-height: clamp(16.5rem, 64svh, 24rem);
+			min-height: clamp(17rem, 56svh, 21.5rem);
 		}
 
 		.hero__brand {
@@ -411,7 +414,7 @@ const monthly = productInfo.plans.find((p) => p.id === 'monthly') ?? productInfo
 
 	@media (max-width: 900px) and (orientation: landscape) and (max-height: 480px) {
 		.hero__content {
-			min-height: min(70svh, 16.5rem);
+			min-height: min(72svh, 18rem);
 			padding-block: 0.85rem 0.8rem;
 		}
 
