@@ -126,19 +126,7 @@
     "aboutFeatEsp": "ESP wallhack — see players and loot through walls",
     "aboutFeatAim": "Soft aim — smooth aimbot with hotkeys",
     "aboutFeatRadar": "2D radar — spot threats outside your view",
-    "aboutFeatUpdates": "Patch updates when Warzone or Ricochet changes",
-    "aboutRequirements": "You need Windows 10 or 11 and Call of Duty: Warzone installed.",
-    "aboutExploreTitle": "Learn more before you buy",
-    "aboutLinkOverview": "Overview",
-    "aboutLinkOverviewHint": "Full Warzone cheats guide",
-    "aboutLinkEsp": "ESP",
-    "aboutLinkEspHint": "Wallhack and player boxes",
-    "aboutLinkAimbot": "Aimbot",
-    "aboutLinkAimbotHint": "Soft aim settings",
-    "aboutLinkStatus": "Status",
-    "aboutLinkStatusHint": "Check before you play",
-    "aboutLinkPricing": "Pricing",
-    "aboutLinkPricingHint": "Monthly and lifetime plans"
+    "aboutFeatUpdates": "Patch updates when Warzone or Ricochet changes"
   },
   "homeSeo": {
     "eyebrow": "Quick links",

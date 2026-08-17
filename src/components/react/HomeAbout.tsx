@@ -5,14 +5,6 @@ type Props = {
 	locale: string;
 };
 
-const exploreLinks = [
-	{ href: '/warzone-cheats/', labelKey: 'home.aboutLinkOverview', hintKey: 'home.aboutLinkOverviewHint' },
-	{ href: '/warzone-esp/', labelKey: 'home.aboutLinkEsp', hintKey: 'home.aboutLinkEspHint' },
-	{ href: '/warzone-aimbot/', labelKey: 'home.aboutLinkAimbot', hintKey: 'home.aboutLinkAimbotHint' },
-	{ href: '/updates/', labelKey: 'home.aboutLinkStatus', hintKey: 'home.aboutLinkStatusHint' },
-	{ href: '/pricing/', labelKey: 'home.aboutLinkPricing', hintKey: 'home.aboutLinkPricingHint' },
-] as const;
-
 const featureKeys = [
 	'home.aboutFeatEsp',
 	'home.aboutFeatAim',
@@ -40,23 +32,6 @@ function HomeAboutInner() {
 						</li>
 					))}
 				</ul>
-
-				<p className="home-about__req">{t('home.aboutRequirements')}</p>
-
-				<nav className="home-about__explore" aria-label={t('home.aboutExploreTitle')}>
-					<h3 className="home-about__explore-title">{t('home.aboutExploreTitle')}</h3>
-					<ul className="home-about__links">
-						{exploreLinks.map((link) => (
-							<li key={link.href}>
-								<a href={link.href}>
-									<span className="home-about__link-label">{t(link.labelKey)}</span>
-									<span className="home-about__link-hint">{t(link.hintKey)}</span>
-									<span className="home-about__link-arrow" aria-hidden="true" />
-								</a>
-							</li>
-						))}
-					</ul>
-				</nav>
 			</div>
 		</section>
 	);
