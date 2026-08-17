@@ -35,3 +35,19 @@ export const OFFICIAL_WARZONE_RESOURCES: ExternalResource[] = [
 
 /** Subset for compact footers and blog sidebars. */
 export const CORE_OFFICIAL_RESOURCES = OFFICIAL_WARZONE_RESOURCES.slice(0, 3);
+
+/** External URLs for secondary CTAs and citations. */
+export const EXT_URLS = {
+	warzone: 'https://www.callofduty.com/warzone',
+	status: 'https://support.activision.com/',
+	ricochet: 'https://www.ricochet.com/',
+	patchBlog: 'https://www.callofduty.com/blog/tag/call-of-duty-warzone',
+} as const;
+
+/** Inline HTML citations (open in new tab) for page copy. */
+export const EXT_CITATIONS = {
+	warzone: `<a href="${EXT_URLS.warzone}" target="_blank" rel="noopener noreferrer">Call of Duty: Warzone</a>`,
+	status: `<a href="${EXT_URLS.status}" target="_blank" rel="noopener noreferrer">Call of Duty Support</a>`,
+	ricochet: `<a href="${EXT_URLS.ricochet}" target="_blank" rel="noopener noreferrer">Ricochet Anti-Cheat</a>`,
+	patchBlog: `<a href="${EXT_URLS.patchBlog}" target="_blank" rel="noopener noreferrer">official Warzone patch notes</a>`,
+} as const;

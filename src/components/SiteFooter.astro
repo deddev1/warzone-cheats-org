@@ -4,6 +4,7 @@ import { getLocalizedPath } from '../data/i18n/routing';
 import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
 import { getBlogBasePath } from '../data/blog/helpers';
 import { getCheatBlogLinks } from '../data/blog/internal-links';
+import { CORE_OFFICIAL_RESOURCES } from '../data/external-resources';
 import { siteConfig } from '../data/site';
 
 interface Props {
@@ -36,6 +37,12 @@ const guides =
 	locale === defaultLocale
 		? getCheatBlogLinks(locale).slice(0, 6).map(({ href, title }) => ({ href, title }))
 		: [];
+
+/** Authoritative Activision links — site-wide crawl paths for E-E-A-T. */
+const official =
+	locale === defaultLocale
+		? CORE_OFFICIAL_RESOURCES.map(({ href, title }) => ({ href, title }))
+		: [];
 ---
 
 <SiteFooterApp
@@ -47,6 +54,7 @@ const guides =
 	explore={explore}
 	help={help}
 	guides={guides}
+	official={official}
 />
 
 <style is:global>
@@ -67,6 +75,14 @@ const guides =
 
 	.site-footer__grid--no-guides {
 		grid-template-columns: 1.5fr 1fr 1fr;
+	}
+
+	.site-footer__grid--with-official {
+		grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr;
+	}
+
+	.site-footer__grid--with-official.site-footer__grid--no-guides {
+		grid-template-columns: 1.5fr 1fr 1fr 1fr;
 	}
 
 	.site-footer__brand {

@@ -124,11 +124,8 @@ const ctaSecondaryHref = ctaSecondaryPath
 		? siteConfig.checkoutUrl
 		: getLocalizedPath('features', locale);
 
-const showExternalResources =
-	locale === defaultLocale &&
-	['updates', 'ricochet', 'undetected', 'setup', 'faq', 'support', 'hacks', 'cheats-2026'].includes(
-		pageId,
-	);
+const LEGAL_PAGE_IDS = new Set<PageId>(['privacy', 'refund', 'terms']);
+const showExternalResources = locale === defaultLocale && pageId !== 'home' && !LEGAL_PAGE_IDS.has(pageId);
 
 const monthly = productInfo.plans.find((p) => p.id === 'monthly') ?? productInfo.plans[0];
 const lifetime = productInfo.plans.find((p) => p.id === 'lifetime') ?? productInfo.plans[1];

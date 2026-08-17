@@ -1,6 +1,7 @@
 import type { PageId } from './content.generated';
 import { fillBrandTokens, seoDescription } from '../brand';
 import { brandCopy, brandSeo, seoPageTitle } from '../site-core';
+import { EXT_CITATIONS, EXT_URLS } from '../external-resources';
 
 export type SimpleSection = {
 	h2: string;
@@ -43,15 +44,15 @@ export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
 		h1: 'Features',
 		intro: brandCopy.featuresIntro,
 		ctaPrimary: brandCopy.ctaBuy,
-		ctaSecondary: 'View store',
-		ctaSecondaryHref: '/pricing/',
+		ctaSecondary: 'Official Warzone site',
+		ctaSecondaryHref: EXT_URLS.warzone,
 		galleryTitle: 'In-game look',
 		sections: [
 			{
 				h2: 'ESP & wallhack',
 				paragraphs: [
 					'See enemy operators, squads, and UAV pings, and loot through walls with distance readouts.',
-					'Use filters so the overlay stays clear in loadout, Rebirth Island, and Resurgence chaos.',
+					`Map and loot systems evolve with ${EXT_CITATIONS.warzone} season updates — toggleable ESP categories keep overlays useful when POIs rotate.`,
 				],
 				list: ['Player boxes & distance', 'Loot and gulag markers', 'Squad and threat filters'],
 			},
@@ -59,7 +60,7 @@ export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
 				h2: 'Aimbot & soft aim',
 				paragraphs: [
 					'Aim help you can tune to feel natural.',
-					'Set FOV, smoothness, and bone priority per weapon before you match.',
+					`Weapon balance shifts after ${EXT_CITATIONS.patchBlog} — retune FOV and smoothness after major combat patches.`,
 				],
 				list: ['Smooth aim strength', 'FOV and bone priority', 'Hotkeys mid-match'],
 			},
@@ -74,8 +75,8 @@ export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
 			{
 				h2: 'Updates & support',
 				paragraphs: [
-					'We rebuild after big {game} or {antiCheat} patches.',
-					'Check Status before you play after a patch day.',
+					`We rebuild after big {game} or ${EXT_CITATIONS.ricochet} patches.`,
+					`Check Status before you play after a patch day, and cross-check ${EXT_CITATIONS.status} if Activision services look unstable.`,
 				],
 				list: ['Status on the Status page', 'Setup guide included', 'Email support with your order ID'],
 			},
@@ -87,8 +88,8 @@ export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
 		h1: 'Store',
 		intro: brandCopy.storeIntro,
 		ctaPrimary: brandCopy.ctaBuy,
-		ctaSecondary: 'Setup guide',
-		ctaSecondaryHref: '/setup/',
+		ctaSecondary: 'Official patch notes',
+		ctaSecondaryHref: EXT_URLS.patchBlog,
 		galleryTitle: 'In-game look',
 		sections: [
 			{
@@ -103,13 +104,15 @@ export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
 				h2: 'Plans',
 				paragraphs: [
 					'Pick monthly to try first, or lifetime for one payment.',
-					'Both plans unlock the same features after checkout.',
+					`Season calendars and client updates come from ${EXT_CITATIONS.warzone}. Active licenses receive rebuild access when we publish maintenance on <a href="/updates/">Updates</a>.`,
 				],
 				list: ['Monthly — 30 days', 'Lifetime — one-time', 'Instant license by email'],
 			},
 			{
 				h2: 'Before you buy',
-				paragraphs: ['Read the refund policy if you need it. Contact support with your order ID for help.'],
+				paragraphs: [
+					`Read the refund policy if you need it. Cross-check ${EXT_CITATIONS.status} on patch mornings before you assume a download failure.`,
+				],
 				list: [
 					'<a href="/refund-policy/">Refund policy</a>',
 					'<a href="/faq/">FAQ</a>',
@@ -124,15 +127,15 @@ export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
 		h1: 'Status',
 		intro: brandCopy.statusIntro,
 		ctaPrimary: brandCopy.ctaBuy,
-		ctaSecondary: 'Warzone Cheats overview',
-		ctaSecondaryHref: '/warzone-cheats/',
+		ctaSecondary: 'Official Warzone support',
+		ctaSecondaryHref: EXT_URLS.status,
 		galleryTitle: 'In-game look',
 		sections: [
 			{
 				h2: 'Current status',
 				paragraphs: [
 					'As of 13 Aug 2026 the package is online for Call of Duty: Warzone on Windows PC. We post a new note here when a game or Ricochet patch needs a rebuild.',
-					'If Status is green, you can match. If we are rebuilding, wait for the next note.',
+					`Use ${EXT_CITATIONS.status} for Activision platform health and this page for Warzone Cheats build status — both matter on big update days.`,
 				],
 				list: [
 					'Check this page before every match after a patch',
@@ -143,13 +146,16 @@ export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
 			{
 				h2: 'After a patch',
 				paragraphs: [
-					'Wait for our rebuild note, then launch. Do not play on an old build after a big update.',
+					`Follow season notes from ${EXT_CITATIONS.warzone}, then confirm our rebuild is live before you queue.`,
+					'Do not run yesterday’s build into today’s anti-cheat and call it bad luck.',
 				],
 				list: ['Read the latest status note', 'Follow setup if something fails', 'Email support with your order ID'],
 			},
 			{
 				h2: 'Important',
-				paragraphs: ['No cheat is 100% safe forever. Stay updated and use safe settings.'],
+				paragraphs: [
+					`Anti-cheat background: ${EXT_CITATIONS.ricochet}. No cheat is 100% safe forever — stay updated and use safe settings.`,
+				],
 				list: ['Status first, then play', '<a href="/support/">Support</a> for license help'],
 			},
 		],
@@ -160,14 +166,14 @@ export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
 		h1: 'Warzone Cheats',
 		intro: brandCopy.previewIntro,
 		ctaPrimary: brandCopy.ctaBuy,
-		ctaSecondary: 'View features',
-		ctaSecondaryHref: '/features/',
+		ctaSecondary: 'Official patch notes',
+		ctaSecondaryHref: EXT_URLS.patchBlog,
 		galleryTitle: 'In-match look',
 		sections: [
 			{
 				h2: 'What you get',
 				paragraphs: [
-					'One license for Call of Duty: Warzone on Windows PC — built for BR and Resurgence-style modes.',
+					`One license for ${EXT_CITATIONS.warzone} on Windows PC — built for BR and Resurgence-style modes.`,
 				],
 				list: [
 					'ESP / wallhack with distance',
@@ -180,6 +186,7 @@ export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
 				h2: 'Built for Warzone matches',
 				paragraphs: [
 					'Read enemy operators and squads before you push, mark loot worth the risk, and stay aware near gulags. Tune soft aim per weapon class for loadout, Rebirth Island, and long-range maps.',
+					`Official game updates come from Activision; cross-check ${EXT_CITATIONS.status} before patch-day queues.`,
 				],
 				list: [
 					'<a href="/warzone-esp/">ESP guide</a>',
@@ -190,7 +197,9 @@ export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
 			},
 			{
 				h2: 'How to start',
-				paragraphs: ['Buy a plan, get your license by email, then follow setup. Check Status after every major patch.'],
+				paragraphs: [
+					`See ${EXT_CITATIONS.ricochet} for anti-cheat background, then buy a plan, get your license by email, and follow setup.`,
+				],
 				list: [
 					'<a href="/pricing/">Open store</a>',
 					'<a href="/setup/">Setup guide</a>',
@@ -206,18 +215,24 @@ export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
 		h1: 'ESP',
 		intro: 'See players and loot through walls during Warzone matches. Part of the same {brand} license.',
 		ctaPrimary: brandCopy.ctaBuy,
-		ctaSecondary: 'Warzone Cheats overview',
-		ctaSecondaryHref: '/warzone-cheats/',
+		ctaSecondary: 'Official Warzone site',
+		ctaSecondaryHref: EXT_URLS.warzone,
 		galleryTitle: 'ESP in match',
 		sections: [
 			{
 				h2: 'What ESP shows',
-				paragraphs: ['Boxes, distance, and filters for enemy operators, squads, and UAV pings, and loot.'],
+				paragraphs: [
+					'Boxes, distance, and filters for enemy operators, squads, and UAV pings, and loot.',
+					`Warzone’s live seasons and map updates are published by Activision (${EXT_CITATIONS.warzone}). When POIs or loot rules shift, ESP categories stay useful because they track players and contracts — not a single static landmark.`,
+				],
 				list: ['Player ESP', 'Loot markers', 'Squad and threat filters'],
 			},
 			{
 				h2: 'When to use it',
-				paragraphs: ['Clear loadout, Rebirth Island, and resurgences without flooding the screen.'],
+				paragraphs: [
+					'Clear loadout, Rebirth Island, and resurgences without flooding the screen.',
+					`Read ${EXT_CITATIONS.ricochet} for how anti-cheat updates ship, then cross-check our <a href="/updates/">maintenance guide</a> after major patches.`,
+				],
 				list: ['Tune opacity', 'Filter noise', 'Pair with radar'],
 			},
 			{
@@ -238,18 +253,24 @@ export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
 		h1: 'Aimbot',
 		intro: 'Soft aim and aim assist you can tune for Warzone. Included in the same {brand} license.',
 		ctaPrimary: brandCopy.ctaBuy,
-		ctaSecondary: 'Warzone Cheats overview',
-		ctaSecondaryHref: '/warzone-cheats/',
+		ctaSecondary: 'Official patch notes',
+		ctaSecondaryHref: EXT_URLS.patchBlog,
 		galleryTitle: 'Aimbot view',
 		sections: [
 			{
 				h2: 'Controls',
-				paragraphs: ['Set FOV, smoothness, and bone priority before you match.'],
+				paragraphs: [
+					'Set FOV, smoothness, and bone priority before you match.',
+					`Weapon balance and season rules change via ${EXT_CITATIONS.warzone}. Revisit Aimbot FOV and smoothness after major combat patches so assist still matches the live TTK windows.`,
+				],
 				list: ['Soft aim strength', 'Bone priority', 'Hotkeys mid-match'],
 			},
 			{
 				h2: 'Play styles',
-				paragraphs: ['Keep settings subtle for longer sessions. Raise strength only when you accept more risk.'],
+				paragraphs: [
+					'Keep settings subtle for longer sessions. Raise strength only when you accept more risk.',
+					`Balance patches from ${EXT_CITATIONS.patchBlog} can change ideal FOV — retune after major weapon updates.`,
+				],
 				list: ['Legit soft aim', 'Per-weapon profiles', 'Works with ESP'],
 			},
 			{
@@ -270,13 +291,16 @@ export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
 		h1: 'Radar',
 		intro: 'A simple 2D radar for threats outside your view. Included in the same {brand} license.',
 		ctaPrimary: brandCopy.ctaBuy,
-		ctaSecondary: 'Warzone Cheats overview',
-		ctaSecondaryHref: '/warzone-cheats/',
+		ctaSecondary: 'Official Warzone site',
+		ctaSecondaryHref: EXT_URLS.warzone,
 		galleryTitle: 'Radar overlay',
 		sections: [
 			{
 				h2: 'What it shows',
-				paragraphs: ['Nearby enemy cues with adjustable range for BR and Resurgence.'],
+				paragraphs: [
+					'Nearby enemy cues with adjustable range for BR and Resurgence.',
+					`Mode rules and seasonal changes come from ${EXT_CITATIONS.warzone}. Radar range remains configurable when map scale or mobility meta shifts.`,
+				],
 				list: ['Flank awareness', 'Gulag awareness', 'Adjustable range'],
 			},
 			{
@@ -296,13 +320,16 @@ export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
 		h1: 'Setup',
 		intro: brandCopy.setupIntro,
 		ctaPrimary: brandCopy.ctaBuy,
-		ctaSecondary: 'Check status',
-		ctaSecondaryHref: '/updates/',
+		ctaSecondary: 'Official Warzone site',
+		ctaSecondaryHref: EXT_URLS.warzone,
 		galleryTitle: 'In-game look',
 		sections: [
 			{
 				h2: 'Before you install',
-				paragraphs: ['Buy a plan first. You get a license by email.'],
+				paragraphs: [
+					'Buy a plan first. You get a license by email.',
+					`Also glance at ${EXT_CITATIONS.status} if Activision services look unstable on patch day — a platform outage is not a license fault.`,
+				],
 				list: ['Windows 10 / 11 PC', 'Disable conflicting overlays', 'Have your order email ready'],
 			},
 			{
@@ -312,7 +339,9 @@ export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
 			},
 			{
 				h2: 'If something fails',
-				paragraphs: ['Check Status after a patch. Email {email} with your order ID.'],
+				paragraphs: [
+					`Check Status after a patch. Confirm ${EXT_CITATIONS.warzone} client health if matchmaking fails. Email {email} with your order ID.`,
+				],
 				list: ['<a href="/updates/">Status page</a>', '<a href="/support/">Support</a>', '<a href="/faq/">FAQ</a>'],
 			},
 		],
@@ -323,8 +352,8 @@ export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
 		h1: 'Support',
 		intro: brandCopy.supportIntro,
 		ctaPrimary: brandCopy.ctaBuy,
-		ctaSecondary: 'FAQ',
-		ctaSecondaryHref: '/faq/',
+		ctaSecondary: 'Official game support',
+		ctaSecondaryHref: EXT_URLS.status,
 		galleryTitle: 'In-game look',
 		sections: [
 			{
@@ -334,7 +363,9 @@ export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
 			},
 			{
 				h2: 'Faster answers',
-				paragraphs: ['Check FAQ and Status before you write. Many setup questions are already covered.'],
+				paragraphs: [
+					`Check FAQ and Status before you write. Many setup questions are already covered. For Activision account or launcher issues, use ${EXT_CITATIONS.status}.`,
+				],
 				list: ['<a href="/faq/">FAQ</a>', '<a href="/updates/">Status</a>', '<a href="/setup/">Setup</a>'],
 			},
 		],
@@ -345,8 +376,8 @@ export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
 		h1: 'FAQ',
 		intro: brandCopy.faqIntro,
 		ctaPrimary: brandCopy.ctaBuy,
-		ctaSecondary: 'Support',
-		ctaSecondaryHref: '/support/',
+		ctaSecondary: 'Official game support',
+		ctaSecondaryHref: EXT_URLS.status,
 		galleryTitle: 'In-game look',
 		sections: [
 			{
@@ -356,7 +387,10 @@ export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
 			},
 			{
 				h2: 'Setup & updates',
-				paragraphs: ['Follow Setup after you buy. Check Status after big {game} or {antiCheat} patches.'],
+				paragraphs: [
+					`Follow Setup after you buy. Check Status after big {game} or ${EXT_CITATIONS.ricochet} patches.`,
+					`Warzone itself is published by Activision (${EXT_CITATIONS.warzone}). Cheats are third-party tools and may violate Activision rules — use is at your own risk.`,
+				],
 				list: ['<a href="/setup/">Setup guide</a>', '<a href="/updates/">Status</a>'],
 			},
 			{
