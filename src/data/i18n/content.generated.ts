@@ -514,8 +514,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					imageAlt: "Warzone wallhack visibility through walls in Call of Duty: Warzone",
 					galleryTitle: "Warzone wallhack ESP gallery",
 					ctaPrimary: "Buy Warzone Cheats",
-					ctaSecondary: "Warzone ESP page",
-					ctaSecondaryHref: "/warzone-esp/",
+					ctaSecondary: "Official Warzone site",
+					ctaSecondaryHref: "https://www.callofduty.com/warzone",
 					sections: [
 						{
 							h2: "Wallhack ESP vs raw aim tools",
@@ -712,8 +712,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					imageAlt: "Warzone Cheats download and install delivery flow",
 					galleryTitle: "Warzone cheat download visuals",
 					ctaPrimary: "Buy Warzone Cheats",
-					ctaSecondary: "Setup guide",
-					ctaSecondaryHref: "/setup/",
+					ctaSecondary: "Official game support",
+					ctaSecondaryHref: "https://support.activision.com/",
 					sections: [
 						{
 							h2: "How Warzone cheat download delivery works",
@@ -750,8 +750,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					imageAlt: "Warzone Cheats in-game menu controls",
 					galleryTitle: "Warzone mod menu gallery",
 					ctaPrimary: "Buy Warzone Cheats",
-					ctaSecondary: "Full feature list",
-					ctaSecondaryHref: "/features/",
+					ctaSecondary: "Official patch notes",
+					ctaSecondaryHref: "https://www.callofduty.com/blog/tag/call-of-duty-warzone",
 					sections: [
 						{
 							h2: "What a Warzone mod menu controls",
@@ -788,8 +788,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					imageAlt: "Warzone soft aim FOV and smoothness settings",
 					galleryTitle: "Warzone soft aim gallery",
 					ctaPrimary: "Buy Warzone Cheats",
-					ctaSecondary: "Aimbot controls",
-					ctaSecondaryHref: "/warzone-aimbot/",
+					ctaSecondary: "Official patch notes",
+					ctaSecondaryHref: "https://www.callofduty.com/blog/tag/call-of-duty-warzone",
 					sections: [
 						{
 							h2: "What Warzone soft aim means",
@@ -826,8 +826,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					imageAlt: "Warzone Cheats overview for Call of Duty: Warzone on PC",
 					galleryTitle: "Best Warzone cheats gallery",
 					ctaPrimary: "Buy Warzone Cheats",
-					ctaSecondary: "Compare pricing",
-					ctaSecondaryHref: "/pricing/",
+					ctaSecondary: "Official Warzone support",
+					ctaSecondaryHref: "https://support.activision.com/",
 					sections: [
 						{
 							h2: "What makes the Warzone cheats in 2026",
@@ -864,8 +864,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					imageAlt: "Warzone aimbot hack controls and bone priority",
 					galleryTitle: "Warzone aimbot hack gallery",
 					ctaPrimary: "Buy Warzone Cheats",
-					ctaSecondary: "Aimbot settings",
-					ctaSecondaryHref: "/warzone-aimbot/",
+					ctaSecondary: "Official patch notes",
+					ctaSecondaryHref: "https://www.callofduty.com/blog/tag/call-of-duty-warzone",
 					sections: [
 						{
 							h2: "Warzone aimbot hack vs visibility tools",
@@ -902,8 +902,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					imageAlt: "Warzone ESP hack boxes and loot markers",
 					galleryTitle: "Warzone ESP hack gallery",
 					ctaPrimary: "Buy Warzone Cheats",
-					ctaSecondary: "ESP controls",
-					ctaSecondaryHref: "/warzone-esp/",
+					ctaSecondary: "Official Warzone site",
+					ctaSecondaryHref: "https://www.callofduty.com/warzone",
 					sections: [
 						{
 							h2: "What a Warzone ESP hack shows",
@@ -940,8 +940,8 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 					imageAlt: "Warzone Cheats license features overview",
 					galleryTitle: "Warzone unlock all guide visuals",
 					ctaPrimary: "Buy Warzone Cheats",
-					ctaSecondary: "See features",
-					ctaSecondaryHref: "/features/",
+					ctaSecondary: "Official Warzone site",
+					ctaSecondaryHref: "https://www.callofduty.com/warzone",
 					sections: [
 						{
 							h2: "What Warzone unlock all usually means",

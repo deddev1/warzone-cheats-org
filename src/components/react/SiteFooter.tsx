@@ -3,6 +3,7 @@ import I18nProvider from './I18nProvider';
 
 type FooterLink = { labelKey: string; href: string };
 type GuideLink = { href: string; title: string };
+type OfficialLink = { href: string; title: string };
 
 type Props = {
 	locale: string;
@@ -12,9 +13,18 @@ type Props = {
 	explore: FooterLink[];
 	help: FooterLink[];
 	guides?: GuideLink[];
+	official?: OfficialLink[];
 };
 
-function SiteFooterInner({ siteName, supportEmail, shareUrl, explore, help, guides = [] }: Props) {
+function SiteFooterInner({
+	siteName,
+	supportEmail,
+	shareUrl,
+	explore,
+	help,
+	guides = [],
+	official = [],
+}: Props) {
 	const { t } = useTranslation();
 	const year = new Date().getFullYear();
 	const encodedUrl = encodeURIComponent(shareUrl);
@@ -39,7 +49,7 @@ function SiteFooterInner({ siteName, supportEmail, shareUrl, explore, help, guid
 	return (
 		<footer className="site-footer">
 			<div
-				className={`shell site-footer__grid${guides.length === 0 ? ' site-footer__grid--no-guides' : ''}`}
+				className={`shell site-footer__grid${guides.length === 0 && official.length === 0 ? ' site-footer__grid--no-guides' : ''}${official.length > 0 ? ' site-footer__grid--with-official' : ''}`}
 			>
 				<div>
 					<p className="site-footer__brand">{siteName}</p>
@@ -77,6 +87,20 @@ function SiteFooterInner({ siteName, supportEmail, shareUrl, explore, help, guid
 							<li>
 								<a href="/blog/">{t('common.blog')}</a>
 							</li>
+						</ul>
+					</div>
+				)}
+				{official.length > 0 && (
+					<div>
+						<p className="site-footer__label">{t('footer.official')}</p>
+						<ul>
+							{official.map((link) => (
+								<li key={link.href}>
+									<a href={link.href} rel="noopener noreferrer" target="_blank">
+										{link.title}
+									</a>
+								</li>
+							))}
 						</ul>
 					</div>
 				)}
