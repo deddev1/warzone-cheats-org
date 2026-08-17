@@ -8,6 +8,7 @@ import {
 	locales,
 } from './locales';
 import { getCannibalTargetId, isCannibalPageId } from '../seo-cannibal-map';
+import { isIndexedLocale } from '../seo-locale-index';
 
 /** Canonical page identifiers shared across all locales. */
 export type PageId =
@@ -731,22 +732,16 @@ export function getSelfHreflangAlternates(
 
 export function getHreflangAlternates(pageId: PageId, currentLocale: LocaleCode = defaultLocale) {
 	const resolvedId = (isCannibalPageId(pageId) ? getCannibalTargetId(pageId) : pageId) as PageId;
-	const byLocale = localeCodes.map((code) => ({
-		hreflang: localeMap[code].hreflang,
-		href: absoluteLocalizedUrl(resolvedId, code),
-		code,
-	}));
-	const self = byLocale.find((alt) => alt.code === currentLocale)!;
-	const others = byLocale.filter((alt) => alt.code !== currentLocale);
-	const xDefault = {
-		hreflang: 'x-default' as const,
-		href: absoluteLocalizedUrl(resolvedId, defaultLocale),
-	};
-	// Self-referential hreflang first — required by Google/Seobility for the active locale.
+	const enHref = absoluteLocalizedUrl(resolvedId, defaultLocale);
+
+	// English-only indexation — hreflang cluster is en + x-default (no thin locale alternates).
+	if (!isIndexedLocale(currentLocale)) {
+		return [];
+	}
+
 	return [
-		{ hreflang: self.hreflang, href: self.href },
-		...others.map(({ hreflang, href }) => ({ hreflang, href })),
-		xDefault,
+		{ hreflang: localeMap[defaultLocale].hreflang, href: enHref },
+		{ hreflang: 'x-default' as const, href: enHref },
 	];
 }
 
@@ -818,7 +813,7 @@ export function getPageLocaleSwitchHref(context: PageContext, targetLocale: Loca
 }
 
 export function hreflangLinksXml(pageId: PageId, escapeXml: (v: string) => string): string {
-	return getHreflangAlternates(pageId)
+	return getHreflangAlternates(pageId, defaultLocale)
 		.map(
 			(alt) =>
 				`    <xhtml:link rel="alternate" hreflang="${escapeXml(alt.hreflang)}" href="${escapeXml(alt.href)}"/>`,

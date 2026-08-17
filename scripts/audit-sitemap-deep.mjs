@@ -86,6 +86,12 @@ async function main() {
 		}
 	}
 
+	if (childSitemaps.length !== 2) {
+		fail(`sitemap.xml index: expected 2 child sitemaps (en + images), got ${childSitemaps.length}`);
+	} else {
+		ok('sitemap.xml index lists English and image sitemaps only');
+	}
+
 	const allXmlFiles = ['sitemap-en.xml', 'sitemap-images.xml', 'sitemap-i18n.xml'];
 	const locales = [
 		'es','fr','de','pt','it','nl','pl','ru','tr','ar','ja','ko','zh','hi','id','th','vi','uk','cs','ro','sv',
@@ -197,6 +203,17 @@ async function main() {
 
 	ok(`Audited ${allPageUrls.size} unique page URLs`);
 	ok(`Audited ${allImageUrls.size} unique image URLs`);
+
+	// Homepage hreflang — English-only cluster
+	const homeBlock = enXml.split(/<url>/i).find((b) => b.includes(`<loc>${SITE}/</loc>`) || b.includes(`<loc>${SITE}</loc>`));
+	if (homeBlock) {
+		const homeHreflang = [...homeBlock.matchAll(/hreflang="([^"]+)"/g)].map((m) => m[1]);
+		if (homeHreflang.length !== 2 || !homeHreflang.includes('en') || !homeHreflang.includes('x-default')) {
+			fail(`Homepage hreflang: expected en + x-default, got ${homeHreflang.join(', ')}`);
+		} else {
+			ok('Homepage hreflang is en + x-default only');
+		}
+	}
 
 	// robots + AI site guide
 	const robots = await readFile(path.join(ROOT, 'public/robots.txt'), 'utf8');

@@ -21,7 +21,14 @@ const LEGACY_HOSTS = new Set([
 	'www.besttarkovcheats.com',
 ]);
 
-function redirectResponse(target: string, status = 301): Response {
+const NON_INDEXED_LOCALE_CODES = new Set([
+	'es', 'fr', 'de', 'pt', 'it', 'nl', 'pl', 'ru', 'tr', 'ar', 'ja', 'ko', 'zh', 'hi', 'id', 'th', 'vi', 'uk', 'cs', 'ro', 'sv',
+]);
+
+function isNonIndexedLocalePath(pathname: string): boolean {
+	const segment = pathname.split('/').filter(Boolean)[0];
+	return Boolean(segment && NON_INDEXED_LOCALE_CODES.has(segment));
+}
 	const headers = new Headers({
 		Location: target,
 		'Cache-Control': 'no-store',
@@ -71,6 +78,10 @@ export default {
 		const contentType = headers.get('Content-Type') || '';
 		const isHtml = contentType.includes('text/html');
 		applySecurityHeaders(headers, { html: isHtml });
+
+		if (isHtml && isNonIndexedLocalePath(url.pathname)) {
+			headers.set('X-Robots-Tag', 'noindex, nofollow');
+		}
 
 		return new Response(response.body, {
 			status: response.status,

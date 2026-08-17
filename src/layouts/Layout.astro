@@ -7,7 +7,8 @@ import LocaleSuggest from '../components/LocaleSuggest.astro';
 import InlineBrandEditor from '../components/InlineBrandEditor.astro';
 import { defaultLocale, localeMap, locales, type LocaleCode } from '../data/i18n/locales';
 import type { PageId } from '../data/i18n/content.generated';
-import { buildCanonicalUrl, type HreflangAlternate } from '../data/i18n/routing';
+import { buildCanonicalUrl, getLocalizedPath, type HreflangAlternate } from '../data/i18n/routing';
+import { localeIndexFlags, isIndexedLocale } from '../data/seo-locale-index';
 
 interface Crumb {
 	label: string;
@@ -58,7 +59,14 @@ const {
 	lcpImageSizes = '100vw',
 } = Astro.props;
 
-const canonicalURL = buildCanonicalUrl(canonicalPath);
+const localeIndex = localeIndexFlags(locale);
+const effectiveNoindex = noindex || localeIndex.noindex;
+const effectiveCanonicalPath =
+	!localeIndex.indexed && pageId
+		? getLocalizedPath(pageId, localeIndex.canonicalLocale)
+		: canonicalPath;
+
+const canonicalURL = buildCanonicalUrl(effectiveCanonicalPath);
 const ogImageURL = new URL(ogImage, siteConfig.url).href;
 const logoURL = new URL(siteConfig.logoRaster, siteConfig.url).href;
 const ogImageIsLogo = ogImage === siteConfig.logo;
@@ -66,10 +74,12 @@ const ogImageType = ogImage.endsWith('.webp') ? 'image/webp' : 'image/png';
 const ogImageWidth = ogImageIsLogo ? '512' : '1920';
 const ogImageHeight = ogImageIsLogo ? '512' : '1080';
 const twitterCard = ogImageIsLogo ? 'summary' : 'summary_large_image';
-const robots = noindex ? 'noindex, nofollow' : 'index, follow, max-image-preview:large';
+const robots = effectiveNoindex ? 'noindex, nofollow' : 'index, follow, max-image-preview:large';
 const siteDescription = `${productInfo.tagline}. ${productInfo.summary}`;
 const localeMeta = localeMap[locale];
-const ogLocaleAlternates = locales.filter((l) => l.code !== locale);
+const ogLocaleAlternates = localeIndex.indexed
+	? locales.filter((l) => l.code !== locale && isIndexedLocale(l.code))
+	: [];
 const schemaLanguage = localeMeta.ogLocale.replace('_', '-');
 const schemaLanguages = locales.map((l) => l.ogLocale.replace('_', '-'));
 const worldwidePlace = { '@type': 'Place' as const, name: siteConfig.market };
@@ -271,7 +281,7 @@ if (aboutNode) {
 				))
 		}
 
-		{!noindex && (
+		{!effectiveNoindex && (
 			<script type="application/ld+json" set:html={JSON.stringify({ '@context': 'https://schema.org', '@graph': graph })} />
 		)}
 

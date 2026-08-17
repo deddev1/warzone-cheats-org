@@ -1,8 +1,15 @@
 import { defineMiddleware } from 'astro:middleware';
 import { applySecurityHeaders } from './lib/security-headers.js';
+import { defaultLocale, isLocaleCode } from './data/i18n/locales';
 
 function isBrandStudioPage(pathname: string): boolean {
 	return pathname === '/brand-studio' || pathname === '/brand-studio/';
+}
+
+/** /es/, /fr/, … — UI-only locales excluded from Google index. */
+function isNonIndexedLocalePath(pathname: string): boolean {
+	const segment = pathname.split('/').filter(Boolean)[0];
+	return Boolean(segment && isLocaleCode(segment) && segment !== defaultLocale);
 }
 
 /**
@@ -37,6 +44,10 @@ export const onRequest = defineMiddleware(async (context, next) => {
 	if (isBrandStudioPage(context.url.pathname)) {
 		headers.set('X-Robots-Tag', 'noindex, nofollow');
 		headers.set('Cache-Control', 'no-store');
+	}
+
+	if (isHtml && isNonIndexedLocalePath(context.url.pathname)) {
+		headers.set('X-Robots-Tag', 'noindex, nofollow');
 	}
 
 	applySecurityHeaders(headers, {
