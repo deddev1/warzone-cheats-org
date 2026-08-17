@@ -13,32 +13,32 @@ export type BrandSitemapImage = {
 
 const defaultImages: BrandSitemapImage[] = [
 	{
-		src: '/images/warzone-cheats-esp.webp',
+		src: '/images/esp.webp',
 		title: 'warzone cheats esp',
 		caption: 'warzone cheats esp wallhack',
 	},
 	{
-		src: '/images/warzone-cheats-wallhack.webp',
+		src: '/images/wallhack.webp',
 		title: 'warzone cheats wallhack',
 		caption: 'warzone cheats wallhack esp',
 	},
 	{
-		src: '/images/warzone-cheats-aimbot.webp',
+		src: '/images/aimbot.webp',
 		title: 'warzone cheats aimbot',
 		caption: 'warzone cheats aimbot soft aim',
 	},
 	{
-		src: '/images/warzone-cheats-aimbot-view.webp',
+		src: '/images/sniper.webp',
 		title: 'warzone cheats aimbot',
 		caption: 'warzone cheats aimbot view',
 	},
 	{
-		src: '/images/warzone-cheats-radar.webp',
+		src: '/images/radar.webp',
 		title: 'warzone cheats radar',
 		caption: 'warzone cheats radar hack',
 	},
 	{
-		src: '/images/warzone-cheats-raid.webp',
+		src: '/images/combat.webp',
 		title: 'warzone cheats',
 		caption: 'warzone cheats in match',
 	},
