@@ -72,7 +72,8 @@ export const brand = {
 	 */
 	seo: {
 		homeTitle: 'Warzone Cheats | Official Windows PC Site',
-		homeDescription: 'Official Warzone Cheats site for Call of Duty: Warzone on Windows PC. Compare features, store plans, and live status — then buy ESP, soft aim, and radar in one',
+		homeDescription:
+			'Official Warzone Cheats for Call of Duty: Warzone on Windows PC. ESP, soft aim, and radar in one license — compare plans, check live status, and buy.',
 		featuresTitle: '{game} Features | {brand}',
 		featuresDescription: 'Everything in one {game} license for Windows PC — ESP, soft aim, radar, loot tools, and patch updates after {antiCheat}. See what is included.',
 		storeTitle: '{game} Store | {brand}',
