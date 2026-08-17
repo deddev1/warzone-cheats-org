@@ -64,7 +64,7 @@ const monthly = productInfo.plans.find((p) => p.id === 'monthly') ?? productInfo
 		/* Cover = crop excess. Anchor high for heads, tilt down slightly for lower body. */
 		object-fit: cover;
 		object-position: 58% 22%;
-		filter: brightness(0.68);
+		filter: brightness(0.52);
 		image-rendering: auto;
 		transform: translateZ(0);
 		animation: hero-in 0.9s ease-out both;
@@ -77,10 +77,10 @@ const monthly = productInfo.plans.find((p) => p.id === 'monthly') ?? productInfo
 		pointer-events: none;
 		background: linear-gradient(
 			90deg,
-			rgba(5, 5, 6, 0.84) 0%,
-			rgba(5, 5, 6, 0.6) 34%,
-			rgba(5, 5, 6, 0.34) 58%,
-			rgba(5, 5, 6, 0.14) 74%
+			rgba(5, 5, 6, 0.88) 0%,
+			rgba(5, 5, 6, 0.68) 34%,
+			rgba(5, 5, 6, 0.42) 58%,
+			rgba(5, 5, 6, 0.22) 74%
 		);
 	}
 
@@ -306,10 +306,10 @@ const monthly = productInfo.plans.find((p) => p.id === 'monthly') ?? productInfo
 		.hero__veil {
 			background: linear-gradient(
 				180deg,
-				rgba(5, 5, 6, 0.38) 0%,
-				rgba(5, 5, 6, 0.58) 42%,
-				rgba(5, 5, 6, 0.92) 78%,
-				rgba(5, 5, 6, 0.97) 100%
+				rgba(5, 5, 6, 0.48) 0%,
+				rgba(5, 5, 6, 0.66) 42%,
+				rgba(5, 5, 6, 0.94) 78%,
+				rgba(5, 5, 6, 0.98) 100%
 			);
 		}
 
