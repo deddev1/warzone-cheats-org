@@ -134,32 +134,32 @@ export const brand = {
 		reviewsImageCaption: 'What buyers say about {primaryKeyword}',
 		images: [
 			{
-				src: '/images/warzone-cheats-esp.webp',
+				src: '/images/esp.webp',
 				title: 'ESP overlay in Call of Duty: Warzone',
 				caption: 'Player ESP boxes and distance readouts during a match',
 			},
 			{
-				src: '/images/warzone-cheats-wallhack.webp',
+				src: '/images/wallhack.webp',
 				title: 'Wallhack visibility for Call of Duty: Warzone matches',
 				caption: 'Enemy operator and squad outlines through walls and terrain',
 			},
 			{
-				src: '/images/warzone-cheats-aimbot.webp',
+				src: '/images/aimbot.webp',
 				title: 'Soft aim assist for Call of Duty: Warzone',
 				caption: 'Configurable soft aim FOV and bone priority',
 			},
 			{
-				src: '/images/warzone-cheats-aimbot-view.webp',
+				src: '/images/sniper.webp',
 				title: 'Aimbot view in Warzone Cheats',
 				caption: 'In-menu aimbot controls for Windows PC',
 			},
 			{
-				src: '/images/warzone-cheats-radar.webp',
+				src: '/images/radar.webp',
 				title: '2D radar threat overlay',
 				caption: 'Radar cues for flanks near gulags',
 			},
 			{
-				src: '/images/warzone-cheats-raid.webp',
+				src: '/images/combat.webp',
 				title: 'Warzone Cheats license plans',
 				caption: 'Monthly and lifetime plans for Windows PC',
 			},

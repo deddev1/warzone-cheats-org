@@ -61,7 +61,12 @@ function buildI18nContent() {
 			const p = pages[pageId];
 			if (p.title.length > 60) console.warn(`WARN [${locale}/${pageId}] title ${p.title.length} chars: ${p.title}`);
 			if (p.description.length > 160) console.warn(`WARN [${locale}/${pageId}] desc ${p.description.length} chars`);
-			if (!p.heroImage?.startsWith('/images/warzone') && !p.heroImage?.startsWith('/images/call-of-duty-warzone')) {
+			const simpleHero = /^\/images\/(esp|wallhack|aimbot|sniper|radar|combat)(-\d+w)?\.webp$/.test(p.heroImage ?? '');
+			if (
+				!p.heroImage?.startsWith('/images/warzone') &&
+				!p.heroImage?.startsWith('/images/call-of-duty-warzone') &&
+				!simpleHero
+			) {
 				throw new Error(`Invalid heroImage for ${locale}/${pageId}: ${p.heroImage}`);
 			}
 			if (pageId === 'home' && p.sections.length !== 2) {
