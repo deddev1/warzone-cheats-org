@@ -86,17 +86,28 @@ async function main() {
 		}
 	}
 
-	if (childSitemaps.length !== 3) {
-		fail(`sitemap.xml index: expected 3 child sitemaps (en + uk + images), got ${childSitemaps.length}`);
+	if (childSitemaps.length !== 2) {
+		fail(`sitemap.xml index: expected 2 child sitemaps (en + images), got ${childSitemaps.length}`);
 	} else {
-		ok('sitemap.xml index lists English, Ukrainian, and image sitemaps');
+		ok('sitemap.xml index lists English and image sitemaps only');
 	}
 
-	const allXmlFiles = ['sitemap-en.xml', 'sitemap-images.xml', 'sitemap-i18n.xml'];
-	const locales = [
-		'es','fr','de','pt','it','nl','pl','ru','tr','ar','ja','ko','zh','hi','id','th','vi','uk','cs','ro','sv',
+	const allXmlFiles = ['sitemap-en.xml', 'sitemap-images.xml'];
+	const legacyLocaleSitemaps = [
+		'sitemap-i18n.xml',
+		'sitemap-es.xml','sitemap-fr.xml','sitemap-de.xml','sitemap-pt.xml','sitemap-it.xml',
+		'sitemap-nl.xml','sitemap-pl.xml','sitemap-ru.xml','sitemap-tr.xml','sitemap-ar.xml',
+		'sitemap-ja.xml','sitemap-ko.xml','sitemap-zh.xml','sitemap-hi.xml','sitemap-id.xml',
+		'sitemap-th.xml','sitemap-vi.xml','sitemap-uk.xml','sitemap-cs.xml','sitemap-ro.xml','sitemap-sv.xml',
 	];
-	for (const l of locales) allXmlFiles.push(`sitemap-${l}.xml`);
+	for (const file of legacyLocaleSitemaps) {
+		try {
+			await access(path.join(DIST, file));
+			fail(`${file} must not exist in dist/ (legacy locale sitemap)`);
+		} catch {
+			ok(`Legacy locale sitemap not emitted: ${file}`);
+		}
+	}
 
 	const allPageUrls = new Set();
 	const allImageUrls = new Set();
@@ -208,10 +219,10 @@ async function main() {
 	const homeBlock = enXml.split(/<url>/i).find((b) => b.includes(`<loc>${SITE}/</loc>`) || b.includes(`<loc>${SITE}</loc>`));
 	if (homeBlock) {
 		const homeHreflang = [...homeBlock.matchAll(/hreflang="([^"]+)"/g)].map((m) => m[1]);
-		if (homeHreflang.length !== 3 || !homeHreflang.includes('en') || !homeHreflang.includes('uk') || !homeHreflang.includes('x-default')) {
-			fail(`Homepage hreflang: expected en + uk + x-default, got ${homeHreflang.join(', ')}`);
+		if (homeHreflang.length !== 2 || !homeHreflang.includes('en') || !homeHreflang.includes('x-default')) {
+			fail(`Homepage hreflang: expected en + x-default, got ${homeHreflang.join(', ')}`);
 		} else {
-			ok('Homepage hreflang is en + uk + x-default');
+			ok('Homepage hreflang is en + x-default only');
 		}
 	}
 

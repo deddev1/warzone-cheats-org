@@ -1,7 +1,6 @@
 import { defineMiddleware } from 'astro:middleware';
 import { applySecurityHeaders } from './lib/security-headers.js';
-import { defaultLocale, isLocaleCode, type LocaleCode } from './data/i18n/locales';
-import { isIndexedLocale } from './data/seo-locale-index';
+import { defaultLocale, isLocaleCode } from './data/i18n/locales';
 
 function isBrandStudioPage(pathname: string): boolean {
 	return pathname === '/brand-studio' || pathname === '/brand-studio/';
@@ -10,9 +9,7 @@ function isBrandStudioPage(pathname: string): boolean {
 /** /es/, /fr/, … — UI-only locales excluded from Google index. */
 function isNonIndexedLocalePath(pathname: string): boolean {
 	const segment = pathname.split('/').filter(Boolean)[0];
-	return Boolean(
-		segment && isLocaleCode(segment) && !isIndexedLocale(segment as LocaleCode),
-	);
+	return Boolean(segment && isLocaleCode(segment) && segment !== defaultLocale);
 }
 
 /**

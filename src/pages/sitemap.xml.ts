@@ -1,15 +1,13 @@
 import type { APIRoute } from 'astro';
 import { getBlogSitemapEntries } from '../data/blog/helpers';
-import { indexedNonEnglishLocaleCodes } from '../data/seo-locale-index';
 import { siteConfig } from '../data/site';
 import { latestPageLastmod } from '../data/sitemap-meta';
-import { localeSitemapFilename } from '../data/sitemap-locale';
 import { renderSitemapIndexXml, sitemapResponseHeaders } from '../data/sitemap-xml';
 
 export const prerender = true;
 
 /**
- * Primary sitemap index for Google Search Console — English + indexed locale + image sitemaps.
+ * Primary sitemap index for Google Search Console — English + image sitemaps only.
  * Locale UI pages (/es/, /fr/, …) are noindex with EN canonical until human translations ship.
  */
 export const GET: APIRoute = () => {
@@ -21,10 +19,6 @@ export const GET: APIRoute = () => {
 
 	const subSitemaps: { loc: string; lastmod: string }[] = [
 		{ loc: new URL('/sitemap-en.xml', siteConfig.url).href, lastmod: englishLastmod },
-		...indexedNonEnglishLocaleCodes.map((locale) => ({
-			loc: new URL(`/${localeSitemapFilename(locale)}`, siteConfig.url).href,
-			lastmod: pageLastmod,
-		})),
 		{ loc: new URL('/sitemap-images.xml', siteConfig.url).href, lastmod: pageLastmod },
 	];
 

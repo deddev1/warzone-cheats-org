@@ -58,12 +58,12 @@ const FAQ_PAGES = 11; // FAQ answer pages (index is in the product pages)
 /** Product pages in sitemap — excludes cannibal EN URLs that 301 to stronger pillars */
 const ENGLISH_PRODUCT_PAGES = 14;
 const ENGLISH_PAGES = ENGLISH_PRODUCT_PAGES + BLOG_PAGES + REVIEW_PAGES + FAQ_PAGES;
-const I18N_LOCALES = 1; // uk
-/** Indexed locale product pages in sitemap-uk.xml */
-const PRODUCT_PAGES_PER_LOCALE = 14;
+const I18N_LOCALES = 0;
+/** Locale product pages are UI-only (noindex) — excluded from sitemaps */
+const PRODUCT_PAGES_PER_LOCALE = 0;
 const BLOG_PAGES_PER_LOCALE = 0;
-const PAGES_PER_LOCALE = PRODUCT_PAGES_PER_LOCALE + BLOG_PAGES_PER_LOCALE;
-const I18N_URLS = I18N_LOCALES * PAGES_PER_LOCALE;
+const PAGES_PER_LOCALE = 0;
+const I18N_URLS = 0;
 const TOTAL_PAGES = ENGLISH_PAGES + I18N_URLS;
 /** Full EN HTML may still emit redirect stubs for cannibal URLs; sitemaps omit them */
 const ENGLISH_HTML_PAGES = 25 + BLOG_PAGES + REVIEW_PAGES + FAQ_PAGES;
@@ -71,9 +71,8 @@ const ENGLISH_HTML_PAGES = 25 + BLOG_PAGES + REVIEW_PAGES + FAQ_PAGES;
 const LOCALE_BLOG_REDIRECT_PAGES = 18;
 const LOCALE_UI_HTML_PAGES = 21 * (14 + LOCALE_BLOG_REDIRECT_PAGES);
 const TOTAL_HTML_PAGES = ENGLISH_HTML_PAGES + LOCALE_UI_HTML_PAGES;
-const HREFLANG_PER_URL = 3; // en + uk + x-default
-const SITEMAP_INDEX_ENTRIES = 3; // EN + uk + images
-const INDEXED_NON_EN_LOCALES = ['uk'];
+const HREFLANG_PER_URL = 2;
+const SITEMAP_INDEX_ENTRIES = 2; // EN + images
 
 /** Built HTML that intentionally 301s — allowed to be absent from sitemaps */
 const REDIRECT_ONLY_PATHS = new Set([
@@ -210,7 +209,6 @@ async function main() {
 
 	const sitemapIndex = await readFile(path.join(DIST, 'sitemap.xml'), 'utf8');
 	const sitemapEn = await readFile(path.join(DIST, 'sitemap-en.xml'), 'utf8');
-	const sitemapI18n = await readFile(path.join(DIST, 'sitemap-i18n.xml'), 'utf8');
 	const sitemapImages = await readFile(path.join(DIST, 'sitemap-images.xml'), 'utf8');
 	const robots = await readFile(path.join(ROOT, 'public', 'robots.txt'), 'utf8');
 	const pathRedirects = JSON.parse(
@@ -219,7 +217,6 @@ async function main() {
 
 	const indexLocs = gulagLocs(sitemapIndex);
 	const enLocs = gulagLocs(sitemapEn);
-	const i18nLocs = gulagLocs(sitemapI18n);
 	const imageLocs = gulagLocs(sitemapImages);
 
 	// sitemap.xml must be a sitemap index (not a urlset)
@@ -247,24 +244,36 @@ async function main() {
 		bump();
 	} else ok('path-redirects.json 301s sitemap-blog.xml → sitemap-en.xml');
 
-	// Per-locale sitemap files — uk indexed; others empty
-	const localeSitemapLocs = {};
-	let localeUrlTotal = 0;
-	for (const locale of I18N_LOCALE_CODES) {
-		const file = path.join(DIST, `sitemap-${locale}.xml`);
-		const xml = await readFile(file, 'utf8');
-		const locs = gulagLocs(xml);
-		localeSitemapLocs[locale] = locs;
-		localeUrlTotal += locs.length;
+	if (pathRedirects['/sitemap-i18n.xml'] !== '/sitemap.xml') {
+		fail('path-redirects.json missing 301: /sitemap-i18n.xml → /sitemap.xml');
+		bump();
+	} else ok('path-redirects.json 301s sitemap-i18n.xml → sitemap.xml');
 
-		const expected = INDEXED_NON_EN_LOCALES.includes(locale) ? PAGES_PER_LOCALE : 0;
-		if (locs.length !== expected) {
-			fail(`sitemap-${locale}.xml: expected ${expected} URLs, got ${locs.length}`);
+	// Locale sitemaps must not be emitted — noindex locales redirect to primary index
+	for (const locale of I18N_LOCALE_CODES) {
+		const legacyFile = `sitemap-${locale}.xml`;
+		try {
+			await access(path.join(DIST, legacyFile));
+			fail(`${legacyFile} must not exist in dist/ (redirect to sitemap.xml)`);
+			bump();
+		} catch {
+			/* expected — file not generated */
+		}
+		if (pathRedirects[`/${legacyFile}`] !== '/sitemap.xml') {
+			fail(`path-redirects.json missing 301: /${legacyFile} → /sitemap.xml`);
 			bump();
 		}
 	}
 	if (errors === 0) {
-		ok(`Locale sitemaps: uk has ${PAGES_PER_LOCALE} URLs; other locales empty (noindex)`);
+		ok('Locale sitemaps not generated; 21 legacy URLs 301 to sitemap.xml');
+	}
+
+	try {
+		await access(path.join(DIST, 'sitemap-i18n.xml'));
+		fail('sitemap-i18n.xml must not exist in dist/ (redirect to sitemap.xml)');
+		bump();
+	} catch {
+		if (errors === 0) ok('sitemap-i18n.xml not emitted (legacy URL redirects to sitemap.xml)');
 	}
 
 	// Count checks
@@ -272,16 +281,6 @@ async function main() {
 		fail(`sitemap-en.xml: expected ${ENGLISH_PAGES} URLs, got ${enLocs.length}`);
 		bump();
 	} else ok(`sitemap-en.xml has ${ENGLISH_PAGES} English URLs`);
-
-	if (i18nLocs.length !== I18N_URLS) {
-		fail(`sitemap-i18n.xml: expected ${I18N_URLS} URLs (indexed locales), got ${i18nLocs.length}`);
-		bump();
-	} else ok(`sitemap-i18n.xml has ${I18N_URLS} indexed locale URLs (uk)`);
-
-	if (localeUrlTotal !== I18N_URLS) {
-		fail(`Per-locale sitemaps total: expected ${I18N_URLS}, got ${localeUrlTotal}`);
-		bump();
-	}
 
 	if (imageLocs.length !== IMAGE_SITEMAP_ENTRIES) {
 		fail(`sitemap-images.xml: expected ${IMAGE_SITEMAP_ENTRIES} image host URLs, got ${imageLocs.length}`);
@@ -344,35 +343,8 @@ async function main() {
 		bump();
 	} else ok('Every English sitemap URL has <image:image>');
 
-	let localeMissingImages = 0;
-	for (const locale of I18N_LOCALE_CODES) {
-		const xml = await readFile(path.join(DIST, `sitemap-${locale}.xml`), 'utf8');
-		localeMissingImages += countUrlsMissingImages(xml);
-	}
-	if (localeMissingImages > 0) {
-		fail(`Locale sitemaps: ${localeMissingImages} <url> entries missing <image:image>`);
-		bump();
-	} else ok('Locale sitemaps are empty (no image annotation required)');
-
-	// No overlap between EN and legacy i18n sitemap
-	const overlap = enLocs.filter((u) => i18nLocs.includes(u));
-	if (overlap.length > 0) {
-		fail(`Duplicate URLs in both sitemaps: ${overlap.join(', ')}`);
-		bump();
-	} else ok('No duplicate URLs between sitemap-en.xml and sitemap-i18n.xml');
-
-	// Per-locale sitemaps match combined i18n sitemap (both empty)
-	const perLocaleSet = new Set(Object.values(localeSitemapLocs).flat());
-	const i18nSet = new Set(i18nLocs);
-	const missingInAggregate = [...perLocaleSet].filter((u) => !i18nSet.has(u));
-	const extraInAggregate = [...i18nSet].filter((u) => !perLocaleSet.has(u));
-	if (missingInAggregate.length > 0 || extraInAggregate.length > 0) {
-		fail('Per-locale sitemaps and sitemap-i18n.xml URL sets differ');
-		bump();
-	} else ok('Locale sitemaps match sitemap-i18n.xml URL set (uk indexed)');
-
 	// HTTPS + trailing slash (page URLs only — sub-sitemap .xml locs omit trailing slash)
-	for (const loc of [...enLocs, ...i18nLocs]) {
+	for (const loc of enLocs) {
 		if (!loc.startsWith('https://')) {
 			fail(`Non-HTTPS URL: ${loc}`);
 			bump();
@@ -403,7 +375,7 @@ async function main() {
 	if (homeHreflang !== HREFLANG_PER_URL) {
 		fail(`Homepage hreflang links: expected ${HREFLANG_PER_URL}, got ${homeHreflang}`);
 		bump();
-	} else ok(`Homepage has ${HREFLANG_PER_URL} hreflang alternates (en + uk + x-default)`);
+	} else ok(`Homepage has ${HREFLANG_PER_URL} hreflang alternates (en + x-default)`);
 
 	// sitemap.xml index — EN + images only
 	if (indexLocs.length !== SITEMAP_INDEX_ENTRIES) {
@@ -415,23 +387,18 @@ async function main() {
 		fail('sitemap.xml missing sitemap-en.xml');
 		bump();
 	}
-	if (!indexLocs.includes(`${SITE}/sitemap-uk.xml`)) {
-		fail('sitemap.xml missing sitemap-uk.xml');
-		bump();
-	}
 	if (!indexLocs.includes(`${SITE}/sitemap-images.xml`)) {
 		fail('sitemap.xml missing sitemap-images.xml');
 		bump();
 	}
 	for (const locale of I18N_LOCALE_CODES) {
-		if (locale === 'uk') continue;
 		const loc = `${SITE}/sitemap-${locale}.xml`;
 		if (indexLocs.includes(loc)) {
 			fail(`sitemap.xml must not list noindex locale sitemap: sitemap-${locale}.xml`);
 			bump();
 		}
 	}
-	if (errors === 0) ok('sitemap.xml lists EN, uk, and image sitemaps only');
+	if (errors === 0) ok('sitemap.xml lists English and image sitemaps only (no locale sitemaps)');
 
 	// robots.txt — single GSC submission path
 	if (!robots.includes(`${SITE}/sitemap.xml`)) {
@@ -484,10 +451,7 @@ async function main() {
 
 	// Built HTML vs sitemap total
 	const htmlPaths = await collectHtmlPaths(DIST);
-	const sitemapPaths = new Set([
-		...enLocs.map((u) => u.replace(SITE, '') || '/'),
-		...i18nLocs.map((u) => u.replace(SITE, '')),
-	]);
+	const sitemapPaths = new Set(enLocs.map((u) => u.replace(SITE, '') || '/'));
 
 	const htmlSet = new Set(htmlPaths);
 	const missingFromSitemap = [...htmlSet].filter((p) => {
@@ -520,22 +484,7 @@ async function main() {
 		} else if (!localeHtml.includes(`href="${SITE}/"`)) {
 			fail('Locale homepage /es/ must canonical to English homepage');
 			bump();
-		} else ok('Locale UI pages (non-uk) are noindex with English canonical');
-
-	const ukSample = path.join(DIST, 'uk', 'index.html');
-	try {
-		const ukHtml = await readFile(ukSample, 'utf8');
-		if (ukHtml.includes('noindex, nofollow')) {
-			fail('Indexed locale homepage /uk/ must not include noindex');
-			bump();
-		} else if (!ukHtml.includes(`href="${SITE}/uk/"`)) {
-			fail('Indexed locale homepage /uk/ must self-canonical');
-			bump();
-		} else ok('Indexed uk locale pages are indexable with self-canonical');
-	} catch {
-		fail('Missing built uk homepage at dist/uk/index.html');
-		bump();
-	}
+		} else ok('Locale UI pages are noindex with English canonical');
 	} catch {
 		fail('Missing built locale homepage at dist/es/index.html');
 		bump();
@@ -546,7 +495,7 @@ async function main() {
 		bump();
 	} else ok('Every sitemap URL has a matching HTML page');
 
-	console.log('\nLocale sitemaps: uk indexed (14 URLs); others empty (noindex)');
+	console.log('\nLocale sitemaps: not generated (noindex locales redirect to sitemap.xml)');
 
 	console.log('');
 	if (errors > 0) {

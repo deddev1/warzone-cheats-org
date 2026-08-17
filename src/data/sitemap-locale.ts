@@ -78,12 +78,9 @@ export function localeSitemapUrl(locale: LocaleCode): string {
 	return new URL(`/${localeSitemapFilename(locale)}`, siteConfig.url).href;
 }
 
-export function renderLocaleSitemapUrlBlock(
-	entry: LocaleSitemapEntry,
-	locale: LocaleCode,
-): string {
+export function renderLocaleSitemapUrlBlock(entry: LocaleSitemapEntry): string {
 	const loc = new URL(entry.path, siteConfig.url).href;
-	const hreflangBlock = entry.pageId ? `\n${hreflangLinksXml(entry.pageId, escapeXml, locale)}` : '';
+	const hreflangBlock = entry.pageId ? `\n${hreflangLinksXml(entry.pageId, escapeXml)}` : '';
 	if (!entry.image) {
 		throw new Error(`[sitemap] Missing image for locale URL ${entry.path}`);
 	}

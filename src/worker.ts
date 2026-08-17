@@ -22,7 +22,7 @@ const LEGACY_HOSTS = new Set([
 ]);
 
 const NON_INDEXED_LOCALE_CODES = new Set([
-	'es', 'fr', 'de', 'pt', 'it', 'nl', 'pl', 'ru', 'tr', 'ar', 'ja', 'ko', 'zh', 'hi', 'id', 'th', 'vi', 'cs', 'ro', 'sv',
+	'es', 'fr', 'de', 'pt', 'it', 'nl', 'pl', 'ru', 'tr', 'ar', 'ja', 'ko', 'zh', 'hi', 'id', 'th', 'vi', 'uk', 'cs', 'ro', 'sv',
 ]);
 
 function isNonIndexedLocalePath(pathname: string): boolean {
