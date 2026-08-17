@@ -23,6 +23,7 @@ type Props = {
 };
 
 const icons: Record<string, string> = {
+	home: 'M4.5 10.2 12 4.8l7.5 5.4V19a1.2 1.2 0 01-1.2 1.2H5.7A1.2 1.2 0 014.5 19v-8.8zM9.8 20.2V13h4.4v7.2',
 	hacks:
 		'M12 3.5l7.5 4.2v8.6L12 20.5l-7.5-4.2V7.7L12 3.5zm0 2.2L6.8 8.5v6.9L12 18.3l5.2-2.9V8.5L12 5.7z',
 	esp: 'M12 5a7 7 0 100 14 7 7 0 000-14zm0 2.2a4.8 4.8 0 110 9.6 4.8 4.8 0 010-9.6zM12 10.2v2.4l1.8 1.1',
@@ -50,7 +51,8 @@ function NavbarInner({
 	const [scrolled, setScrolled] = useState(false);
 
 	const isActive = (href: string) => {
-		if (href === '/') return currentPath === '/' || currentPath === `/${locale}/`;
+		const homePaths = new Set(['/', `/${locale}/`, homeHref]);
+		if (homePaths.has(href)) return homePaths.has(currentPath);
 		if (href === reviewsBasePath) return currentPath === href || currentPath.startsWith(href);
 		return currentPath === href || currentPath.startsWith(href);
 	};
@@ -89,7 +91,7 @@ function NavbarInner({
 				label: t(item.labelKey),
 				active: isActive(item.href),
 			})),
-		[links, t, currentPath, locale, reviewsBasePath],
+		[links, t, currentPath, locale, reviewsBasePath, homeHref],
 	);
 
 	return (

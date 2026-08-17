@@ -47,6 +47,7 @@ const localeMetas = locales.map((l) => ({
 }));
 
 const links = [
+	{ id: 'home', labelKey: 'nav.home', href: getLocalizedPath('home', locale) },
 	{ id: 'hacks', labelKey: 'nav.preview', edit: 'navPreview', href: getLocalizedPath('hacks', locale) },
 	{ id: 'esp', labelKey: 'nav.features', edit: 'navFeatures', href: getLocalizedPath('features', locale) },
 	{ id: 'pricing', labelKey: 'nav.store', edit: 'navStore', href: getLocalizedPath('pricing', locale) },
@@ -234,7 +235,7 @@ const links = [
 	.site-header__bar {
 		display: flex;
 		align-items: center;
-		justify-content: space-between;
+		justify-content: flex-start;
 		min-height: var(--header-h);
 		gap: 0.75rem;
 	}
@@ -242,8 +243,9 @@ const links = [
 	.site-brand {
 		display: none;
 		min-width: 0;
-		flex: 1 1 auto;
-		margin-right: 0.5rem;
+		flex: 0 1 auto;
+		max-width: min(11rem, 28vw);
+		margin-right: 0.35rem;
 		font-family: var(--font-display);
 		font-size: 0.95rem;
 		font-weight: 700;
@@ -260,15 +262,24 @@ const links = [
 	}
 
 	.site-nav {
-		display: flex;
+		display: inline-flex;
 		align-items: center;
 		justify-content: flex-start;
 		gap: 0.1rem;
+		width: max-content;
+		max-width: 100%;
 		padding: 0.22rem;
 		border: 1px solid var(--line-soft);
 		border-radius: 999px;
 		background: color-mix(in srgb, var(--bg-elevated) 65%, transparent);
 		box-shadow: inset 0 1px 0 color-mix(in srgb, #fff 5%, transparent);
+		flex: 0 0 auto;
+		overflow-x: auto;
+		scrollbar-width: none;
+	}
+
+	.site-nav::-webkit-scrollbar {
+		display: none;
 	}
 
 	.site-nav a {
@@ -475,13 +486,6 @@ const links = [
 		.site-nav,
 		.site-tools__lang {
 			display: none;
-		}
-
-		.site-brand {
-			display: block;
-			flex: 1 1 auto;
-			min-width: 0;
-			max-width: none;
 		}
 
 		.site-header__bar {
