@@ -31,6 +31,7 @@ const LEGACY_HOSTS = new Set([
 // Keep in sync with public/_redirects (which preserves query strings by default, as we do below).
 const PATH_REDIRECTS = {
 	'/sitemap-0.xml': '/sitemap.xml',
+	'/sitemap-blog.xml': '/sitemap-en.xml',
 	'/sitemap-index.xml': '/sitemap.xml',
 	'/sitemap.xml/': '/sitemap.xml',
 	'/sitemap-en.xml/': '/sitemap-en.xml',

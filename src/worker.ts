@@ -29,6 +29,8 @@ function isNonIndexedLocalePath(pathname: string): boolean {
 	const segment = pathname.split('/').filter(Boolean)[0];
 	return Boolean(segment && NON_INDEXED_LOCALE_CODES.has(segment));
 }
+
+function redirectResponse(target: string, status = 301): Response {
 	const headers = new Headers({
 		Location: target,
 		'Cache-Control': 'no-store',

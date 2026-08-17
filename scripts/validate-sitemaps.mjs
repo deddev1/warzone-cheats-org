@@ -241,6 +241,11 @@ async function main() {
 		bump();
 	} else ok('path-redirects.json 301s sitemap-index.xml → sitemap.xml');
 
+	if (pathRedirects['/sitemap-blog.xml'] !== '/sitemap-en.xml') {
+		fail('path-redirects.json missing 301: /sitemap-blog.xml → /sitemap-en.xml');
+		bump();
+	} else ok('path-redirects.json 301s sitemap-blog.xml → sitemap-en.xml');
+
 	// Per-locale sitemap files — empty while locales are noindex
 	const localeSitemapLocs = {};
 	let localeUrlTotal = 0;
