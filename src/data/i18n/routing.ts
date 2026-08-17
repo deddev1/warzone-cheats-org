@@ -8,7 +8,7 @@ import {
 	locales,
 } from './locales';
 import { getCannibalTargetId, isCannibalPageId } from '../seo-cannibal-map';
-import { isIndexedLocale } from '../seo-locale-index';
+import { indexedLocaleCodes, isIndexedLocale } from '../seo-locale-index';
 
 /** Canonical page identifiers shared across all locales. */
 export type PageId =
@@ -732,17 +732,19 @@ export function getSelfHreflangAlternates(
 
 export function getHreflangAlternates(pageId: PageId, currentLocale: LocaleCode = defaultLocale) {
 	const resolvedId = (isCannibalPageId(pageId) ? getCannibalTargetId(pageId) : pageId) as PageId;
-	const enHref = absoluteLocalizedUrl(resolvedId, defaultLocale);
 
-	// English-only indexation — hreflang cluster is en + x-default (no thin locale alternates).
 	if (!isIndexedLocale(currentLocale)) {
 		return [];
 	}
 
-	return [
-		{ hreflang: localeMap[defaultLocale].hreflang, href: enHref },
-		{ hreflang: 'x-default' as const, href: enHref },
-	];
+	const enHref = absoluteLocalizedUrl(resolvedId, defaultLocale);
+	const alternates: HreflangAlternate[] = indexedLocaleCodes.map((locale) => ({
+		hreflang: localeMap[locale].hreflang,
+		href: absoluteLocalizedUrl(resolvedId, locale),
+	}));
+
+	alternates.push({ hreflang: 'x-default', href: enHref });
+	return alternates;
 }
 
 export function resolvePageIdFromPath(path: string): PageId | undefined {
@@ -812,8 +814,12 @@ export function getPageLocaleSwitchHref(context: PageContext, targetLocale: Loca
 	return getLocalizedPath('home', targetLocale);
 }
 
-export function hreflangLinksXml(pageId: PageId, escapeXml: (v: string) => string): string {
-	return getHreflangAlternates(pageId, defaultLocale)
+export function hreflangLinksXml(
+	pageId: PageId,
+	escapeXml: (v: string) => string,
+	locale: LocaleCode = defaultLocale,
+): string {
+	return getHreflangAlternates(pageId, locale)
 		.map(
 			(alt) =>
 				`    <xhtml:link rel="alternate" hreflang="${escapeXml(alt.hreflang)}" href="${escapeXml(alt.href)}"/>`,
