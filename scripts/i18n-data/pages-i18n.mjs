@@ -215,6 +215,31 @@ const SUFFIX_I18N = {
 	},
 };
 
+const NEXT_STEPS_H2 = {
+	en: 'Next steps',
+	es: 'Próximos pasos',
+	fr: 'Étapes suivantes',
+	de: 'Nächste Schritte',
+	pt: 'Próximos passos',
+	it: 'Prossimi passi',
+	nl: 'Volgende stappen',
+	pl: 'Następne kroki',
+	ru: 'Следующие шаги',
+	tr: 'Sonraki adımlar',
+	ar: 'الخطوات التالية',
+	ja: '次のステップ',
+	ko: '다음 단계',
+	zh: '下一步',
+	hi: 'अगले कदम',
+	id: 'Langkah berikutnya',
+	th: 'ขั้นตอนถัดไป',
+	vi: 'Bước tiếp theo',
+	uk: 'Наступні кроки',
+	cs: 'Další kroky',
+	ro: 'Pașii următori',
+	sv: 'Nästa steg',
+};
+
 function productPage(locale, pageKey, topicName, cta2href) {
 	const p = phrases[locale];
 	const home = PAGE_META_HOME[locale];
@@ -234,11 +259,43 @@ function productPage(locale, pageKey, topicName, cta2href) {
 		ctaPrimary: p.buy,
 		ctaSecondary: home.cta2,
 		ctaSecondaryHref: cta2href,
-		sections: [
-			section(topicName, p.s1(`${meta.focus}.`), p.s2()),
-			section(`${p.undetected}`, p.s3(), p.s2()),
-			section(p.delivery, p.s2(), p.legal()),
-		],
+		sections: (() => {
+			const blocks = [
+				section(topicName, p.s1(`${meta.focus}.`), p.s2()),
+				section(`${p.undetected}`, p.s3(), p.s2()),
+				section(p.delivery, p.s2(), p.legal()),
+			];
+			if (pageKey === 'features') {
+				const updates = TOPIC_NAMES.updates[locale] ?? 'Updates';
+				const support = TOPIC_NAMES.support[locale] ?? 'Support';
+				blocks.push(
+					section(
+						`${updates} & ${support}`,
+						p.s3(),
+						p.s2(),
+						[
+							`<a href="/updates/">${updates}</a>`,
+							`<a href="/setup/">${TOPIC_NAMES.setup[locale] ?? 'Setup'}</a>`,
+							'support@warzonecheats.org',
+						],
+					),
+				);
+			} else if (pageKey === 'hacks' || pageKey === 'warzone-esp' || pageKey === 'warzone-aimbot') {
+				blocks.push(
+					section(
+						NEXT_STEPS_H2[locale] ?? 'Next steps',
+						p.s2(),
+						p.s3(),
+						[
+							`<a href="/warzone-cheats/">${TOPIC_NAMES.hacks[locale] ?? 'Warzone Cheats'}</a>`,
+							`<a href="/features/">${TOPIC_NAMES.features[locale] ?? 'Features'}</a>`,
+							`<a href="/pricing/">${TOPIC_NAMES.pricing[locale] ?? 'Pricing'}</a>`,
+						],
+					),
+				);
+			}
+			return blocks;
+		})(),
 	};
 }
 

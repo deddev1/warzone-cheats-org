@@ -152,6 +152,16 @@ export const enPages = {
 				`Monitor ${EXT.status} on patch days, then confirm rebuild notes before you queue. Setup and billing help lives on <a href="/support/">Support</a> and support@warzonecheats.org.`,
 				'Next step: compare plans on <a href="/pricing/">Pricing</a>, read <a href="/blog/warzone-cheats-complete-guide-2026/">how undetected maintenance works</a>, or open the <a href="/warzone-cheats/">undetected guide</a>.',
 			),
+			section(
+				'Updates & support',
+				`We rebuild after big Call of Duty: Warzone or ${EXT.ricochet} patches.`,
+				`Check Status before you play after a patch day, and cross-check ${EXT.status} if Activision services look unstable.`,
+				[
+					'Status on the <a href="/updates/">Updates page</a>',
+					'Setup guide on <a href="/setup/">Setup</a>',
+					'Email support with your order ID',
+				],
+			),
 		],
 	},
 	pricing: {

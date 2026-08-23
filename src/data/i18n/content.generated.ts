@@ -275,6 +275,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Next step: compare plans on <a href=\"/pricing/\">Pricing</a>, read <a href=\"/blog/warzone-cheats-complete-guide-2026/\">how undetected maintenance works</a>, or open the <a href=\"/warzone-cheats/\">undetected guide</a>.",
 							],
 						},
+						{
+							h2: "Updates & support",
+							paragraphs: [
+								"We rebuild after big Call of Duty: Warzone or <a href=\"https://www.ricochet.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Ricochet Anti-Cheat</a> patches.",
+								"Check Status before you play after a patch day, and cross-check <a href=\"https://support.activision.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Call of Duty: Warzone Support</a> if Activision services look unstable.",
+							],
+							list: [
+								"Status on the <a href=\"/updates/\">Updates page</a>",
+								"Setup guide on <a href=\"/setup/\">Setup</a>",
+								"Email support with your order ID",
+							],
+						},
 					],
 					heroImage: "/images/sniper.webp",
 				},
@@ -1216,6 +1228,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Contacta support@warzonecheats.org para solicitudes legales o de soporte.",
 							],
 						},
+						{
+							h2: "Próximos pasos",
+							paragraphs: [
+								"Licencias con entrega digital instantánea vía checkout Zadeyo. Planes $35/mes y $150 de por vida incluyen Ricochet anti-cheat maintenance.",
+								"Consulta la página Updates antes de jugar tras parches de Ricochet anti-cheat. Ningún cheat garantiza estado indetectable permanente.",
+							],
+							list: [
+								"<a href=\"/warzone-cheats/\">Trucos Warzone</a>",
+								"<a href=\"/features/\">Funciones</a>",
+								"<a href=\"/pricing/\">Precios</a>",
+							],
+						},
 					],
 				},
 				"warzone-aimbot": {
@@ -1251,6 +1275,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Contacta support@warzonecheats.org para solicitudes legales o de soporte.",
 							],
 						},
+						{
+							h2: "Próximos pasos",
+							paragraphs: [
+								"Licencias con entrega digital instantánea vía checkout Zadeyo. Planes $35/mes y $150 de por vida incluyen Ricochet anti-cheat maintenance.",
+								"Consulta la página Updates antes de jugar tras parches de Ricochet anti-cheat. Ningún cheat garantiza estado indetectable permanente.",
+							],
+							list: [
+								"<a href=\"/warzone-cheats/\">Trucos Warzone</a>",
+								"<a href=\"/features/\">Funciones</a>",
+								"<a href=\"/pricing/\">Precios</a>",
+							],
+						},
 					],
 				},
 				features: {
@@ -1284,6 +1320,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Licencias con entrega digital instantánea vía checkout Zadeyo. Planes $35/mes y $150 de por vida incluyen Ricochet anti-cheat maintenance.",
 								"Contacta support@warzonecheats.org para solicitudes legales o de soporte.",
+							],
+						},
+						{
+							h2: "Actualizaciones & Soporte",
+							paragraphs: [
+								"Consulta la página Updates antes de jugar tras parches de Ricochet anti-cheat. Ningún cheat garantiza estado indetectable permanente.",
+								"Licencias con entrega digital instantánea vía checkout Zadeyo. Planes $35/mes y $150 de por vida incluyen Ricochet anti-cheat maintenance.",
+							],
+							list: [
+								"<a href=\"/updates/\">Actualizaciones</a>",
+								"<a href=\"/setup/\">Instalación</a>",
+								"support@warzonecheats.org",
 							],
 						},
 					],
@@ -1669,6 +1717,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Licencias con entrega digital instantánea vía checkout Zadeyo. Planes $35/mes y $150 de por vida incluyen Ricochet anti-cheat maintenance.",
 								"Contacta support@warzonecheats.org para solicitudes legales o de soporte.",
+							],
+						},
+						{
+							h2: "Próximos pasos",
+							paragraphs: [
+								"Licencias con entrega digital instantánea vía checkout Zadeyo. Planes $35/mes y $150 de por vida incluyen Ricochet anti-cheat maintenance.",
+								"Consulta la página Updates antes de jugar tras parches de Ricochet anti-cheat. Ningún cheat garantiza estado indetectable permanente.",
+							],
+							list: [
+								"<a href=\"/warzone-cheats/\">Trucos Warzone</a>",
+								"<a href=\"/features/\">Funciones</a>",
+								"<a href=\"/pricing/\">Precios</a>",
 							],
 						},
 					],
@@ -2159,6 +2219,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Contactez support@warzonecheats.org pour le support ou les demandes légales.",
 							],
 						},
+						{
+							h2: "Étapes suivantes",
+							paragraphs: [
+								"Licences avec livraison numérique instantanée via checkout Zadeyo. Forfaits 35 $/mois et 150 $ à vie incluent la maintenance Ricochet anti-cheat.",
+								"Consultez Updates après les patchs Ricochet anti-cheat. Aucune triche ne garantit un statut indétectable permanent.",
+							],
+							list: [
+								"<a href=\"/warzone-cheats/\">Triches Warzone</a>",
+								"<a href=\"/features/\">Fonctions</a>",
+								"<a href=\"/pricing/\">Tarifs</a>",
+							],
+						},
 					],
 				},
 				"warzone-aimbot": {
@@ -2194,6 +2266,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Contactez support@warzonecheats.org pour le support ou les demandes légales.",
 							],
 						},
+						{
+							h2: "Étapes suivantes",
+							paragraphs: [
+								"Licences avec livraison numérique instantanée via checkout Zadeyo. Forfaits 35 $/mois et 150 $ à vie incluent la maintenance Ricochet anti-cheat.",
+								"Consultez Updates après les patchs Ricochet anti-cheat. Aucune triche ne garantit un statut indétectable permanent.",
+							],
+							list: [
+								"<a href=\"/warzone-cheats/\">Triches Warzone</a>",
+								"<a href=\"/features/\">Fonctions</a>",
+								"<a href=\"/pricing/\">Tarifs</a>",
+							],
+						},
 					],
 				},
 				features: {
@@ -2227,6 +2311,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Licences avec livraison numérique instantanée via checkout Zadeyo. Forfaits 35 $/mois et 150 $ à vie incluent la maintenance Ricochet anti-cheat.",
 								"Contactez support@warzonecheats.org pour le support ou les demandes légales.",
+							],
+						},
+						{
+							h2: "Mises à jour & Support",
+							paragraphs: [
+								"Consultez Updates après les patchs Ricochet anti-cheat. Aucune triche ne garantit un statut indétectable permanent.",
+								"Licences avec livraison numérique instantanée via checkout Zadeyo. Forfaits 35 $/mois et 150 $ à vie incluent la maintenance Ricochet anti-cheat.",
+							],
+							list: [
+								"<a href=\"/updates/\">Mises à jour</a>",
+								"<a href=\"/setup/\">Installation</a>",
+								"support@warzonecheats.org",
 							],
 						},
 					],
@@ -2612,6 +2708,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Licences avec livraison numérique instantanée via checkout Zadeyo. Forfaits 35 $/mois et 150 $ à vie incluent la maintenance Ricochet anti-cheat.",
 								"Contactez support@warzonecheats.org pour le support ou les demandes légales.",
+							],
+						},
+						{
+							h2: "Étapes suivantes",
+							paragraphs: [
+								"Licences avec livraison numérique instantanée via checkout Zadeyo. Forfaits 35 $/mois et 150 $ à vie incluent la maintenance Ricochet anti-cheat.",
+								"Consultez Updates après les patchs Ricochet anti-cheat. Aucune triche ne garantit un statut indétectable permanent.",
+							],
+							list: [
+								"<a href=\"/warzone-cheats/\">Triches Warzone</a>",
+								"<a href=\"/features/\">Fonctions</a>",
+								"<a href=\"/pricing/\">Tarifs</a>",
 							],
 						},
 					],
@@ -3102,6 +3210,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"support@warzonecheats.org für Support und rechtliche Anfragen.",
 							],
 						},
+						{
+							h2: "Nächste Schritte",
+							paragraphs: [
+								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Ricochet anti-cheat-Wartung.",
+								"Updates-Seite nach Ricochet anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
+							],
+							list: [
+								"<a href=\"/warzone-cheats/\">Warzone Cheats</a>",
+								"<a href=\"/features/\">Features</a>",
+								"<a href=\"/pricing/\">Preise</a>",
+							],
+						},
 					],
 				},
 				"warzone-aimbot": {
@@ -3137,6 +3257,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"support@warzonecheats.org für Support und rechtliche Anfragen.",
 							],
 						},
+						{
+							h2: "Nächste Schritte",
+							paragraphs: [
+								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Ricochet anti-cheat-Wartung.",
+								"Updates-Seite nach Ricochet anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
+							],
+							list: [
+								"<a href=\"/warzone-cheats/\">Warzone Cheats</a>",
+								"<a href=\"/features/\">Features</a>",
+								"<a href=\"/pricing/\">Preise</a>",
+							],
+						},
 					],
 				},
 				features: {
@@ -3170,6 +3302,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Ricochet anti-cheat-Wartung.",
 								"support@warzonecheats.org für Support und rechtliche Anfragen.",
+							],
+						},
+						{
+							h2: "Updates & Support",
+							paragraphs: [
+								"Updates-Seite nach Ricochet anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
+								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Ricochet anti-cheat-Wartung.",
+							],
+							list: [
+								"<a href=\"/updates/\">Updates</a>",
+								"<a href=\"/setup/\">Setup</a>",
+								"support@warzonecheats.org",
 							],
 						},
 					],
@@ -3555,6 +3699,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Ricochet anti-cheat-Wartung.",
 								"support@warzonecheats.org für Support und rechtliche Anfragen.",
+							],
+						},
+						{
+							h2: "Nächste Schritte",
+							paragraphs: [
+								"Lizenzen mit sofortige digitale Lieferung über Zadeyo Checkout. $35/Monat und $150 Lifetime inkl. Ricochet anti-cheat-Wartung.",
+								"Updates-Seite nach Ricochet anti-cheat-Patches prüfen. Kein Cheat garantiert dauerhaft undetected Status.",
+							],
+							list: [
+								"<a href=\"/warzone-cheats/\">Warzone Cheats</a>",
+								"<a href=\"/features/\">Features</a>",
+								"<a href=\"/pricing/\">Preise</a>",
 							],
 						},
 					],
@@ -4045,6 +4201,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Contacte support@warzonecheats.org para suporte ou questões legais.",
 							],
 						},
+						{
+							h2: "Próximos passos",
+							paragraphs: [
+								"Licenças com entrega digital instantânea via checkout Zadeyo. Planos $35/mês e $150 vitalício incluem manutenção Ricochet anti-cheat.",
+								"Verifique Updates após patches Ricochet anti-cheat. Nenhum cheat garante status indetectável permanente.",
+							],
+							list: [
+								"<a href=\"/warzone-cheats/\">Cheats Warzone</a>",
+								"<a href=\"/features/\">Recursos</a>",
+								"<a href=\"/pricing/\">Preços</a>",
+							],
+						},
 					],
 				},
 				"warzone-aimbot": {
@@ -4080,6 +4248,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Contacte support@warzonecheats.org para suporte ou questões legais.",
 							],
 						},
+						{
+							h2: "Próximos passos",
+							paragraphs: [
+								"Licenças com entrega digital instantânea via checkout Zadeyo. Planos $35/mês e $150 vitalício incluem manutenção Ricochet anti-cheat.",
+								"Verifique Updates após patches Ricochet anti-cheat. Nenhum cheat garante status indetectável permanente.",
+							],
+							list: [
+								"<a href=\"/warzone-cheats/\">Cheats Warzone</a>",
+								"<a href=\"/features/\">Recursos</a>",
+								"<a href=\"/pricing/\">Preços</a>",
+							],
+						},
 					],
 				},
 				features: {
@@ -4113,6 +4293,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Licenças com entrega digital instantânea via checkout Zadeyo. Planos $35/mês e $150 vitalício incluem manutenção Ricochet anti-cheat.",
 								"Contacte support@warzonecheats.org para suporte ou questões legais.",
+							],
+						},
+						{
+							h2: "Atualizações & Suporte",
+							paragraphs: [
+								"Verifique Updates após patches Ricochet anti-cheat. Nenhum cheat garante status indetectável permanente.",
+								"Licenças com entrega digital instantânea via checkout Zadeyo. Planos $35/mês e $150 vitalício incluem manutenção Ricochet anti-cheat.",
+							],
+							list: [
+								"<a href=\"/updates/\">Atualizações</a>",
+								"<a href=\"/setup/\">Instalação</a>",
+								"support@warzonecheats.org",
 							],
 						},
 					],
@@ -4498,6 +4690,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Licenças com entrega digital instantânea via checkout Zadeyo. Planos $35/mês e $150 vitalício incluem manutenção Ricochet anti-cheat.",
 								"Contacte support@warzonecheats.org para suporte ou questões legais.",
+							],
+						},
+						{
+							h2: "Próximos passos",
+							paragraphs: [
+								"Licenças com entrega digital instantânea via checkout Zadeyo. Planos $35/mês e $150 vitalício incluem manutenção Ricochet anti-cheat.",
+								"Verifique Updates após patches Ricochet anti-cheat. Nenhum cheat garante status indetectável permanente.",
+							],
+							list: [
+								"<a href=\"/warzone-cheats/\">Cheats Warzone</a>",
+								"<a href=\"/features/\">Recursos</a>",
+								"<a href=\"/pricing/\">Preços</a>",
 							],
 						},
 					],
@@ -4988,6 +5192,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Contatta support@warzonecheats.org per supporto o richieste legali.",
 							],
 						},
+						{
+							h2: "Prossimi passi",
+							paragraphs: [
+								"Licenze con consegna digitale istantanea via checkout Zadeyo. Piani $35/mese e $150 a vita includono manutenzione Ricochet anti-cheat.",
+								"Controlla Updates dopo patch Ricochet anti-cheat. Nessun cheat garantisce stato indetectable permanente.",
+							],
+							list: [
+								"<a href=\"/warzone-cheats/\">Cheat Warzone</a>",
+								"<a href=\"/features/\">Funzioni</a>",
+								"<a href=\"/pricing/\">Prezzi</a>",
+							],
+						},
 					],
 				},
 				"warzone-aimbot": {
@@ -5023,6 +5239,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Contatta support@warzonecheats.org per supporto o richieste legali.",
 							],
 						},
+						{
+							h2: "Prossimi passi",
+							paragraphs: [
+								"Licenze con consegna digitale istantanea via checkout Zadeyo. Piani $35/mese e $150 a vita includono manutenzione Ricochet anti-cheat.",
+								"Controlla Updates dopo patch Ricochet anti-cheat. Nessun cheat garantisce stato indetectable permanente.",
+							],
+							list: [
+								"<a href=\"/warzone-cheats/\">Cheat Warzone</a>",
+								"<a href=\"/features/\">Funzioni</a>",
+								"<a href=\"/pricing/\">Prezzi</a>",
+							],
+						},
 					],
 				},
 				features: {
@@ -5056,6 +5284,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Licenze con consegna digitale istantanea via checkout Zadeyo. Piani $35/mese e $150 a vita includono manutenzione Ricochet anti-cheat.",
 								"Contatta support@warzonecheats.org per supporto o richieste legali.",
+							],
+						},
+						{
+							h2: "Aggiornamenti & Supporto",
+							paragraphs: [
+								"Controlla Updates dopo patch Ricochet anti-cheat. Nessun cheat garantisce stato indetectable permanente.",
+								"Licenze con consegna digitale istantanea via checkout Zadeyo. Piani $35/mese e $150 a vita includono manutenzione Ricochet anti-cheat.",
+							],
+							list: [
+								"<a href=\"/updates/\">Aggiornamenti</a>",
+								"<a href=\"/setup/\">Setup</a>",
+								"support@warzonecheats.org",
 							],
 						},
 					],
@@ -5441,6 +5681,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Licenze con consegna digitale istantanea via checkout Zadeyo. Piani $35/mese e $150 a vita includono manutenzione Ricochet anti-cheat.",
 								"Contatta support@warzonecheats.org per supporto o richieste legali.",
+							],
+						},
+						{
+							h2: "Prossimi passi",
+							paragraphs: [
+								"Licenze con consegna digitale istantanea via checkout Zadeyo. Piani $35/mese e $150 a vita includono manutenzione Ricochet anti-cheat.",
+								"Controlla Updates dopo patch Ricochet anti-cheat. Nessun cheat garantisce stato indetectable permanente.",
+							],
+							list: [
+								"<a href=\"/warzone-cheats/\">Cheat Warzone</a>",
+								"<a href=\"/features/\">Funzioni</a>",
+								"<a href=\"/pricing/\">Prezzi</a>",
 							],
 						},
 					],
@@ -5931,6 +6183,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"support@warzonecheats.org voor support en juridische vragen.",
 							],
 						},
+						{
+							h2: "Volgende stappen",
+							paragraphs: [
+								"Licenties met directe digitale levering via Zadeyo checkout. $35/maand en $150 lifetime incl. Ricochet anti-cheat-onderhoud.",
+								"Check Updates na Ricochet anti-cheat-patches. Geen cheat garandeert permanent undetected status.",
+							],
+							list: [
+								"<a href=\"/warzone-cheats/\">Warzone Cheats</a>",
+								"<a href=\"/features/\">Functies</a>",
+								"<a href=\"/pricing/\">Prijzen</a>",
+							],
+						},
 					],
 				},
 				"warzone-aimbot": {
@@ -5966,6 +6230,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"support@warzonecheats.org voor support en juridische vragen.",
 							],
 						},
+						{
+							h2: "Volgende stappen",
+							paragraphs: [
+								"Licenties met directe digitale levering via Zadeyo checkout. $35/maand en $150 lifetime incl. Ricochet anti-cheat-onderhoud.",
+								"Check Updates na Ricochet anti-cheat-patches. Geen cheat garandeert permanent undetected status.",
+							],
+							list: [
+								"<a href=\"/warzone-cheats/\">Warzone Cheats</a>",
+								"<a href=\"/features/\">Functies</a>",
+								"<a href=\"/pricing/\">Prijzen</a>",
+							],
+						},
 					],
 				},
 				features: {
@@ -5999,6 +6275,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Licenties met directe digitale levering via Zadeyo checkout. $35/maand en $150 lifetime incl. Ricochet anti-cheat-onderhoud.",
 								"support@warzonecheats.org voor support en juridische vragen.",
+							],
+						},
+						{
+							h2: "Updates & Support",
+							paragraphs: [
+								"Check Updates na Ricochet anti-cheat-patches. Geen cheat garandeert permanent undetected status.",
+								"Licenties met directe digitale levering via Zadeyo checkout. $35/maand en $150 lifetime incl. Ricochet anti-cheat-onderhoud.",
+							],
+							list: [
+								"<a href=\"/updates/\">Updates</a>",
+								"<a href=\"/setup/\">Setup</a>",
+								"support@warzonecheats.org",
 							],
 						},
 					],
@@ -6384,6 +6672,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Licenties met directe digitale levering via Zadeyo checkout. $35/maand en $150 lifetime incl. Ricochet anti-cheat-onderhoud.",
 								"support@warzonecheats.org voor support en juridische vragen.",
+							],
+						},
+						{
+							h2: "Volgende stappen",
+							paragraphs: [
+								"Licenties met directe digitale levering via Zadeyo checkout. $35/maand en $150 lifetime incl. Ricochet anti-cheat-onderhoud.",
+								"Check Updates na Ricochet anti-cheat-patches. Geen cheat garandeert permanent undetected status.",
+							],
+							list: [
+								"<a href=\"/warzone-cheats/\">Warzone Cheats</a>",
+								"<a href=\"/features/\">Functies</a>",
+								"<a href=\"/pricing/\">Prijzen</a>",
 							],
 						},
 					],
@@ -6874,6 +7174,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"support@warzonecheats.org w sprawach wsparcia i prawnych.",
 							],
 						},
+						{
+							h2: "Następne kroki",
+							paragraphs: [
+								"Licencje z natychmiastowa dostawa cyfrowa przez checkout Zadeyo. Plany $35/mies. i $150 lifetime z konserwacją Ricochet anti-cheat.",
+								"Sprawdź Updates po patchach Ricochet anti-cheat. Żaden cheat nie gwarantuje permanentnego undetected statusu.",
+							],
+							list: [
+								"<a href=\"/warzone-cheats/\">Cheaty Warzone</a>",
+								"<a href=\"/features/\">Funkcje</a>",
+								"<a href=\"/pricing/\">Cennik</a>",
+							],
+						},
 					],
 				},
 				"warzone-aimbot": {
@@ -6909,6 +7221,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"support@warzonecheats.org w sprawach wsparcia i prawnych.",
 							],
 						},
+						{
+							h2: "Następne kroki",
+							paragraphs: [
+								"Licencje z natychmiastowa dostawa cyfrowa przez checkout Zadeyo. Plany $35/mies. i $150 lifetime z konserwacją Ricochet anti-cheat.",
+								"Sprawdź Updates po patchach Ricochet anti-cheat. Żaden cheat nie gwarantuje permanentnego undetected statusu.",
+							],
+							list: [
+								"<a href=\"/warzone-cheats/\">Cheaty Warzone</a>",
+								"<a href=\"/features/\">Funkcje</a>",
+								"<a href=\"/pricing/\">Cennik</a>",
+							],
+						},
 					],
 				},
 				features: {
@@ -6942,6 +7266,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Licencje z natychmiastowa dostawa cyfrowa przez checkout Zadeyo. Plany $35/mies. i $150 lifetime z konserwacją Ricochet anti-cheat.",
 								"support@warzonecheats.org w sprawach wsparcia i prawnych.",
+							],
+						},
+						{
+							h2: "Aktualizacje & Wsparcie",
+							paragraphs: [
+								"Sprawdź Updates po patchach Ricochet anti-cheat. Żaden cheat nie gwarantuje permanentnego undetected statusu.",
+								"Licencje z natychmiastowa dostawa cyfrowa przez checkout Zadeyo. Plany $35/mies. i $150 lifetime z konserwacją Ricochet anti-cheat.",
+							],
+							list: [
+								"<a href=\"/updates/\">Aktualizacje</a>",
+								"<a href=\"/setup/\">Instalacja</a>",
+								"support@warzonecheats.org",
 							],
 						},
 					],
@@ -7327,6 +7663,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Licencje z natychmiastowa dostawa cyfrowa przez checkout Zadeyo. Plany $35/mies. i $150 lifetime z konserwacją Ricochet anti-cheat.",
 								"support@warzonecheats.org w sprawach wsparcia i prawnych.",
+							],
+						},
+						{
+							h2: "Następne kroki",
+							paragraphs: [
+								"Licencje z natychmiastowa dostawa cyfrowa przez checkout Zadeyo. Plany $35/mies. i $150 lifetime z konserwacją Ricochet anti-cheat.",
+								"Sprawdź Updates po patchach Ricochet anti-cheat. Żaden cheat nie gwarantuje permanentnego undetected statusu.",
+							],
+							list: [
+								"<a href=\"/warzone-cheats/\">Cheaty Warzone</a>",
+								"<a href=\"/features/\">Funkcje</a>",
+								"<a href=\"/pricing/\">Cennik</a>",
 							],
 						},
 					],
@@ -7817,6 +8165,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"support@warzonecheats.org для поддержки и юридических вопросов.",
 							],
 						},
+						{
+							h2: "Следующие шаги",
+							paragraphs: [
+								"Лицензии с мгновенная цифровая доставка через checkout Zadeyo. Тарифы $35/мес и $150 навсегда включают обслуживание Ricochet anti-cheat.",
+								"Проверяйте Updates после патчей Ricochet anti-cheat. Ни один чит не гарантирует постоянный undetected статус.",
+							],
+							list: [
+								"<a href=\"/warzone-cheats/\">Читы Warzone</a>",
+								"<a href=\"/features/\">Функции</a>",
+								"<a href=\"/pricing/\">Цены</a>",
+							],
+						},
 					],
 				},
 				"warzone-aimbot": {
@@ -7852,6 +8212,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"support@warzonecheats.org для поддержки и юридических вопросов.",
 							],
 						},
+						{
+							h2: "Следующие шаги",
+							paragraphs: [
+								"Лицензии с мгновенная цифровая доставка через checkout Zadeyo. Тарифы $35/мес и $150 навсегда включают обслуживание Ricochet anti-cheat.",
+								"Проверяйте Updates после патчей Ricochet anti-cheat. Ни один чит не гарантирует постоянный undetected статус.",
+							],
+							list: [
+								"<a href=\"/warzone-cheats/\">Читы Warzone</a>",
+								"<a href=\"/features/\">Функции</a>",
+								"<a href=\"/pricing/\">Цены</a>",
+							],
+						},
 					],
 				},
 				features: {
@@ -7885,6 +8257,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Лицензии с мгновенная цифровая доставка через checkout Zadeyo. Тарифы $35/мес и $150 навсегда включают обслуживание Ricochet anti-cheat.",
 								"support@warzonecheats.org для поддержки и юридических вопросов.",
+							],
+						},
+						{
+							h2: "Обновления & Поддержка",
+							paragraphs: [
+								"Проверяйте Updates после патчей Ricochet anti-cheat. Ни один чит не гарантирует постоянный undetected статус.",
+								"Лицензии с мгновенная цифровая доставка через checkout Zadeyo. Тарифы $35/мес и $150 навсегда включают обслуживание Ricochet anti-cheat.",
+							],
+							list: [
+								"<a href=\"/updates/\">Обновления</a>",
+								"<a href=\"/setup/\">Установка</a>",
+								"support@warzonecheats.org",
 							],
 						},
 					],
@@ -8270,6 +8654,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Лицензии с мгновенная цифровая доставка через checkout Zadeyo. Тарифы $35/мес и $150 навсегда включают обслуживание Ricochet anti-cheat.",
 								"support@warzonecheats.org для поддержки и юридических вопросов.",
+							],
+						},
+						{
+							h2: "Следующие шаги",
+							paragraphs: [
+								"Лицензии с мгновенная цифровая доставка через checkout Zadeyo. Тарифы $35/мес и $150 навсегда включают обслуживание Ricochet anti-cheat.",
+								"Проверяйте Updates после патчей Ricochet anti-cheat. Ни один чит не гарантирует постоянный undetected статус.",
+							],
+							list: [
+								"<a href=\"/warzone-cheats/\">Читы Warzone</a>",
+								"<a href=\"/features/\">Функции</a>",
+								"<a href=\"/pricing/\">Цены</a>",
 							],
 						},
 					],
@@ -8760,6 +9156,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Destek ve yasal sorular için support@warzonecheats.org.",
 							],
 						},
+						{
+							h2: "Sonraki adımlar",
+							paragraphs: [
+								"Zadeyo checkout ile anında dijital teslimat. $35/ay ve $150 ömür boyu planları Ricochet anti-cheat bakımı içerir.",
+								"Ricochet anti-cheat yamalarından sonra Updates sayfasını kontrol edin. Hiçbir hile kalıcı undetected garantisi vermez.",
+							],
+							list: [
+								"<a href=\"/warzone-cheats/\">Warzone Hileleri</a>",
+								"<a href=\"/features/\">Özellikler</a>",
+								"<a href=\"/pricing/\">Fiyatlar</a>",
+							],
+						},
 					],
 				},
 				"warzone-aimbot": {
@@ -8795,6 +9203,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"Destek ve yasal sorular için support@warzonecheats.org.",
 							],
 						},
+						{
+							h2: "Sonraki adımlar",
+							paragraphs: [
+								"Zadeyo checkout ile anında dijital teslimat. $35/ay ve $150 ömür boyu planları Ricochet anti-cheat bakımı içerir.",
+								"Ricochet anti-cheat yamalarından sonra Updates sayfasını kontrol edin. Hiçbir hile kalıcı undetected garantisi vermez.",
+							],
+							list: [
+								"<a href=\"/warzone-cheats/\">Warzone Hileleri</a>",
+								"<a href=\"/features/\">Özellikler</a>",
+								"<a href=\"/pricing/\">Fiyatlar</a>",
+							],
+						},
 					],
 				},
 				features: {
@@ -8828,6 +9248,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Zadeyo checkout ile anında dijital teslimat. $35/ay ve $150 ömür boyu planları Ricochet anti-cheat bakımı içerir.",
 								"Destek ve yasal sorular için support@warzonecheats.org.",
+							],
+						},
+						{
+							h2: "Güncellemeler & Destek",
+							paragraphs: [
+								"Ricochet anti-cheat yamalarından sonra Updates sayfasını kontrol edin. Hiçbir hile kalıcı undetected garantisi vermez.",
+								"Zadeyo checkout ile anında dijital teslimat. $35/ay ve $150 ömür boyu planları Ricochet anti-cheat bakımı içerir.",
+							],
+							list: [
+								"<a href=\"/updates/\">Güncellemeler</a>",
+								"<a href=\"/setup/\">Kurulum</a>",
+								"support@warzonecheats.org",
 							],
 						},
 					],
@@ -9213,6 +9645,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Zadeyo checkout ile anında dijital teslimat. $35/ay ve $150 ömür boyu planları Ricochet anti-cheat bakımı içerir.",
 								"Destek ve yasal sorular için support@warzonecheats.org.",
+							],
+						},
+						{
+							h2: "Sonraki adımlar",
+							paragraphs: [
+								"Zadeyo checkout ile anında dijital teslimat. $35/ay ve $150 ömür boyu planları Ricochet anti-cheat bakımı içerir.",
+								"Ricochet anti-cheat yamalarından sonra Updates sayfasını kontrol edin. Hiçbir hile kalıcı undetected garantisi vermez.",
+							],
+							list: [
+								"<a href=\"/warzone-cheats/\">Warzone Hileleri</a>",
+								"<a href=\"/features/\">Özellikler</a>",
+								"<a href=\"/pricing/\">Fiyatlar</a>",
 							],
 						},
 					],
@@ -9703,6 +10147,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"support@warzonecheats.org للدعم والطلبات القانونية.",
 							],
 						},
+						{
+							h2: "الخطوات التالية",
+							paragraphs: [
+								"تراخيص مع تسليم رقمي فوري عبر checkout Zadeyo. خطط 35$/شهر و150$ مدى الحياة تشمل صيانة Ricochet anti-cheat.",
+								"راجع Updates بعد تص patches Ricochet anti-cheat. لا يضمن أي غش حالة undetected دائمة.",
+							],
+							list: [
+								"<a href=\"/warzone-cheats/\">غش Warzone</a>",
+								"<a href=\"/features/\">الميزات</a>",
+								"<a href=\"/pricing/\">الأسعار</a>",
+							],
+						},
 					],
 				},
 				"warzone-aimbot": {
@@ -9738,6 +10194,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"support@warzonecheats.org للدعم والطلبات القانونية.",
 							],
 						},
+						{
+							h2: "الخطوات التالية",
+							paragraphs: [
+								"تراخيص مع تسليم رقمي فوري عبر checkout Zadeyo. خطط 35$/شهر و150$ مدى الحياة تشمل صيانة Ricochet anti-cheat.",
+								"راجع Updates بعد تص patches Ricochet anti-cheat. لا يضمن أي غش حالة undetected دائمة.",
+							],
+							list: [
+								"<a href=\"/warzone-cheats/\">غش Warzone</a>",
+								"<a href=\"/features/\">الميزات</a>",
+								"<a href=\"/pricing/\">الأسعار</a>",
+							],
+						},
 					],
 				},
 				features: {
@@ -9771,6 +10239,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"تراخيص مع تسليم رقمي فوري عبر checkout Zadeyo. خطط 35$/شهر و150$ مدى الحياة تشمل صيانة Ricochet anti-cheat.",
 								"support@warzonecheats.org للدعم والطلبات القانونية.",
+							],
+						},
+						{
+							h2: "التحديثات & الدعم",
+							paragraphs: [
+								"راجع Updates بعد تص patches Ricochet anti-cheat. لا يضمن أي غش حالة undetected دائمة.",
+								"تراخيص مع تسليم رقمي فوري عبر checkout Zadeyo. خطط 35$/شهر و150$ مدى الحياة تشمل صيانة Ricochet anti-cheat.",
+							],
+							list: [
+								"<a href=\"/updates/\">التحديثات</a>",
+								"<a href=\"/setup/\">التثبيت</a>",
+								"support@warzonecheats.org",
 							],
 						},
 					],
@@ -10156,6 +10636,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"تراخيص مع تسليم رقمي فوري عبر checkout Zadeyo. خطط 35$/شهر و150$ مدى الحياة تشمل صيانة Ricochet anti-cheat.",
 								"support@warzonecheats.org للدعم والطلبات القانونية.",
+							],
+						},
+						{
+							h2: "الخطوات التالية",
+							paragraphs: [
+								"تراخيص مع تسليم رقمي فوري عبر checkout Zadeyo. خطط 35$/شهر و150$ مدى الحياة تشمل صيانة Ricochet anti-cheat.",
+								"راجع Updates بعد تص patches Ricochet anti-cheat. لا يضمن أي غش حالة undetected دائمة.",
+							],
+							list: [
+								"<a href=\"/warzone-cheats/\">غش Warzone</a>",
+								"<a href=\"/features/\">الميزات</a>",
+								"<a href=\"/pricing/\">الأسعار</a>",
 							],
 						},
 					],
@@ -10646,6 +11138,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"サポート・法務: support@warzonecheats.org",
 							],
 						},
+						{
+							h2: "次のステップ",
+							paragraphs: [
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにRicochet anti-cheatメンテナンス含む。",
+								"Ricochet anti-cheatパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
+							],
+							list: [
+								"<a href=\"/warzone-cheats/\">Warzone Cheats</a>",
+								"<a href=\"/features/\">機能</a>",
+								"<a href=\"/pricing/\">料金</a>",
+							],
+						},
 					],
 				},
 				"warzone-aimbot": {
@@ -10681,6 +11185,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"サポート・法務: support@warzonecheats.org",
 							],
 						},
+						{
+							h2: "次のステップ",
+							paragraphs: [
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにRicochet anti-cheatメンテナンス含む。",
+								"Ricochet anti-cheatパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
+							],
+							list: [
+								"<a href=\"/warzone-cheats/\">Warzone Cheats</a>",
+								"<a href=\"/features/\">機能</a>",
+								"<a href=\"/pricing/\">料金</a>",
+							],
+						},
 					],
 				},
 				features: {
@@ -10714,6 +11230,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにRicochet anti-cheatメンテナンス含む。",
 								"サポート・法務: support@warzonecheats.org",
+							],
+						},
+						{
+							h2: "更新 & サポート",
+							paragraphs: [
+								"Ricochet anti-cheatパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにRicochet anti-cheatメンテナンス含む。",
+							],
+							list: [
+								"<a href=\"/updates/\">更新</a>",
+								"<a href=\"/setup/\">セットアップ</a>",
+								"support@warzonecheats.org",
 							],
 						},
 					],
@@ -11099,6 +11627,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにRicochet anti-cheatメンテナンス含む。",
 								"サポート・法務: support@warzonecheats.org",
+							],
+						},
+						{
+							h2: "次のステップ",
+							paragraphs: [
+								"Zadeyo checkoutで即時デジタル配信。$35/月と$150永久プランにRicochet anti-cheatメンテナンス含む。",
+								"Ricochet anti-cheatパッチ後はUpdatesページを確認。永久undetectedは保証されません。",
+							],
+							list: [
+								"<a href=\"/warzone-cheats/\">Warzone Cheats</a>",
+								"<a href=\"/features/\">機能</a>",
+								"<a href=\"/pricing/\">料金</a>",
 							],
 						},
 					],
@@ -11589,6 +12129,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"지원 및 법무: support@warzonecheats.org",
 							],
 						},
+						{
+							h2: "다음 단계",
+							paragraphs: [
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 Ricochet anti-cheat 유지보수 포함.",
+								"Ricochet anti-cheat 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
+							],
+							list: [
+								"<a href=\"/warzone-cheats/\">Warzone Cheats</a>",
+								"<a href=\"/features/\">기능</a>",
+								"<a href=\"/pricing/\">가격</a>",
+							],
+						},
 					],
 				},
 				"warzone-aimbot": {
@@ -11624,6 +12176,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"지원 및 법무: support@warzonecheats.org",
 							],
 						},
+						{
+							h2: "다음 단계",
+							paragraphs: [
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 Ricochet anti-cheat 유지보수 포함.",
+								"Ricochet anti-cheat 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
+							],
+							list: [
+								"<a href=\"/warzone-cheats/\">Warzone Cheats</a>",
+								"<a href=\"/features/\">기능</a>",
+								"<a href=\"/pricing/\">가격</a>",
+							],
+						},
 					],
 				},
 				features: {
@@ -11657,6 +12221,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 Ricochet anti-cheat 유지보수 포함.",
 								"지원 및 법무: support@warzonecheats.org",
+							],
+						},
+						{
+							h2: "업데이트 & 지원",
+							paragraphs: [
+								"Ricochet anti-cheat 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 Ricochet anti-cheat 유지보수 포함.",
+							],
+							list: [
+								"<a href=\"/updates/\">업데이트</a>",
+								"<a href=\"/setup/\">설치</a>",
+								"support@warzonecheats.org",
 							],
 						},
 					],
@@ -12042,6 +12618,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 Ricochet anti-cheat 유지보수 포함.",
 								"지원 및 법무: support@warzonecheats.org",
+							],
+						},
+						{
+							h2: "다음 단계",
+							paragraphs: [
+								"Zadeyo checkout으로 즉시 디지털 배송. $35/월 및 $150 평생 요금제에 Ricochet anti-cheat 유지보수 포함.",
+								"Ricochet anti-cheat 패치 후 Updates 페이지 확인. 영구 undetected 보장 없음.",
+							],
+							list: [
+								"<a href=\"/warzone-cheats/\">Warzone Cheats</a>",
+								"<a href=\"/features/\">기능</a>",
+								"<a href=\"/pricing/\">가격</a>",
 							],
 						},
 					],
@@ -12532,6 +13120,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"支持与法务：support@warzonecheats.org",
 							],
 						},
+						{
+							h2: "下一步",
+							paragraphs: [
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含Ricochet anti-cheat维护。",
+								"Ricochet anti-cheat补丁后请查看Updates页面。无任何作弊保证永久undetected。",
+							],
+							list: [
+								"<a href=\"/warzone-cheats/\">Warzone作弊</a>",
+								"<a href=\"/features/\">功能</a>",
+								"<a href=\"/pricing/\">价格</a>",
+							],
+						},
 					],
 				},
 				"warzone-aimbot": {
@@ -12567,6 +13167,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"支持与法务：support@warzonecheats.org",
 							],
 						},
+						{
+							h2: "下一步",
+							paragraphs: [
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含Ricochet anti-cheat维护。",
+								"Ricochet anti-cheat补丁后请查看Updates页面。无任何作弊保证永久undetected。",
+							],
+							list: [
+								"<a href=\"/warzone-cheats/\">Warzone作弊</a>",
+								"<a href=\"/features/\">功能</a>",
+								"<a href=\"/pricing/\">价格</a>",
+							],
+						},
 					],
 				},
 				features: {
@@ -12600,6 +13212,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含Ricochet anti-cheat维护。",
 								"支持与法务：support@warzonecheats.org",
+							],
+						},
+						{
+							h2: "更新 & 支持",
+							paragraphs: [
+								"Ricochet anti-cheat补丁后请查看Updates页面。无任何作弊保证永久undetected。",
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含Ricochet anti-cheat维护。",
+							],
+							list: [
+								"<a href=\"/updates/\">更新</a>",
+								"<a href=\"/setup/\">安装</a>",
+								"support@warzonecheats.org",
 							],
 						},
 					],
@@ -12985,6 +13609,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含Ricochet anti-cheat维护。",
 								"支持与法务：support@warzonecheats.org",
+							],
+						},
+						{
+							h2: "下一步",
+							paragraphs: [
+								"通过Zadeyo checkout即时数字交付。$35/月和$150终身含Ricochet anti-cheat维护。",
+								"Ricochet anti-cheat补丁后请查看Updates页面。无任何作弊保证永久undetected。",
+							],
+							list: [
+								"<a href=\"/warzone-cheats/\">Warzone作弊</a>",
+								"<a href=\"/features/\">功能</a>",
+								"<a href=\"/pricing/\">价格</a>",
 							],
 						},
 					],
@@ -13475,6 +14111,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"सहायता: support@warzonecheats.org",
 							],
 						},
+						{
+							h2: "अगले कदम",
+							paragraphs: [
+								"Zadeyo checkout से तुरंत डिजिटल डिलीवरी। $35/माह और $150 लाइफ़टाइम में Ricochet anti-cheat maintenance शामिल।",
+								"Ricochet anti-cheat पैच के बाद Updates पेज देखें। कोई भी cheat permanent undetected गारंटी नहीं देता।",
+							],
+							list: [
+								"<a href=\"/warzone-cheats/\">Warzone Cheats</a>",
+								"<a href=\"/features/\">फ़ीचर्स</a>",
+								"<a href=\"/pricing/\">कीमत</a>",
+							],
+						},
 					],
 				},
 				"warzone-aimbot": {
@@ -13510,6 +14158,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"सहायता: support@warzonecheats.org",
 							],
 						},
+						{
+							h2: "अगले कदम",
+							paragraphs: [
+								"Zadeyo checkout से तुरंत डिजिटल डिलीवरी। $35/माह और $150 लाइफ़टाइम में Ricochet anti-cheat maintenance शामिल।",
+								"Ricochet anti-cheat पैच के बाद Updates पेज देखें। कोई भी cheat permanent undetected गारंटी नहीं देता।",
+							],
+							list: [
+								"<a href=\"/warzone-cheats/\">Warzone Cheats</a>",
+								"<a href=\"/features/\">फ़ीचर्स</a>",
+								"<a href=\"/pricing/\">कीमत</a>",
+							],
+						},
 					],
 				},
 				features: {
@@ -13543,6 +14203,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Zadeyo checkout से तुरंत डिजिटल डिलीवरी। $35/माह और $150 लाइफ़टाइम में Ricochet anti-cheat maintenance शामिल।",
 								"सहायता: support@warzonecheats.org",
+							],
+						},
+						{
+							h2: "अपडेट & सहायता",
+							paragraphs: [
+								"Ricochet anti-cheat पैच के बाद Updates पेज देखें। कोई भी cheat permanent undetected गारंटी नहीं देता।",
+								"Zadeyo checkout से तुरंत डिजिटल डिलीवरी। $35/माह और $150 लाइफ़टाइम में Ricochet anti-cheat maintenance शामिल।",
+							],
+							list: [
+								"<a href=\"/updates/\">अपडेट</a>",
+								"<a href=\"/setup/\">सेटअप</a>",
+								"support@warzonecheats.org",
 							],
 						},
 					],
@@ -13928,6 +14600,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Zadeyo checkout से तुरंत डिजिटल डिलीवरी। $35/माह और $150 लाइफ़टाइम में Ricochet anti-cheat maintenance शामिल।",
 								"सहायता: support@warzonecheats.org",
+							],
+						},
+						{
+							h2: "अगले कदम",
+							paragraphs: [
+								"Zadeyo checkout से तुरंत डिजिटल डिलीवरी। $35/माह और $150 लाइफ़टाइम में Ricochet anti-cheat maintenance शामिल।",
+								"Ricochet anti-cheat पैच के बाद Updates पेज देखें। कोई भी cheat permanent undetected गारंटी नहीं देता।",
+							],
+							list: [
+								"<a href=\"/warzone-cheats/\">Warzone Cheats</a>",
+								"<a href=\"/features/\">फ़ीचर्स</a>",
+								"<a href=\"/pricing/\">कीमत</a>",
 							],
 						},
 					],
@@ -14418,6 +15102,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"support@warzonecheats.org untuk dukungan dan legal.",
 							],
 						},
+						{
+							h2: "Langkah berikutnya",
+							paragraphs: [
+								"pengiriman digital instan via checkout Zadeyo. Paket $35/bulan dan $150 seumur hidup termasuk pemeliharaan Ricochet anti-cheat.",
+								"Periksa Updates setelah patch Ricochet anti-cheat. Tidak ada cheat yang menjamin undetected permanen.",
+							],
+							list: [
+								"<a href=\"/warzone-cheats/\">Cheat Warzone</a>",
+								"<a href=\"/features/\">Fitur</a>",
+								"<a href=\"/pricing/\">Harga</a>",
+							],
+						},
 					],
 				},
 				"warzone-aimbot": {
@@ -14453,6 +15149,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"support@warzonecheats.org untuk dukungan dan legal.",
 							],
 						},
+						{
+							h2: "Langkah berikutnya",
+							paragraphs: [
+								"pengiriman digital instan via checkout Zadeyo. Paket $35/bulan dan $150 seumur hidup termasuk pemeliharaan Ricochet anti-cheat.",
+								"Periksa Updates setelah patch Ricochet anti-cheat. Tidak ada cheat yang menjamin undetected permanen.",
+							],
+							list: [
+								"<a href=\"/warzone-cheats/\">Cheat Warzone</a>",
+								"<a href=\"/features/\">Fitur</a>",
+								"<a href=\"/pricing/\">Harga</a>",
+							],
+						},
 					],
 				},
 				features: {
@@ -14486,6 +15194,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"pengiriman digital instan via checkout Zadeyo. Paket $35/bulan dan $150 seumur hidup termasuk pemeliharaan Ricochet anti-cheat.",
 								"support@warzonecheats.org untuk dukungan dan legal.",
+							],
+						},
+						{
+							h2: "Pembaruan & Dukungan",
+							paragraphs: [
+								"Periksa Updates setelah patch Ricochet anti-cheat. Tidak ada cheat yang menjamin undetected permanen.",
+								"pengiriman digital instan via checkout Zadeyo. Paket $35/bulan dan $150 seumur hidup termasuk pemeliharaan Ricochet anti-cheat.",
+							],
+							list: [
+								"<a href=\"/updates/\">Pembaruan</a>",
+								"<a href=\"/setup/\">Setup</a>",
+								"support@warzonecheats.org",
 							],
 						},
 					],
@@ -14871,6 +15591,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"pengiriman digital instan via checkout Zadeyo. Paket $35/bulan dan $150 seumur hidup termasuk pemeliharaan Ricochet anti-cheat.",
 								"support@warzonecheats.org untuk dukungan dan legal.",
+							],
+						},
+						{
+							h2: "Langkah berikutnya",
+							paragraphs: [
+								"pengiriman digital instan via checkout Zadeyo. Paket $35/bulan dan $150 seumur hidup termasuk pemeliharaan Ricochet anti-cheat.",
+								"Periksa Updates setelah patch Ricochet anti-cheat. Tidak ada cheat yang menjamin undetected permanen.",
+							],
+							list: [
+								"<a href=\"/warzone-cheats/\">Cheat Warzone</a>",
+								"<a href=\"/features/\">Fitur</a>",
+								"<a href=\"/pricing/\">Harga</a>",
 							],
 						},
 					],
@@ -15361,6 +16093,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"support@warzonecheats.org สำหรับการสนับสนุน",
 							],
 						},
+						{
+							h2: "ขั้นตอนถัดไป",
+							paragraphs: [
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล Ricochet anti-cheat",
+								"ตรวจ Updates หลังแพตช์ Ricochet anti-cheat ไม่มี cheat รับประกัน undetected ถาวร",
+							],
+							list: [
+								"<a href=\"/warzone-cheats/\">Warzone Cheats</a>",
+								"<a href=\"/features/\">ฟีเจอร์</a>",
+								"<a href=\"/pricing/\">ราคา</a>",
+							],
+						},
 					],
 				},
 				"warzone-aimbot": {
@@ -15396,6 +16140,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"support@warzonecheats.org สำหรับการสนับสนุน",
 							],
 						},
+						{
+							h2: "ขั้นตอนถัดไป",
+							paragraphs: [
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล Ricochet anti-cheat",
+								"ตรวจ Updates หลังแพตช์ Ricochet anti-cheat ไม่มี cheat รับประกัน undetected ถาวร",
+							],
+							list: [
+								"<a href=\"/warzone-cheats/\">Warzone Cheats</a>",
+								"<a href=\"/features/\">ฟีเจอร์</a>",
+								"<a href=\"/pricing/\">ราคา</a>",
+							],
+						},
 					],
 				},
 				features: {
@@ -15429,6 +16185,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล Ricochet anti-cheat",
 								"support@warzonecheats.org สำหรับการสนับสนุน",
+							],
+						},
+						{
+							h2: "อัปเดต & สนับสนุน",
+							paragraphs: [
+								"ตรวจ Updates หลังแพตช์ Ricochet anti-cheat ไม่มี cheat รับประกัน undetected ถาวร",
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล Ricochet anti-cheat",
+							],
+							list: [
+								"<a href=\"/updates/\">อัปเดต</a>",
+								"<a href=\"/setup/\">ติดตั้ง</a>",
+								"support@warzonecheats.org",
 							],
 						},
 					],
@@ -15814,6 +16582,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล Ricochet anti-cheat",
 								"support@warzonecheats.org สำหรับการสนับสนุน",
+							],
+						},
+						{
+							h2: "ขั้นตอนถัดไป",
+							paragraphs: [
+								"จัดส่งดิจิทัลทันที ผ่าน checkout Zadeyo แพ็ก $35/เดือน และ $150 ตลอดชีพ รวมการดูแล Ricochet anti-cheat",
+								"ตรวจ Updates หลังแพตช์ Ricochet anti-cheat ไม่มี cheat รับประกัน undetected ถาวร",
+							],
+							list: [
+								"<a href=\"/warzone-cheats/\">Warzone Cheats</a>",
+								"<a href=\"/features/\">ฟีเจอร์</a>",
+								"<a href=\"/pricing/\">ราคา</a>",
 							],
 						},
 					],
@@ -16304,6 +17084,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"support@warzonecheats.org cho hỗ trợ và pháp lý.",
 							],
 						},
+						{
+							h2: "Bước tiếp theo",
+							paragraphs: [
+								"giao hàng kỹ thuật số tức thì qua checkout Zadeyo. Gói $35/tháng và $150 trọn đời gồm bảo trì Ricochet anti-cheat.",
+								"Kiểm tra Updates sau bản vá Ricochet anti-cheat. Không cheat nào đảm bảo undetected vĩnh viễn.",
+							],
+							list: [
+								"<a href=\"/warzone-cheats/\">Cheat Warzone</a>",
+								"<a href=\"/features/\">Tính năng</a>",
+								"<a href=\"/pricing/\">Giá</a>",
+							],
+						},
 					],
 				},
 				"warzone-aimbot": {
@@ -16339,6 +17131,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"support@warzonecheats.org cho hỗ trợ và pháp lý.",
 							],
 						},
+						{
+							h2: "Bước tiếp theo",
+							paragraphs: [
+								"giao hàng kỹ thuật số tức thì qua checkout Zadeyo. Gói $35/tháng và $150 trọn đời gồm bảo trì Ricochet anti-cheat.",
+								"Kiểm tra Updates sau bản vá Ricochet anti-cheat. Không cheat nào đảm bảo undetected vĩnh viễn.",
+							],
+							list: [
+								"<a href=\"/warzone-cheats/\">Cheat Warzone</a>",
+								"<a href=\"/features/\">Tính năng</a>",
+								"<a href=\"/pricing/\">Giá</a>",
+							],
+						},
 					],
 				},
 				features: {
@@ -16372,6 +17176,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"giao hàng kỹ thuật số tức thì qua checkout Zadeyo. Gói $35/tháng và $150 trọn đời gồm bảo trì Ricochet anti-cheat.",
 								"support@warzonecheats.org cho hỗ trợ và pháp lý.",
+							],
+						},
+						{
+							h2: "Cập nhật & Hỗ trợ",
+							paragraphs: [
+								"Kiểm tra Updates sau bản vá Ricochet anti-cheat. Không cheat nào đảm bảo undetected vĩnh viễn.",
+								"giao hàng kỹ thuật số tức thì qua checkout Zadeyo. Gói $35/tháng và $150 trọn đời gồm bảo trì Ricochet anti-cheat.",
+							],
+							list: [
+								"<a href=\"/updates/\">Cập nhật</a>",
+								"<a href=\"/setup/\">Cài đặt</a>",
+								"support@warzonecheats.org",
 							],
 						},
 					],
@@ -16757,6 +17573,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"giao hàng kỹ thuật số tức thì qua checkout Zadeyo. Gói $35/tháng và $150 trọn đời gồm bảo trì Ricochet anti-cheat.",
 								"support@warzonecheats.org cho hỗ trợ và pháp lý.",
+							],
+						},
+						{
+							h2: "Bước tiếp theo",
+							paragraphs: [
+								"giao hàng kỹ thuật số tức thì qua checkout Zadeyo. Gói $35/tháng và $150 trọn đời gồm bảo trì Ricochet anti-cheat.",
+								"Kiểm tra Updates sau bản vá Ricochet anti-cheat. Không cheat nào đảm bảo undetected vĩnh viễn.",
+							],
+							list: [
+								"<a href=\"/warzone-cheats/\">Cheat Warzone</a>",
+								"<a href=\"/features/\">Tính năng</a>",
+								"<a href=\"/pricing/\">Giá</a>",
 							],
 						},
 					],
@@ -17247,6 +18075,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"support@warzonecheats.org для підтримки та правових питань.",
 							],
 						},
+						{
+							h2: "Наступні кроки",
+							paragraphs: [
+								"Ліцензії з миттєва цифрова доставка через checkout Zadeyo. Тарифи $35/міс і $150 назавжди включають обслуговування Ricochet anti-cheat.",
+								"Перевіряйте Updates після патчів Ricochet anti-cheat. Жоден чит не гарантує постійний undetected статус.",
+							],
+							list: [
+								"<a href=\"/warzone-cheats/\">Чіти Warzone</a>",
+								"<a href=\"/features/\">Функції</a>",
+								"<a href=\"/pricing/\">Ціни</a>",
+							],
+						},
 					],
 				},
 				"warzone-aimbot": {
@@ -17282,6 +18122,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"support@warzonecheats.org для підтримки та правових питань.",
 							],
 						},
+						{
+							h2: "Наступні кроки",
+							paragraphs: [
+								"Ліцензії з миттєва цифрова доставка через checkout Zadeyo. Тарифи $35/міс і $150 назавжди включають обслуговування Ricochet anti-cheat.",
+								"Перевіряйте Updates після патчів Ricochet anti-cheat. Жоден чит не гарантує постійний undetected статус.",
+							],
+							list: [
+								"<a href=\"/warzone-cheats/\">Чіти Warzone</a>",
+								"<a href=\"/features/\">Функції</a>",
+								"<a href=\"/pricing/\">Ціни</a>",
+							],
+						},
 					],
 				},
 				features: {
@@ -17315,6 +18167,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Ліцензії з миттєва цифрова доставка через checkout Zadeyo. Тарифи $35/міс і $150 назавжди включають обслуговування Ricochet anti-cheat.",
 								"support@warzonecheats.org для підтримки та правових питань.",
+							],
+						},
+						{
+							h2: "Оновлення & Підтримка",
+							paragraphs: [
+								"Перевіряйте Updates після патчів Ricochet anti-cheat. Жоден чит не гарантує постійний undetected статус.",
+								"Ліцензії з миттєва цифрова доставка через checkout Zadeyo. Тарифи $35/міс і $150 назавжди включають обслуговування Ricochet anti-cheat.",
+							],
+							list: [
+								"<a href=\"/updates/\">Оновлення</a>",
+								"<a href=\"/setup/\">Встановлення</a>",
+								"support@warzonecheats.org",
 							],
 						},
 					],
@@ -17700,6 +18564,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Ліцензії з миттєва цифрова доставка через checkout Zadeyo. Тарифи $35/міс і $150 назавжди включають обслуговування Ricochet anti-cheat.",
 								"support@warzonecheats.org для підтримки та правових питань.",
+							],
+						},
+						{
+							h2: "Наступні кроки",
+							paragraphs: [
+								"Ліцензії з миттєва цифрова доставка через checkout Zadeyo. Тарифи $35/міс і $150 назавжди включають обслуговування Ricochet anti-cheat.",
+								"Перевіряйте Updates після патчів Ricochet anti-cheat. Жоден чит не гарантує постійний undetected статус.",
+							],
+							list: [
+								"<a href=\"/warzone-cheats/\">Чіти Warzone</a>",
+								"<a href=\"/features/\">Функції</a>",
+								"<a href=\"/pricing/\">Ціни</a>",
 							],
 						},
 					],
@@ -18190,6 +19066,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"support@warzonecheats.org pro podporu a právní dotazy.",
 							],
 						},
+						{
+							h2: "Další kroky",
+							paragraphs: [
+								"Licence s okamžité digitální doručení přes checkout Zadeyo. Plány $35/měs. a $150 lifetime včetně údržby Ricochet anti-cheat.",
+								"Po patchích Ricochet anti-cheat zkontrolujte Updates. Žádný cheat negarantuje trvalý undetected stav.",
+							],
+							list: [
+								"<a href=\"/warzone-cheats/\">Warzone cheaty</a>",
+								"<a href=\"/features/\">Funkce</a>",
+								"<a href=\"/pricing/\">Ceny</a>",
+							],
+						},
 					],
 				},
 				"warzone-aimbot": {
@@ -18225,6 +19113,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"support@warzonecheats.org pro podporu a právní dotazy.",
 							],
 						},
+						{
+							h2: "Další kroky",
+							paragraphs: [
+								"Licence s okamžité digitální doručení přes checkout Zadeyo. Plány $35/měs. a $150 lifetime včetně údržby Ricochet anti-cheat.",
+								"Po patchích Ricochet anti-cheat zkontrolujte Updates. Žádný cheat negarantuje trvalý undetected stav.",
+							],
+							list: [
+								"<a href=\"/warzone-cheats/\">Warzone cheaty</a>",
+								"<a href=\"/features/\">Funkce</a>",
+								"<a href=\"/pricing/\">Ceny</a>",
+							],
+						},
 					],
 				},
 				features: {
@@ -18258,6 +19158,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Licence s okamžité digitální doručení přes checkout Zadeyo. Plány $35/měs. a $150 lifetime včetně údržby Ricochet anti-cheat.",
 								"support@warzonecheats.org pro podporu a právní dotazy.",
+							],
+						},
+						{
+							h2: "Aktualizace & Podpora",
+							paragraphs: [
+								"Po patchích Ricochet anti-cheat zkontrolujte Updates. Žádný cheat negarantuje trvalý undetected stav.",
+								"Licence s okamžité digitální doručení přes checkout Zadeyo. Plány $35/měs. a $150 lifetime včetně údržby Ricochet anti-cheat.",
+							],
+							list: [
+								"<a href=\"/updates/\">Aktualizace</a>",
+								"<a href=\"/setup/\">Instalace</a>",
+								"support@warzonecheats.org",
 							],
 						},
 					],
@@ -18643,6 +19555,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Licence s okamžité digitální doručení přes checkout Zadeyo. Plány $35/měs. a $150 lifetime včetně údržby Ricochet anti-cheat.",
 								"support@warzonecheats.org pro podporu a právní dotazy.",
+							],
+						},
+						{
+							h2: "Další kroky",
+							paragraphs: [
+								"Licence s okamžité digitální doručení přes checkout Zadeyo. Plány $35/měs. a $150 lifetime včetně údržby Ricochet anti-cheat.",
+								"Po patchích Ricochet anti-cheat zkontrolujte Updates. Žádný cheat negarantuje trvalý undetected stav.",
+							],
+							list: [
+								"<a href=\"/warzone-cheats/\">Warzone cheaty</a>",
+								"<a href=\"/features/\">Funkce</a>",
+								"<a href=\"/pricing/\">Ceny</a>",
 							],
 						},
 					],
@@ -19133,6 +20057,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"support@warzonecheats.org pentru suport și legal.",
 							],
 						},
+						{
+							h2: "Pașii următori",
+							paragraphs: [
+								"Licențe cu livrare digitală instantă via checkout Zadeyo. Planuri $35/lună și $150 pe viață includ mentenanță Ricochet anti-cheat.",
+								"Verificați Updates după patch-uri Ricochet anti-cheat. Niciun cheat nu garantează undetected permanent.",
+							],
+							list: [
+								"<a href=\"/warzone-cheats/\">Cheats Warzone</a>",
+								"<a href=\"/features/\">Funcții</a>",
+								"<a href=\"/pricing/\">Prețuri</a>",
+							],
+						},
 					],
 				},
 				"warzone-aimbot": {
@@ -19168,6 +20104,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"support@warzonecheats.org pentru suport și legal.",
 							],
 						},
+						{
+							h2: "Pașii următori",
+							paragraphs: [
+								"Licențe cu livrare digitală instantă via checkout Zadeyo. Planuri $35/lună și $150 pe viață includ mentenanță Ricochet anti-cheat.",
+								"Verificați Updates după patch-uri Ricochet anti-cheat. Niciun cheat nu garantează undetected permanent.",
+							],
+							list: [
+								"<a href=\"/warzone-cheats/\">Cheats Warzone</a>",
+								"<a href=\"/features/\">Funcții</a>",
+								"<a href=\"/pricing/\">Prețuri</a>",
+							],
+						},
 					],
 				},
 				features: {
@@ -19201,6 +20149,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Licențe cu livrare digitală instantă via checkout Zadeyo. Planuri $35/lună și $150 pe viață includ mentenanță Ricochet anti-cheat.",
 								"support@warzonecheats.org pentru suport și legal.",
+							],
+						},
+						{
+							h2: "Actualizări & Suport",
+							paragraphs: [
+								"Verificați Updates după patch-uri Ricochet anti-cheat. Niciun cheat nu garantează undetected permanent.",
+								"Licențe cu livrare digitală instantă via checkout Zadeyo. Planuri $35/lună și $150 pe viață includ mentenanță Ricochet anti-cheat.",
+							],
+							list: [
+								"<a href=\"/updates/\">Actualizări</a>",
+								"<a href=\"/setup/\">Instalare</a>",
+								"support@warzonecheats.org",
 							],
 						},
 					],
@@ -19586,6 +20546,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Licențe cu livrare digitală instantă via checkout Zadeyo. Planuri $35/lună și $150 pe viață includ mentenanță Ricochet anti-cheat.",
 								"support@warzonecheats.org pentru suport și legal.",
+							],
+						},
+						{
+							h2: "Pașii următori",
+							paragraphs: [
+								"Licențe cu livrare digitală instantă via checkout Zadeyo. Planuri $35/lună și $150 pe viață includ mentenanță Ricochet anti-cheat.",
+								"Verificați Updates după patch-uri Ricochet anti-cheat. Niciun cheat nu garantează undetected permanent.",
+							],
+							list: [
+								"<a href=\"/warzone-cheats/\">Cheats Warzone</a>",
+								"<a href=\"/features/\">Funcții</a>",
+								"<a href=\"/pricing/\">Prețuri</a>",
 							],
 						},
 					],
@@ -20076,6 +21048,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"support@warzonecheats.org för support och juridik.",
 							],
 						},
+						{
+							h2: "Nästa steg",
+							paragraphs: [
+								"Licenser med omedelbar digital leverans via Zadeyo checkout. $35/mån och $150 lifetime inkl. Ricochet anti-cheat-underhåll.",
+								"Kontrollera Updates efter Ricochet anti-cheat-patchar. Ingen cheat garanterar permanent undetected status.",
+							],
+							list: [
+								"<a href=\"/warzone-cheats/\">Warzone Cheats</a>",
+								"<a href=\"/features/\">Funktioner</a>",
+								"<a href=\"/pricing/\">Priser</a>",
+							],
+						},
 					],
 				},
 				"warzone-aimbot": {
@@ -20111,6 +21095,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 								"support@warzonecheats.org för support och juridik.",
 							],
 						},
+						{
+							h2: "Nästa steg",
+							paragraphs: [
+								"Licenser med omedelbar digital leverans via Zadeyo checkout. $35/mån och $150 lifetime inkl. Ricochet anti-cheat-underhåll.",
+								"Kontrollera Updates efter Ricochet anti-cheat-patchar. Ingen cheat garanterar permanent undetected status.",
+							],
+							list: [
+								"<a href=\"/warzone-cheats/\">Warzone Cheats</a>",
+								"<a href=\"/features/\">Funktioner</a>",
+								"<a href=\"/pricing/\">Priser</a>",
+							],
+						},
 					],
 				},
 				features: {
@@ -20144,6 +21140,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Licenser med omedelbar digital leverans via Zadeyo checkout. $35/mån och $150 lifetime inkl. Ricochet anti-cheat-underhåll.",
 								"support@warzonecheats.org för support och juridik.",
+							],
+						},
+						{
+							h2: "Uppdateringar & Support",
+							paragraphs: [
+								"Kontrollera Updates efter Ricochet anti-cheat-patchar. Ingen cheat garanterar permanent undetected status.",
+								"Licenser med omedelbar digital leverans via Zadeyo checkout. $35/mån och $150 lifetime inkl. Ricochet anti-cheat-underhåll.",
+							],
+							list: [
+								"<a href=\"/updates/\">Uppdateringar</a>",
+								"<a href=\"/setup/\">Installation</a>",
+								"support@warzonecheats.org",
 							],
 						},
 					],
@@ -20529,6 +21537,18 @@ export const i18nContent: Record<LocaleCode, { ui: LocaleUi; pages: Record<PageI
 							paragraphs: [
 								"Licenser med omedelbar digital leverans via Zadeyo checkout. $35/mån och $150 lifetime inkl. Ricochet anti-cheat-underhåll.",
 								"support@warzonecheats.org för support och juridik.",
+							],
+						},
+						{
+							h2: "Nästa steg",
+							paragraphs: [
+								"Licenser med omedelbar digital leverans via Zadeyo checkout. $35/mån och $150 lifetime inkl. Ricochet anti-cheat-underhåll.",
+								"Kontrollera Updates efter Ricochet anti-cheat-patchar. Ingen cheat garanterar permanent undetected status.",
+							],
+							list: [
+								"<a href=\"/warzone-cheats/\">Warzone Cheats</a>",
+								"<a href=\"/features/\">Funktioner</a>",
+								"<a href=\"/pricing/\">Priser</a>",
 							],
 						},
 					],

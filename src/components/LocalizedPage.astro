@@ -34,7 +34,7 @@ function localizeParagraphHtml(html: string): string {
 
 const heading = simple?.h1 ?? page.h1;
 const intro = simple?.intro ?? page.intro;
-const sections = simple?.sections ?? page.sections;
+const sections = page.sections;
 const ctaPrimaryLabel = simple?.ctaPrimary ?? page.ctaPrimary;
 const ctaSecondaryLabel = simple?.ctaSecondary ?? page.ctaSecondary;
 const ctaSecondaryPath = simple?.ctaSecondaryHref ?? page.ctaSecondaryHref;
