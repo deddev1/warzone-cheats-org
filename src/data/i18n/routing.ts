@@ -807,7 +807,10 @@ export function resolvePageContextFromPath(pathname: string): PageContext {
 /** Target URL for the same page in another locale (non-blog pages). */
 export function getPageLocaleSwitchHref(context: PageContext, targetLocale: LocaleCode): string {
 	if (context.pageId) {
-		return getLocalizedPath(context.pageId, targetLocale);
+		const resolvedId = (
+			isCannibalPageId(context.pageId) ? getCannibalTargetId(context.pageId) : context.pageId
+		) as PageId;
+		return getLocalizedPath(resolvedId, targetLocale);
 	}
 	return getLocalizedPath('home', targetLocale);
 }

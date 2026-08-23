@@ -1,38 +1,14 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
-import en from './public/locales/en/translation.json';
-import es from './public/locales/es/translation.json';
+import { localeCodes } from './src/data/i18n/locales.ts';
+import { catalogs } from './src/i18n/catalog.ts';
 
-export const supportedLngs = [
-	'en',
-	'es',
-	'fr',
-	'de',
-	'pt',
-	'it',
-	'nl',
-	'pl',
-	'ru',
-	'tr',
-	'ar',
-	'ja',
-	'ko',
-	'zh',
-	'hi',
-	'id',
-	'th',
-	'vi',
-	'uk',
-	'cs',
-	'ro',
-	'sv',
-];
+export const supportedLngs = [...localeCodes];
 
-const resources = {
-	en: { translation: en },
-	es: { translation: es },
-};
+const resources = Object.fromEntries(
+	localeCodes.map((code) => [code, { translation: catalogs[code] }]),
+);
 
 if (!i18n.isInitialized) {
 	i18n

@@ -2,7 +2,7 @@
 import PageLayout from '../layouts/PageLayout.astro';
 import { getPageContent, getUi, type PageId } from '../data/i18n';
 import { getLocalizedPath, localizeInternalHref } from '../data/i18n/routing';
-import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
+import { type LocaleCode } from '../data/i18n/locales';
 import { productInfo, seoFaqs, siteConfig, customerReviewStats } from '../data/site';
 import { absoluteFaqUrl, getFaqPath } from '../data/faq';
 import { warzoneImages } from '../data/warzone';
@@ -62,7 +62,7 @@ const pageUrl = new URL(getLocalizedPath(pageId, locale), siteConfig.url).href;
 const priceValidUntil = '2027-12-31';
 
 const faqSchema =
-	pageId === 'faq' && locale === 'en'
+	pageId === 'faq'
 		? {
 				'@type': 'FAQPage',
 				'@id': `${pageUrl}#faq`,
@@ -125,19 +125,19 @@ const ctaSecondaryHref = ctaSecondaryPath
 		: getLocalizedPath('features', locale);
 
 const LEGAL_PAGE_IDS = new Set<PageId>(['privacy', 'refund', 'terms']);
-const showExternalResources = locale === defaultLocale && pageId !== 'home' && !LEGAL_PAGE_IDS.has(pageId);
+const showExternalResources = pageId !== 'home' && !LEGAL_PAGE_IDS.has(pageId);
 
 const monthly = productInfo.plans.find((p) => p.id === 'monthly') ?? productInfo.plans[0];
 const lifetime = productInfo.plans.find((p) => p.id === 'lifetime') ?? productInfo.plans[1];
-const showStorePlans = pageId === 'pricing' && locale === 'en';
+const showStorePlans = pageId === 'pricing';
 
-const pageBlogLinks = locale === defaultLocale ? getBlogLinksForPage(pageId) : [];
+const pageBlogLinks = getBlogLinksForPage(pageId);
 
 const eyebrowByPage: Partial<Record<PageId, string>> = {
 	features: ui.nav.features,
 	pricing: ui.nav.pricing,
 	updates: ui.nav.updates,
-	hacks: locale === 'en' ? t('nav.preview') : ui.nav.hacks,
+	hacks: t('nav.preview'),
 	'warzone-esp': ui.nav.esp,
 	'warzone-aimbot': ui.nav.aimbot,
 	radar: 'Radar',
@@ -209,7 +209,7 @@ const eyebrowByPage: Partial<Record<PageId, string>> = {
 	}
 
 	{
-		pageId === 'faq' && locale === 'en' && (
+		pageId === 'faq' && (
 			<section class="card-panel faq-index">
 				<h2>{t('common.allQuestions')}</h2>
 				<p>{t('common.openAnyQuestion')}</p>

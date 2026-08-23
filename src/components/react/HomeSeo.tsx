@@ -1,58 +1,65 @@
+import { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import I18nProvider from './I18nProvider';
+import { localizeInternalHref } from '../../data/i18n/routing';
+import type { LocaleCode } from '../../data/i18n/locales';
 
 type FaqItem = { slug: string; question: string; answer: string; href: string };
 
 type Props = {
-	locale: string;
+	locale: LocaleCode;
 	faqs: FaqItem[];
 };
 
-function HomeSeoInner({ faqs }: Props) {
+function HomeSeoInner({ locale, faqs }: Props) {
 	const { t } = useTranslation();
+	const href = (path: string) => localizeInternalHref(path, locale);
 
-	const categories = [
-		{
-			titleKey: 'homeSeo.catFeatures',
-			hintKey: 'homeSeo.catFeaturesHint',
-			links: [
-				{ href: '/features/', labelKey: 'homeSeo.linkAllFeatures' },
-				{ href: '/warzone-esp/', labelKey: 'homeSeo.linkEsp' },
-				{ href: '/warzone-aimbot/', labelKey: 'homeSeo.linkAimbot' },
-				{ href: '/warzone-radar-hack/', labelKey: 'homeSeo.linkRadar' },
-			],
-		},
-		{
-			titleKey: 'homeSeo.catStatus',
-			hintKey: 'homeSeo.catStatusHint',
-			links: [
-				{ href: '/updates/', labelKey: 'homeSeo.linkLiveStatus' },
-				{ href: '/warzone-cheats/', labelKey: 'homeSeo.linkUndetected' },
-				{ href: '/setup/', labelKey: 'homeSeo.linkSetup' },
-				{ href: '/faq/', labelKey: 'homeSeo.linkFaq' },
-			],
-		},
-		{
-			titleKey: 'homeSeo.catStore',
-			hintKey: 'homeSeo.catStoreHint',
-			links: [
-				{ href: '/pricing/', labelKey: 'homeSeo.linkPlans' },
-				{ href: '/reviews/', labelKey: 'homeSeo.linkReviews' },
-				{ href: '/blog/call-of-duty-warzone-cheats-buyers-guide/', labelKey: 'homeSeo.linkBuyersGuide' },
-				{ href: '/warzone-cheats/', labelKey: 'homeSeo.linkWarzoneCheats' },
-			],
-		},
-		{
-			titleKey: 'homeSeo.catHelp',
-			hintKey: 'homeSeo.catHelpHint',
-			links: [
-				{ href: '/support/', labelKey: 'homeSeo.linkSupport' },
-				{ href: '/setup/', labelKey: 'homeSeo.linkSetupGuide' },
-				{ href: '/blog/warzone-cheats-complete-guide-2026/', labelKey: 'homeSeo.linkCompleteGuide' },
-				{ href: '/refund-policy/', labelKey: 'homeSeo.linkRefunds' },
-			],
-		},
-	];
+	const categories = useMemo(
+		() => [
+			{
+				titleKey: 'homeSeo.catFeatures',
+				hintKey: 'homeSeo.catFeaturesHint',
+				links: [
+					{ href: href('/features/'), labelKey: 'homeSeo.linkAllFeatures' },
+					{ href: href('/warzone-esp/'), labelKey: 'homeSeo.linkEsp' },
+					{ href: href('/warzone-aimbot/'), labelKey: 'homeSeo.linkAimbot' },
+					{ href: href('/warzone-radar-hack/'), labelKey: 'homeSeo.linkRadar' },
+				],
+			},
+			{
+				titleKey: 'homeSeo.catStatus',
+				hintKey: 'homeSeo.catStatusHint',
+				links: [
+					{ href: href('/updates/'), labelKey: 'homeSeo.linkLiveStatus' },
+					{ href: href('/warzone-cheats/'), labelKey: 'homeSeo.linkUndetected' },
+					{ href: href('/setup/'), labelKey: 'homeSeo.linkSetup' },
+					{ href: href('/faq/'), labelKey: 'homeSeo.linkFaq' },
+				],
+			},
+			{
+				titleKey: 'homeSeo.catStore',
+				hintKey: 'homeSeo.catStoreHint',
+				links: [
+					{ href: href('/pricing/'), labelKey: 'homeSeo.linkPlans' },
+					{ href: '/reviews/', labelKey: 'homeSeo.linkReviews' },
+					{ href: '/blog/call-of-duty-warzone-cheats-buyers-guide/', labelKey: 'homeSeo.linkBuyersGuide' },
+					{ href: href('/warzone-cheats/'), labelKey: 'homeSeo.linkWarzoneCheats' },
+				],
+			},
+			{
+				titleKey: 'homeSeo.catHelp',
+				hintKey: 'homeSeo.catHelpHint',
+				links: [
+					{ href: href('/support/'), labelKey: 'homeSeo.linkSupport' },
+					{ href: href('/setup/'), labelKey: 'homeSeo.linkSetupGuide' },
+					{ href: '/blog/warzone-cheats-complete-guide-2026/', labelKey: 'homeSeo.linkCompleteGuide' },
+					{ href: href('/refund-policy/'), labelKey: 'homeSeo.linkRefunds' },
+				],
+			},
+		],
+		[locale],
+	);
 
 	const guideLinks = [
 		{
@@ -195,7 +202,7 @@ function HomeSeoInner({ faqs }: Props) {
 						<h3 id="home-faq-title">{t('homeSeo.faqTitle')}</h3>
 						<p className="home-seo__faq-lede">{t('homeSeo.faqLede')}</p>
 					</div>
-					<a className="home-seo__faq-link" href="/faq/">
+					<a className="home-seo__faq-link" href={href('/faq/')}>
 						{t('homeSeo.allAnswers')}
 					</a>
 				</header>
