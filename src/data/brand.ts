@@ -40,12 +40,12 @@ export const brand = {
 	 * Edit in Brand Studio → Colors (tones are fully customizable).
 	 */
 	theme: {
-		accent: '#560061',
-		bg: '#050506',
-		soft: '#d789e1',
-		deep: '#7b1588',
-		hover: '#cc51db',
-		panel: '#111213',
+		accent: '#71805A',
+		bg: '#080B09',
+		soft: '#8D9D6D',
+		deep: '#3B4540',
+		hover: '#8D9D6D',
+		panel: '#171C18',
 	},
 
 	/**
@@ -98,7 +98,7 @@ export const brand = {
 	copy: {
 		tagline: 'Undetected {primaryKeyword} — ESP, aimbot, and radar for PC',
 		summary: '{brand} is an undetected {game} cheat package for Windows PC. Includes ESP, soft aim, and radar, with {antiCheat} maintenance after patches.',
-		heroLede: 'Undetected ESP, soft aim, and radar for Call of Duty: Warzone on Windows PC.',
+		heroLede: 'One license for undetected warzone cheats on Windows PC — ESP wallhack, 2D radar, and soft aim with Ricochet updates after every patch.',
 		blogLabel: 'Warzone Intel',
 		ctaBuy: 'Get Access',
 		ctaBuyShort: 'Buy',
