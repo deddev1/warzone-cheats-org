@@ -61,10 +61,10 @@ const monthly = productInfo.plans.find((p) => p.id === 'monthly') ?? productInfo
 	}
 
 	.hero__media img {
-		/* Cover = crop excess. Anchor high for heads, tilt down slightly for lower body. */
+		/* Cover — operators sit right; keep dark left negative space for copy. */
 		object-fit: cover;
-		object-position: 58% 22%;
-		filter: brightness(0.58);
+		object-position: 88% 42%;
+		filter: brightness(0.62);
 		image-rendering: auto;
 		transform: translateZ(0);
 		animation: hero-in 0.9s ease-out both;
@@ -300,8 +300,7 @@ const monthly = productInfo.plans.find((p) => p.id === 'monthly') ?? productInfo
 
 		.hero__media img {
 			object-fit: cover;
-			/* Characters sit center-right; keep heads in frame, show a bit more below */
-			object-position: 62% 18%;
+			object-position: 92% 38%;
 		}
 
 		.hero__veil {
