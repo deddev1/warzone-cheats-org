@@ -1,15 +1,18 @@
 ---
 import HomeAboutApp from './react/HomeAbout';
 import { defaultLocale, type LocaleCode } from '../data/i18n/locales';
+import { heroSrc } from '../lib/responsive-images';
 
 interface Props {
 	locale?: LocaleCode;
 }
 
 const locale = Astro.props.locale ?? defaultLocale;
+const videoSrc = '/videos/warzone-cheats-demo-480p.mp4';
+const videoPoster = heroSrc;
 ---
 
-<HomeAboutApp client:visible locale={locale} />
+<HomeAboutApp client:visible locale={locale} videoSrc={videoSrc} videoPoster={videoPoster} />
 
 <style is:global>
 	.home-about {
@@ -26,10 +29,60 @@ const locale = Astro.props.locale ?? defaultLocale;
 			var(--bg-panel);
 	}
 
+	.home-about__layout {
+		display: grid;
+		grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
+		grid-template-areas:
+			'head video'
+			'features video';
+		align-items: start;
+		gap: clamp(1rem, 2.5vw, 1.5rem) clamp(1.25rem, 3vw, 2rem);
+	}
+
 	.home-about__head {
-		margin-bottom: 1.25rem;
-		padding-bottom: 1.1rem;
-		border-bottom: 1px solid var(--line-soft);
+		grid-area: head;
+		margin: 0;
+		padding-bottom: 0;
+		border-bottom: none;
+	}
+
+	.home-about__features {
+		grid-area: features;
+		padding-top: 0.85rem;
+		margin-top: 0.15rem;
+		border-top: 1px solid var(--line-soft);
+	}
+
+	.home-about__media {
+		grid-area: video;
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+		justify-content: center;
+		align-self: center;
+		min-width: 0;
+		position: sticky;
+		top: calc(var(--header-h) + 1rem);
+	}
+
+	.home-about__video {
+		display: block;
+		width: 100%;
+		max-height: min(22rem, 52vw);
+		aspect-ratio: 16 / 9;
+		object-fit: cover;
+		border-radius: var(--radius-md, 0.75rem);
+		border: 1px solid var(--line);
+		background: var(--bg-elevated);
+		box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
+	}
+
+	.home-about__video-caption {
+		margin: 0.55rem 0 0;
+		font-size: 0.75rem;
+		line-height: 1.45;
+		color: var(--ink-faint);
+		text-align: center;
 	}
 
 	.home-about__eyebrow {
@@ -102,8 +155,32 @@ const locale = Astro.props.locale ?? defaultLocale;
 	}
 
 	@media (max-width: 900px) {
+		.home-about__layout {
+			grid-template-columns: 1fr;
+			grid-template-areas:
+				'head'
+				'video'
+				'features';
+			gap: 1rem;
+		}
+
+		.home-about__media {
+			position: static;
+			align-self: stretch;
+		}
+
+		.home-about__video {
+			max-height: none;
+		}
+
+		.home-about__head {
+			padding-bottom: 0.25rem;
+		}
+
 		.home-about__features {
 			grid-template-columns: 1fr;
+			padding-top: 0.35rem;
+			border-top: 1px solid var(--line-soft);
 		}
 	}
 
