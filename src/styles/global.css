@@ -5,26 +5,26 @@
 	--font-sans: "Inter Variable", "Inter", ui-sans-serif, system-ui, sans-serif;
 	--font-display: "Syne Variable", "Syne", ui-sans-serif, sans-serif;
 
-	/* Near-black canvas — Linear / open-source product surface ladder */
-	--bg: #08090a;
-	--bg-panel: #0f1011;
-	--bg-elevated: #161618;
-	--bg-hover: #1c1c1f;
-	--line: #23252a;
-	--line-soft: #1a1b1e;
-	--line-strong: #34343a;
-	--ink: #f5f5f7;
-	--ink-muted: #a1a1aa;
-	--ink-faint: #8b8b93;
+	/* Warzone tactical palette — dark canvas + olive accent */
+	--bg: #080b09;
+	--bg-panel: #171c18;
+	--bg-elevated: #101412;
+	--bg-hover: #222923;
+	--line: #29312c;
+	--line-soft: #1f2622;
+	--line-strong: #3b4540;
+	--ink: #ffffff;
+	--ink-muted: #b7bcb8;
+	--ink-faint: #747c77;
 
-	/* Single brand accent: magenta (user request) — used sparingly */
-	--magenta: #c026d3;
-	--magenta-soft: #e879f9;
-	--magenta-deep: #86198f;
+	/* Primary accent: tactical olive — used sparingly */
+	--magenta: #71805a;
+	--magenta-soft: #8d9d6d;
+	--magenta-deep: #3b4540;
 	--accent: var(--magenta);
-	--accent-hover: #d946ef;
-	--ok: #34d399;
-	--warn: #f43f5e;
+	--accent-hover: #8d9d6d;
+	--ok: #5f8a62;
+	--warn: #a9443d;
 
 	/* Legacy aliases */
 	--tone-void: #050505;

@@ -170,11 +170,11 @@ export function deriveBrandTheme(input: Partial<BrandThemeInput> = {}): BrandThe
 		line,
 		lineSoft,
 		lineStrong,
-		ink: '#f5f5f7',
-		inkMuted: '#a1a1aa',
-		inkFaint: '#8b8b93',
-		ok: '#34d399',
-		warn: '#f43f5e',
+		ink: '#ffffff',
+		inkMuted: '#b7bcb8',
+		inkFaint: '#747c77',
+		ok: '#5f8a62',
+		warn: '#a9443d',
 		toneVoid,
 	};
 }

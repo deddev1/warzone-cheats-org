@@ -4,8 +4,8 @@
   "description": "Undetected warzone cheats — ESP, aimbot, and radar for PC",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#050506",
-  "theme_color": "#050506",
+  "background_color": "#080B09",
+  "theme_color": "#080B09",
   "icons": [
     {
       "src": "/favicon.png",

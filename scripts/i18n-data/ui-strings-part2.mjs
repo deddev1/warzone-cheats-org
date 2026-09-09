@@ -2,8 +2,8 @@
 
 export const uiStringsPart2 = {
 	ar: {
-		nav: { home: 'الرئيسية', hacks: 'Hacks', aimbot: 'Aimbot', esp: 'ESP', features: 'الميزات', pricing: 'الأسعار', setup: 'التثبيت', updates: 'التحديثات', faq: 'الأسئلة', buyNow: 'اشترِ الآن' },
-		hero: { accent: 'غش Warzone غير مكتشف', accentShort: 'Warzone Cheats', subtitle: 'ESP wallhack ورadar hack وAimbot لـ Warzone على Windows PC — صيانة Ricochet anti-cheat مشمولة.', subtitleShort: 'ESP ورadar وAimbot لـ Warzone PC', buyNow: 'اشترِ الآن', seeFeatures: 'عرض الميزات' },
+		nav: { home: 'الرئيسية', hacks: 'غش', aimbot: 'Aimbot', esp: 'ESP', features: 'الميزات', pricing: 'الأسعار', setup: 'التثبيت', updates: 'التحديثات', faq: 'الأسئلة', buyNow: 'اشترِ الآن' },
+		hero: { accent: 'غش Warzone غير مكتشف', accentShort: 'Warzone Cheats', subtitle: 'رخصة واحدة لغش Warzone غير المكتشف على Windows PC — ESP wallhack ورادار ثنائي وsoft aim مع تحديثات Ricochet بعد كل تحديث.', subtitleShort: 'ESP ورادار وsoft aim — رخصة واحدة', buyNow: 'اشترِ الآن', seeFeatures: 'عرض الميزات' },
 		trust: { status: 'متصل', statusNote: 'حزمة Warzone Cheats نشطة لـ Warzone على Windows PC.', statusShort: 'نشط', delivery: 'تسليم رقمي فوري', platform: 'Windows 10 و11', antiCheat: 'دعم صيانة Ricochet anti-cheat', antiCheatShort: 'دعم Ricochet anti-cheat' },
 		product: { title: 'Warzone Cheats', addToCart: 'أضف إلى السلة', monthly: 'شهري', lifetime: 'مدى الحياة', available: 'متوفر الآن', gameBadge: 'Warzone', platformBadge: 'Windows PC', statusBadge: 'حزمة غير مكتشفة' },
 		reviews: { title: 'ماذا يقول اللاعبون', subtitle: 'آراء حديثة من مشتري Warzone Cheats', outOf: 'من 5', countLabel: 'مراجعات' },
@@ -23,8 +23,8 @@ export const uiStringsPart2 = {
 	},
 	},
 	ja: {
-		nav: { home: 'ホーム', hacks: 'Hacks', aimbot: 'Aimbot', esp: 'ESP', features: '機能', pricing: '料金', setup: 'セットアップ', updates: '更新', faq: 'FAQ', buyNow: '今すぐ購入' },
-		hero: { accent: 'Undetected Warzoneチート', accentShort: 'Warzone Cheats', subtitle: 'Warzone Windows PC向けESP wallhack、radar hack、Aimbot — Ricochet anti-cheatメンテナンス付き。', subtitleShort: 'Warzone PC向けESP・radar・Aimbot', buyNow: '今すぐ購入', seeFeatures: '機能を見る' },
+		nav: { home: 'ホーム', hacks: 'チート', aimbot: 'Aimbot', esp: 'ESP', features: '機能', pricing: '料金', setup: 'セットアップ', updates: '更新', faq: 'FAQ', buyNow: '今すぐ購入' },
+		hero: { accent: 'Undetected Warzoneチート', accentShort: 'Warzone Cheats', subtitle: 'Windows PC向けundetected Warzoneチートが1ライセンスで利用可能。ESPウォールハック、2Dレーダー、ソフトエイム。パッチ後のRicochet対応付き。', subtitleShort: 'ESP・レーダー・ソフトエイム — 1ライセンス', buyNow: '今すぐ購入', seeFeatures: '機能を見る' },
 		trust: { status: 'オンライン', statusNote: 'Warzone CheatsパッケージはWarzone Windows PCで利用可能です。', statusShort: '稼働中', delivery: '即時デジタル配信', platform: 'Windows 10 & 11', antiCheat: 'Ricochet anti-cheatメンテナンス対応', antiCheatShort: 'Ricochet anti-cheat対応' },
 		product: { title: 'Warzone Cheats', addToCart: 'カートに追加', monthly: '月額', lifetime: '永久', available: '現在利用可能', gameBadge: 'Warzone', platformBadge: 'Windows PC', statusBadge: 'Undetectedパッケージ' },
 		reviews: { title: 'プレイヤーの声', subtitle: 'Warzone Cheats購入者からの最近のフィードバック', outOf: '/5', countLabel: '件のレビュー' },
@@ -44,8 +44,8 @@ export const uiStringsPart2 = {
 	},
 	},
 	ko: {
-		nav: { home: '홈', hacks: 'Hacks', aimbot: 'Aimbot', esp: 'ESP', features: '기능', pricing: '가격', setup: '설치', updates: '업데이트', faq: 'FAQ', buyNow: '구매하기' },
-		hero: { accent: 'Undetected Warzone 치트', accentShort: 'Warzone Cheats', subtitle: 'Warzone Windows PC용 ESP wallhack, radar hack, Aimbot — Ricochet anti-cheat 유지보수 포함.', subtitleShort: 'Warzone PC용 ESP, radar, Aimbot', buyNow: '지금 구매', seeFeatures: '기능 보기' },
+		nav: { home: '홈', hacks: '치트', aimbot: 'Aimbot', esp: 'ESP', features: '기능', pricing: '가격', setup: '설치', updates: '업데이트', faq: 'FAQ', buyNow: '구매하기' },
+		hero: { accent: 'Undetected Warzone 치트', accentShort: 'Warzone Cheats', subtitle: 'Windows PC용 undetected 워존 치트, 하나의 라이선스로 — ESP 월핵, 2D 레이더, 소프트 에임. 패치마다 Ricochet 업데이트 포함.', subtitleShort: 'ESP·레이더·소프트 에임 — 하나의 라이선스', buyNow: '지금 구매', seeFeatures: '기능 보기' },
 		trust: { status: '온라인', statusNote: 'Warzone Cheats 패키지는 Warzone Windows PC에서 이용 가능합니다.', statusShort: '가동 중', delivery: '즉시 디지털 배송', platform: 'Windows 10 & 11', antiCheat: 'Ricochet anti-cheat 유지보수 지원', antiCheatShort: 'Ricochet anti-cheat 지원' },
 		product: { title: 'Warzone Cheats', addToCart: '장바구니에 추가', monthly: '월간', lifetime: '평생', available: '지금 이용 가능', gameBadge: 'Warzone', platformBadge: 'Windows PC', statusBadge: 'Undetected 패키지' },
 		reviews: { title: '플레이어 후기', subtitle: 'Warzone Cheats 구매자 최근 피드백', outOf: '/5', countLabel: '리뷰' },
@@ -65,8 +65,8 @@ export const uiStringsPart2 = {
 	},
 	},
 	zh: {
-		nav: { home: '首页', hacks: 'Hacks', aimbot: 'Aimbot', esp: 'ESP', features: '功能', pricing: '价格', setup: '安装', updates: '更新', faq: '常见问题', buyNow: '立即购买' },
-		hero: { accent: 'Undetected Warzone作弊', accentShort: 'Warzone Cheats', subtitle: '适用于Warzone Windows PC的ESP wallhack、radar hack和Aimbot — 含Ricochet anti-cheat维护。', subtitleShort: 'Warzone PC版ESP、radar与Aimbot', buyNow: '立即购买', seeFeatures: '查看功能' },
+		nav: { home: '首页', hacks: '作弊', aimbot: 'Aimbot', esp: 'ESP', features: '功能', pricing: '价格', setup: '安装', updates: '更新', faq: '常见问题', buyNow: '立即购买' },
+		hero: { accent: 'Undetected Warzone作弊', accentShort: 'Warzone Cheats', subtitle: '一套许可证涵盖 Windows PC 未检测 Warzone 作弊工具：ESP 透视、2D 雷达、软自瞄，每次补丁后含 Ricochet 更新。', subtitleShort: 'ESP、雷达、软自瞄 — 一套许可证', buyNow: '立即购买', seeFeatures: '查看功能' },
 		trust: { status: '在线', statusNote: 'Warzone Cheats套餐已在Warzone Windows PC上线。', statusShort: '运行中', delivery: '即时数字交付', platform: 'Windows 10 和 11', antiCheat: '支持Ricochet anti-cheat维护', antiCheatShort: 'Ricochet anti-cheat支持' },
 		product: { title: 'Warzone Cheats', addToCart: '加入购物车', monthly: '月付', lifetime: '终身', available: '现已可用', gameBadge: 'Warzone', platformBadge: 'Windows PC', statusBadge: 'Undetected套餐' },
 		reviews: { title: '玩家评价', subtitle: 'Warzone Cheats 买家近期反馈', outOf: '/5', countLabel: '条评价' },
@@ -86,8 +86,8 @@ export const uiStringsPart2 = {
 	},
 	},
 	hi: {
-		nav: { home: 'होम', hacks: 'Hacks', aimbot: 'Aimbot', esp: 'ESP', features: 'फ़ीचर्स', pricing: 'कीमत', setup: 'सेटअप', updates: 'अपडेट', faq: 'FAQ', buyNow: 'अभी खरीदें' },
-		hero: { accent: 'Undetected Warzone cheats', accentShort: 'Warzone Cheats', subtitle: 'Warzone Windows PC के लिए ESP wallhack, radar hack और Aimbot — Ricochet maintenance शामिल।', subtitleShort: 'Warzone PC के लिए ESP, radar और Aimbot', buyNow: 'अभी खरीदें', seeFeatures: 'फ़ीचर्स देखें' },
+		nav: { home: 'होम', hacks: 'Cheats', aimbot: 'Aimbot', esp: 'ESP', features: 'फ़ीचर्स', pricing: 'कीमत', setup: 'सेटअप', updates: 'अपडेट', faq: 'FAQ', buyNow: 'अभी खरीदें' },
+		hero: { accent: 'Undetected Warzone cheats', accentShort: 'Warzone Cheats', subtitle: 'Windows PC पर undetected Warzone cheats एक लाइसेंस में — ESP wallhack, 2D radar और soft aim, हर पैच के बाद Ricochet अपडेट।', subtitleShort: 'ESP, radar और soft aim — एक लाइसेंस', buyNow: 'अभी खरीदें', seeFeatures: 'फ़ीचर्स देखें' },
 		trust: { status: 'ऑनलाइन', statusNote: 'Warzone Cheats पैकेज Warzone Windows PC के लिए सक्रिय है।', statusShort: 'सक्रिय', delivery: 'तुरंत डिजिटल डिलीवरी', platform: 'Windows 10 और 11', antiCheat: 'Ricochet maintenance समर्थित', antiCheatShort: 'Ricochet anti-cheat समर्थित' },
 		product: { title: 'Warzone Cheats', addToCart: 'कार्ट में जोड़ें', monthly: 'मासिक', lifetime: 'लाइफ़टाइम', available: 'अभी उपलब्ध', gameBadge: 'Warzone', platformBadge: 'Windows PC', statusBadge: 'Undetected पैकेज' },
 		reviews: { title: 'खिलाड़ी क्या कहते हैं', subtitle: 'Warzone Cheats खरीदारों की हाल की प्रतिक्रिया', outOf: '/5', countLabel: 'समीक्षाएँ' },
@@ -107,8 +107,8 @@ export const uiStringsPart2 = {
 	},
 	},
 	id: {
-		nav: { home: 'Beranda', hacks: 'Hacks', aimbot: 'Aimbot', esp: 'ESP', features: 'Fitur', pricing: 'Harga', setup: 'Setup', updates: 'Pembaruan', faq: 'FAQ', buyNow: 'Beli sekarang' },
-		hero: { accent: 'Cheat Warzone undetected', accentShort: 'Warzone Cheats', subtitle: 'ESP wallhack, radar hack, dan Aimbot untuk Warzone di PC Windows — pemeliharaan Ricochet anti-cheat termasuk.', subtitleShort: 'ESP, radar & Aimbot untuk Warzone PC', buyNow: 'Beli sekarang', seeFeatures: 'Lihat fitur' },
+		nav: { home: 'Beranda', hacks: 'Cheat', aimbot: 'Aimbot', esp: 'ESP', features: 'Fitur', pricing: 'Harga', setup: 'Setup', updates: 'Pembaruan', faq: 'FAQ', buyNow: 'Beli sekarang' },
+		hero: { accent: 'Cheat Warzone undetected', accentShort: 'Warzone Cheats', subtitle: 'Satu lisensi untuk cheat Warzone undetected di PC Windows — wallhack ESP, radar 2D, dan soft aim, dengan update Ricochet setelah setiap patch.', subtitleShort: 'ESP, radar & soft aim — satu lisensi', buyNow: 'Beli sekarang', seeFeatures: 'Lihat fitur' },
 		trust: { status: 'Online', statusNote: 'Paket Warzone Cheats aktif untuk Warzone di PC Windows.', statusShort: 'Aktif', delivery: 'Pengiriman digital instan', platform: 'Windows 10 & 11', antiCheat: 'Pemeliharaan Ricochet anti-cheat didukung', antiCheatShort: 'Ricochet anti-cheat didukung' },
 		product: { title: 'Warzone Cheats', addToCart: 'Tambah ke keranjang', monthly: 'Bulanan', lifetime: 'Seumur hidup', available: 'Tersedia sekarang', gameBadge: 'Warzone', platformBadge: 'Windows PC', statusBadge: 'Paket undetected' },
 		reviews: { title: 'Apa kata pemain', subtitle: 'Umpan balik terbaru dari pembeli Warzone Cheats', outOf: 'dari 5', countLabel: 'ulasan' },
@@ -128,8 +128,8 @@ export const uiStringsPart2 = {
 	},
 	},
 	th: {
-		nav: { home: 'หน้าแรก', hacks: 'Hacks', aimbot: 'Aimbot', esp: 'ESP', features: 'ฟีเจอร์', pricing: 'ราคา', setup: 'ติดตั้ง', updates: 'อัปเดต', faq: 'FAQ', buyNow: 'ซื้อเลย' },
-		hero: { accent: 'Warzone cheats ไม่ถูกตรวจจับ', accentShort: 'Warzone Cheats', subtitle: 'ESP wallhack, radar hack และ Aimbot สำหรับ Warzone บน Windows PC — รวมการดูแล Ricochet anti-cheat', subtitleShort: 'ESP, radar และ Aimbot สำหรับ Warzone PC', buyNow: 'ซื้อเลย', seeFeatures: 'ดูฟีเจอร์' },
+		nav: { home: 'หน้าแรก', hacks: 'ชีท', aimbot: 'Aimbot', esp: 'ESP', features: 'ฟีเจอร์', pricing: 'ราคา', setup: 'ติดตั้ง', updates: 'อัปเดต', faq: 'FAQ', buyNow: 'ซื้อเลย' },
+		hero: { accent: 'Warzone cheats ไม่ถูกตรวจจับ', accentShort: 'Warzone Cheats', subtitle: 'ไลเซนส์เดียวสำหรับ Warzone cheats ที่ไม่ถูกตรวจจับบน Windows PC — ESP wallhack เรดาร์ 2D และ soft aim พร้อมอัปเดต Ricochet หลังทุกแพตช์', subtitleShort: 'ESP เรดาร์ soft aim — ไลเซนส์เดียว', buyNow: 'ซื้อเลย', seeFeatures: 'ดูฟีเจอร์' },
 		trust: { status: 'ออนไลน์', statusNote: 'แพ็กเกจ Warzone Cheats พร้อมใช้งานสำหรับ Warzone บน Windows PC', statusShort: 'ใช้งาน', delivery: 'จัดส่งดิจิทัลทันที', platform: 'Windows 10 และ 11', antiCheat: 'รองรับการดูแล Ricochet anti-cheat', antiCheatShort: 'Ricochet anti-cheat รองรับ' },
 		product: { title: 'Warzone Cheats', addToCart: 'เพิ่มในตะกร้า', monthly: 'รายเดือน', lifetime: 'ตลอดชีพ', available: 'พร้อมใช้งาน', gameBadge: 'Warzone', platformBadge: 'Windows PC', statusBadge: 'แพ็กเกจ undetected' },
 		reviews: { title: 'ผู้เล่นพูดว่าอย่างไร', subtitle: 'ความคิดเห็นล่าสุดจากผู้ซื้อ Warzone Cheats', outOf: 'จาก 5', countLabel: 'รีวิว' },
@@ -149,8 +149,8 @@ export const uiStringsPart2 = {
 	},
 	},
 	vi: {
-		nav: { home: 'Trang chủ', hacks: 'Hacks', aimbot: 'Aimbot', esp: 'ESP', features: 'Tính năng', pricing: 'Giá', setup: 'Cài đặt', updates: 'Cập nhật', faq: 'FAQ', buyNow: 'Mua ngay' },
-		hero: { accent: 'Cheat Warzone undetected', accentShort: 'Warzone Cheats', subtitle: 'ESP wallhack, radar hack và Aimbot cho Warzone trên PC Windows — bảo trì Ricochet anti-cheat bao gồm.', subtitleShort: 'ESP, radar & Aimbot cho Warzone PC', buyNow: 'Mua ngay', seeFeatures: 'Xem tính năng' },
+		nav: { home: 'Trang chủ', hacks: 'Cheat', aimbot: 'Aimbot', esp: 'ESP', features: 'Tính năng', pricing: 'Giá', setup: 'Cài đặt', updates: 'Cập nhật', faq: 'FAQ', buyNow: 'Mua ngay' },
+		hero: { accent: 'Cheat Warzone undetected', accentShort: 'Warzone Cheats', subtitle: 'Một giấy phép cho cheat Warzone undetected trên PC Windows — wallhack ESP, radar 2D và soft aim, cập nhật Ricochet sau mỗi bản vá.', subtitleShort: 'ESP, radar & soft aim — một giấy phép', buyNow: 'Mua ngay', seeFeatures: 'Xem tính năng' },
 		trust: { status: 'Trực tuyến', statusNote: 'Gói Warzone Cheats đang hoạt động cho Warzone trên PC Windows.', statusShort: 'Hoạt động', delivery: 'Giao hàng kỹ thuật số tức thì', platform: 'Windows 10 & 11', antiCheat: 'Hỗ trợ bảo trì Ricochet anti-cheat', antiCheatShort: 'Hỗ trợ Ricochet anti-cheat' },
 		product: { title: 'Warzone Cheats', addToCart: 'Thêm vào giỏ', monthly: 'Hàng tháng', lifetime: 'Trọn đời', available: 'Có sẵn ngay', gameBadge: 'Warzone', platformBadge: 'Windows PC', statusBadge: 'Gói undetected' },
 		reviews: { title: 'Người chơi nói gì', subtitle: 'Phản hồi gần đây từ người mua Warzone Cheats', outOf: '/5', countLabel: 'đánh giá' },
@@ -170,8 +170,8 @@ export const uiStringsPart2 = {
 	},
 	},
 	uk: {
-		nav: { home: 'Головна', hacks: 'Hacks', aimbot: 'Aimbot', esp: 'ESP', features: 'Функції', pricing: 'Ціни', setup: 'Встановлення', updates: 'Оновлення', faq: 'FAQ', buyNow: 'Купити' },
-		hero: { accent: 'Undetected чіти Warzone', accentShort: 'Warzone Cheats', subtitle: 'ESP wallhack, radar hack і Aimbot для Warzone на Windows PC — обслуговування Ricochet anti-cheat включено.', subtitleShort: 'ESP, radar і Aimbot для Warzone PC', buyNow: 'Купити', seeFeatures: 'Дивитися функції' },
+		nav: { home: 'Головна', hacks: 'Чіти', aimbot: 'Aimbot', esp: 'ESP', features: 'Функції', pricing: 'Ціни', setup: 'Встановлення', updates: 'Оновлення', faq: 'FAQ', buyNow: 'Купити' },
+		hero: { accent: 'Undetected чіти Warzone', accentShort: 'Warzone Cheats', subtitle: 'Одна ліцензія на undetected чіти Warzone для Windows ПК — ESP wallhack, 2D-радар і soft aim, оновлення Ricochet після кожного патча.', subtitleShort: 'ESP, радар і soft aim — одна ліцензія', buyNow: 'Купити', seeFeatures: 'Дивитися функції' },
 		trust: { status: 'Онлайн', statusNote: 'Пакет Warzone Cheats активний для Warzone на Windows PC.', statusShort: 'Активний', delivery: 'Миттєва цифрова доставка', platform: 'Windows 10 і 11', antiCheat: 'Підтримка обслуговування Ricochet anti-cheat', antiCheatShort: 'Ricochet anti-cheat підтримка' },
 		product: { title: 'Warzone Cheats', addToCart: 'До кошика', monthly: 'Щомісяця', lifetime: 'Назавжди', available: 'Доступно зараз', gameBadge: 'Warzone', platformBadge: 'Windows PC', statusBadge: 'Undetected пакет' },
 		reviews: { title: 'Що кажуть гравці', subtitle: 'Останні відгуки покупців Warzone Cheats', outOf: 'з 5', countLabel: 'відгуків' },
@@ -191,8 +191,8 @@ export const uiStringsPart2 = {
 	},
 	},
 	cs: {
-		nav: { home: 'Domů', hacks: 'Hacks', aimbot: 'Aimbot', esp: 'ESP', features: 'Funkce', pricing: 'Ceny', setup: 'Instalace', updates: 'Aktualizace', faq: 'FAQ', buyNow: 'Koupit' },
-		hero: { accent: 'Undetected Warzone cheaty', accentShort: 'Warzone Cheats', subtitle: 'ESP wallhack, radar hack a Aimbot pro Warzone na Windows PC — údržba Ricochet anti-cheat v ceně.', subtitleShort: 'ESP, radar a Aimbot pro Warzone PC', buyNow: 'Koupit', seeFeatures: 'Zobrazit funkce' },
+		nav: { home: 'Domů', hacks: 'Cheaty', aimbot: 'Aimbot', esp: 'ESP', features: 'Funkce', pricing: 'Ceny', setup: 'Instalace', updates: 'Aktualizace', faq: 'FAQ', buyNow: 'Koupit' },
+		hero: { accent: 'Undetected Warzone cheaty', accentShort: 'Warzone Cheats', subtitle: 'Jedna licence na undetected Warzone cheaty pro Windows PC — ESP wallhack, 2D radar a soft aim, aktualizace Ricochet po každém patchi.', subtitleShort: 'ESP, radar a soft aim — jedna licence', buyNow: 'Koupit', seeFeatures: 'Zobrazit funkce' },
 		trust: { status: 'Online', statusNote: 'Balíček Warzone Cheats je aktivní pro Warzone na Windows PC.', statusShort: 'Aktivní', delivery: 'Okamžité digitální doručení', platform: 'Windows 10 a 11', antiCheat: 'Podpora údržby Ricochet anti-cheat', antiCheatShort: 'Ricochet anti-cheat podpora' },
 		product: { title: 'Warzone Cheats', addToCart: 'Přidat do košíku', monthly: 'Měsíčně', lifetime: 'Doživotně', available: 'Dostupné nyní', gameBadge: 'Warzone', platformBadge: 'Windows PC', statusBadge: 'Undetected balíček' },
 		reviews: { title: 'Co říkají hráči', subtitle: 'Nedávná zpětná vazba od kupujících Warzone Cheats', outOf: 'z 5', countLabel: 'recenzí' },
@@ -212,8 +212,8 @@ export const uiStringsPart2 = {
 	},
 	},
 	ro: {
-		nav: { home: 'Acasă', hacks: 'Hacks', aimbot: 'Aimbot', esp: 'ESP', features: 'Funcții', pricing: 'Prețuri', setup: 'Instalare', updates: 'Actualizări', faq: 'FAQ', buyNow: 'Cumpără' },
-		hero: { accent: 'Cheats Warzone undetected', accentShort: 'Warzone Cheats', subtitle: 'ESP wallhack, radar hack și Aimbot pentru Warzone pe PC Windows — mentenanță Ricochet anti-cheat inclusă.', subtitleShort: 'ESP, radar și Aimbot pentru Warzone PC', buyNow: 'Cumpără acum', seeFeatures: 'Vezi funcții' },
+		nav: { home: 'Acasă', hacks: 'Cheats', aimbot: 'Aimbot', esp: 'ESP', features: 'Funcții', pricing: 'Prețuri', setup: 'Instalare', updates: 'Actualizări', faq: 'FAQ', buyNow: 'Cumpără' },
+		hero: { accent: 'Cheats Warzone undetected', accentShort: 'Warzone Cheats', subtitle: 'O singură licență pentru cheat-uri Warzone nedetectate pe PC Windows — wallhack ESP, radar 2D și soft aim, actualizări Ricochet după fiecare patch.', subtitleShort: 'ESP, radar și soft aim — o licență', buyNow: 'Cumpără acum', seeFeatures: 'Vezi funcții' },
 		trust: { status: 'Online', statusNote: 'Pachetul Warzone Cheats este activ pentru Warzone pe PC Windows.', statusShort: 'Activ', delivery: 'Livrare digitală instantă', platform: 'Windows 10 și 11', antiCheat: 'Mentenanță Ricochet anti-cheat suportată', antiCheatShort: 'Ricochet anti-cheat suportat' },
 		product: { title: 'Warzone Cheats', addToCart: 'Adaugă în coș', monthly: 'Lunar', lifetime: 'Pe viață', available: 'Disponibil acum', gameBadge: 'Warzone', platformBadge: 'Windows PC', statusBadge: 'Pachet undetected' },
 		reviews: { title: 'Ce spun jucătorii', subtitle: 'Feedback recent de la cumpărătorii Warzone Cheats', outOf: 'din 5', countLabel: 'recenzii' },
@@ -233,8 +233,8 @@ export const uiStringsPart2 = {
 	},
 	},
 	sv: {
-		nav: { home: 'Hem', hacks: 'Hacks', aimbot: 'Aimbot', esp: 'ESP', features: 'Funktioner', pricing: 'Priser', setup: 'Installation', updates: 'Uppdateringar', faq: 'FAQ', buyNow: 'Köp nu' },
-		hero: { accent: 'Undetected Warzone cheats', accentShort: 'Warzone Cheats', subtitle: 'ESP wallhack, radar hack och Aimbot för Warzone på Windows PC — Ricochet anti-cheat-underhåll ingår.', subtitleShort: 'ESP, radar & Aimbot för Warzone PC', buyNow: 'Köp nu', seeFeatures: 'Se funktioner' },
+		nav: { home: 'Hem', hacks: 'Cheats', aimbot: 'Aimbot', esp: 'ESP', features: 'Funktioner', pricing: 'Priser', setup: 'Installation', updates: 'Uppdateringar', faq: 'FAQ', buyNow: 'Köp nu' },
+		hero: { accent: 'Undetected Warzone cheats', accentShort: 'Warzone Cheats', subtitle: 'En licens för undetected Warzone-cheats på Windows PC — ESP-wallhack, 2D-radar och soft aim, med Ricochet-uppdateringar efter varje patch.', subtitleShort: 'ESP, radar & soft aim — en licens', buyNow: 'Köp nu', seeFeatures: 'Se funktioner' },
 		trust: { status: 'Online', statusNote: 'Warzone Cheats-paketet är live för Warzone på Windows PC.', statusShort: 'Live', delivery: 'Omedelbar digital leverans', platform: 'Windows 10 & 11', antiCheat: 'Ricochet anti-cheat-underhåll stöds', antiCheatShort: 'Ricochet anti-cheat stöd' },
 		product: { title: 'Warzone Cheats', addToCart: 'Lägg i varukorg', monthly: 'Månadsvis', lifetime: 'Lifetime', available: 'Tillgänglig nu', gameBadge: 'Warzone', platformBadge: 'Windows PC', statusBadge: 'Undetected paket' },
 		reviews: { title: 'Vad spelare säger', subtitle: 'Senaste feedback från Warzone Cheats-köpare', outOf: 'av 5', countLabel: 'recensioner' },

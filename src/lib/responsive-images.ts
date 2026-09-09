@@ -38,8 +38,8 @@ export function contentSrcSet(baseSrc: string): string | undefined {
 }
 
 /**
- * Homepage / banner hero — Ghost operator art (warzone-ghost-hero).
- * Native art 1536×1024 (3:2).
+ * Homepage / banner hero — tactical squad art (warzone-ghost-hero).
+ * Native art 1672×941 (~16:9).
  */
 export const heroResponsive: ResponsiveWidth[] = [
 	{ src: '/images/warzone-ghost-hero-640w.webp', width: 640 },
